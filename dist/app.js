@@ -174,6 +174,13 @@ function render() {
   if (state.kind) active.push(`<span class="active-chip">${esc(TYPES[state.kind] || state.kind)}</span>`);
   $('#active-filters').innerHTML = active.join('');
   $('#empty-state').hidden = n !== 0;
+  const materiaisSemPontos = state.materials.filter(id =>
+    metadata.materiais.some(m => m.id === id && m.quantidade === 0)
+  );
+  
+  $('#empty-description').textContent = materiaisSemPontos.length
+    ? `Nenhum ponto foi identificado para ${materiaisSemPontos.map(materialName).join(', ')} nas fontes utilizadas. Isso não significa que o descarte seja proibido em BH.`
+    : 'Tente outra região, aumente a distância ou remova um material. A ausência de resultados não significa que o descarte seja proibido.';
   $('#results').innerHTML = filtered.map(({feature:f,distance}) => {
     const p = f.properties;
     const tags = p.materiais_indexados.slice(0,4).map(id => `<span class="tag">${esc(materialName(id))}</span>`).join('');
