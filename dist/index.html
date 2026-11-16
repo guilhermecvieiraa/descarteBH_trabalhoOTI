@@ -41,7 +41,10 @@
           <div id="error-state" class="error-state" role="alert" hidden></div>
           <div id="map-panel" class="map-panel"><div id="map" aria-label="Mapa interativo dos pontos de descarte de Belo Horizonte"></div><div class="map-title"><span class="live-dot"></span> BELO HORIZONTE <small>MG</small></div><button type="button" id="fit-map" class="map-fit" title="Enquadrar resultados" aria-label="Enquadrar todos os resultados">⛶</button><div class="map-legend"><span><i class="dot green"></i>Ponto Verde</span><span><i class="dot blue"></i>URPV</span></div><div id="map-message" class="map-message" role="status" hidden></div></div>
           <div class="list-heading"><h3>Pontos de descarte <span id="list-counter"></span></h3><label>Ordenar por <select id="sort" aria-label="Ordenar resultados"><option value="name">Nome</option><option value="distance" disabled>Menor distância</option></select></label></div>
-          <div id="empty-state" class="empty-state" hidden><span aria-hidden="true">⌕</span><h3>Nenhum ponto encontrado</h3><p>Tente outra região, aumente a distância ou remova um material. A ausência de resultados não significa que o descarte seja proibido.</p><button type="button" id="empty-reset" class="outline">Limpar filtros</button></div>
+          <div id="empty-state" class="empty-state" hidden><span aria-hidden="true">⌕</span><h3>Nenhum ponto encontrado</h3><p id="empty-description">
+  Tente outra região, aumente a distância ou remova um material.
+  A ausência de resultados não significa que o descarte seja proibido.
+</p><button type="button" id="empty-reset" class="outline">Limpar filtros</button></div>
           <div id="results" class="results" aria-label="Lista de pontos de descarte"></div>
         </div>
       </div>
