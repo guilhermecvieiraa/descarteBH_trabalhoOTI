@@ -28,6 +28,16 @@ document.querySelectorAll('dialog').forEach(dialog => {
   });
 });
 
+function nomeExibicao(p) {
+  if (p.tipo !== 'ponto_verde' || normalize(p.nome) !== 'ponto verde') {
+    return present(p.nome);
+  }
+
+  const local = p.referencia || p.bairro || p.endereco;
+
+  return local ? `Ponto Verde · ${local}` : 'Ponto Verde';
+}
+
 function materialName(id) { return metadata?.materiais.find(m => m.id === id)?.nome || id; }
 function renderMaterials() {
   const query = normalize($('#material-query').value);
@@ -134,10 +144,10 @@ function updateMarkers() {
   filtered.forEach(({feature:f}) => {
     const p = f.properties, [lon,lat] = f.geometry.coordinates;
     const icon = L.divIcon({className:`pin-marker ${p.tipo}`,html:'<span></span>',iconSize:[28,34],iconAnchor:[14,30],popupAnchor:[0,-24]});
-    const marker = L.marker([lat,lon], {icon,title:`${TYPES[p.tipo] || p.tipo}: ${p.nome}`,alt:p.nome,keyboard:true}).addTo(markers);
+    const marker = L.marker([lat,lon], {icon,title:`${TYPES[p.tipo] || p.tipo}: ${nomeExibicao(p)}`,alt:nomeExibicao(p),keyboard:true}).addTo(markers);
     const popup = document.createElement('div');
     const title = document.createElement('strong');
-    title.className = 'popup-title'; title.textContent = p.nome || 'Nome não informado';
+    title.className = 'popup-title'; title.textContent = nomeExibicao(p);
     const address = document.createElement('div'); address.textContent = present(p.endereco);
     const button = document.createElement('button'); button.type = 'button'; button.className = 'popup-button'; button.textContent = 'Ver detalhes e materiais →';
     button.addEventListener('click', () => showDetails(f));
@@ -168,7 +178,7 @@ function render() {
     const p = f.properties;
     const tags = p.materiais_indexados.slice(0,4).map(id => `<span class="tag">${esc(materialName(id))}</span>`).join('');
     const more = p.materiais_indexados.length > 4 ? `<span class="tag">+${p.materiais_indexados.length - 4}</span>` : '';
-    return `<article class="point-card" data-card-id="${esc(p.id)}"><div class="card-top"><span class="badge ${esc(p.tipo)}">${esc(TYPES[p.tipo] || p.tipo)}</span>${distance !== null ? `<span class="distance">${distance.toLocaleString('pt-BR',{maximumFractionDigits:1})} km</span>` : `<span class="distance">${esc(p.regional)}</span>`}</div><h4><button type="button" data-detail="${esc(p.id)}">${esc(p.nome || 'Nome não informado')}</button></h4><p class="card-address">${esc(p.endereco || 'Endereço não informado')}<br>${esc(p.bairro || 'Bairro não informado')}</p><div class="tags">${tags || '<span class="tag">Material não informado no índice</span>'}${more}</div><div class="card-bottom"><button type="button" data-detail="${esc(p.id)}">Ver detalhes <span aria-hidden="true">↗</span></button><button type="button" data-map="${esc(p.id)}">Ver no mapa ⌖</button></div></article>`;
+    return `<article class="point-card" data-card-id="${esc(p.id)}"><div class="card-top"><span class="badge ${esc(p.tipo)}">${esc(TYPES[p.tipo] || p.tipo)}</span>${distance !== null ? `<span class="distance">${distance.toLocaleString('pt-BR',{maximumFractionDigits:1})} km</span>` : `<span class="distance">${esc(p.regional)}</span>`}</div><h4><button type="button" data-detail="${esc(p.id)}">${esc(nomeExibicao(p))}</button></h4><p class="card-address">${esc(p.endereco || 'Endereço não informado')}<br>${esc(p.bairro || 'Bairro não informado')}</p><div class="tags">${tags || '<span class="tag">Material não informado no índice</span>'}${more}</div><div class="card-bottom"><button type="button" data-detail="${esc(p.id)}">Ver detalhes <span aria-hidden="true">↗</span></button><button type="button" data-map="${esc(p.id)}">Ver no mapa ⌖</button></div></article>`;
   }).join('');
   updateMarkers();
 }
@@ -176,7 +186,7 @@ function render() {
 function showDetails(f) {
   const p = f.properties, coords = f.geometry.coordinates;
   const materials = p.materiais_indexados.map(id => `<span class="tag">${esc(materialName(id))}</span>`).join('');
-  $('#detail-content').innerHTML = `<span class="badge ${esc(p.tipo)}">${esc(TYPES[p.tipo] || p.tipo)}</span><h2 id="detail-title">${esc(p.nome || 'Nome não informado')}</h2><div class="tags">${materials}</div><dl><dt>Endereço</dt><dd>${esc(present(p.endereco))}</dd><dt>Bairro / regional</dt><dd>${esc(present(p.bairro))} · ${esc(present(p.regional))}</dd><dt>Referência de localização</dt><dd>${esc(present(p.referencia))}</dd><dt>Materiais — texto original da fonte</dt><dd>${esc(present(p.material_original))}</dd><dt>Horário — texto original da fonte</dt><dd>${esc(present(p.horario_original))}</dd><dt>Coordenadas (EPSG:4326)</dt><dd>Latitude: ${coords[1]} · Longitude: ${coords[0]}</dd><dt>Identificador no Descarte BH</dt><dd>${esc(p.id)}</dd></dl><div class="detail-actions"><a class="primary-link" href="${routeUrl(f)}" target="_blank" rel="noopener noreferrer">Abrir rota no Google Maps ↗</a><button type="button" class="outline" id="detail-map">Ver no mapa ⌖</button></div><h3>Origem e metadados do registro</h3>${p.origens.map(o => `<div class="data-source"><h3>${esc(o.nome)}</h3><dl><dt>Arquivo original</dt><dd>${esc(o.arquivo)}</dd><dt>Referência temporal</dt><dd>${fmtDate(o.data_referencia)}</dd><dt>Registro na fonte</dt><dd>${esc(o.id_registro)} · linha ${o.linha}</dd><dt>SHA-256</dt><dd class="hash">${esc(o.sha256)}</dd></dl><a href="${esc(o.url)}" target="_blank" rel="noopener noreferrer">Consultar conjunto oficial ↗</a></div>`).join('')}<p class="metadata-note">Confirme a operação e as condições com a PBH. A descrição é preservada do CSV; ela não comprova recebimento atual. Ausência de um material no índice não significa proibição.</p>`;
+  $('#detail-content').innerHTML = `<span class="badge ${esc(p.tipo)}">${esc(TYPES[p.tipo] || p.tipo)}</span><h2 id="detail-title">${esc(nomeExibicao(p))}</h2><div class="tags">${materials}</div><dl><dt>Endereço</dt><dd>${esc(present(p.endereco))}</dd><dt>Bairro / regional</dt><dd>${esc(present(p.bairro))} · ${esc(present(p.regional))}</dd><dt>Referência de localização</dt><dd>${esc(present(p.referencia))}</dd><dt>Materiais — texto original da fonte</dt><dd>${esc(present(p.material_original))}</dd><dt>Horário — texto original da fonte</dt><dd>${esc(present(p.horario_original))}</dd><dt>Coordenadas (EPSG:4326)</dt><dd>Latitude: ${coords[1]} · Longitude: ${coords[0]}</dd><dt>Identificador no Descarte BH</dt><dd>${esc(p.id)}</dd></dl><div class="detail-actions"><a class="primary-link" href="${routeUrl(f)}" target="_blank" rel="noopener noreferrer">Abrir rota no Google Maps ↗</a><button type="button" class="outline" id="detail-map">Ver no mapa ⌖</button></div><h3>Origem e metadados do registro</h3>${p.origens.map(o => `<div class="data-source"><h3>${esc(o.nome)}</h3><dl><dt>Arquivo original</dt><dd>${esc(o.arquivo)}</dd><dt>Referência temporal</dt><dd>${fmtDate(o.data_referencia)}</dd><dt>Registro na fonte</dt><dd>${esc(o.id_registro)} · linha ${o.linha}</dd><dt>SHA-256</dt><dd class="hash">${esc(o.sha256)}</dd></dl><a href="${esc(o.url)}" target="_blank" rel="noopener noreferrer">Consultar conjunto oficial ↗</a></div>`).join('')}<p class="metadata-note">Confirme a operação e as condições com a PBH. A descrição é preservada do CSV; ela não comprova recebimento atual. Ausência de um material no índice não significa proibição.</p>`;
   $('#detail-map').addEventListener('click', () => { $('#detail-dialog').close(); focusOnMap(p.id); });
   openDialog('detail');
 }
