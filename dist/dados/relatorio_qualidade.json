@@ -1,5 +1,5 @@
 {
-  "processado_em_utc": "2026-11-16T14:47:09+00:00",
+  "processado_em_utc": "2026-11-16T22:55:30+00:00",
   "quantidade_total": 86,
   "fontes": [
     {
@@ -78,7 +78,24 @@
   "rejeicoes": {},
   "registros_rejeitados": [],
   "duplicados_integrados": [],
-  "possiveis_sobreposicoes": [
+  "possiveis_sobreposicoes": [],
+  "enderecos_compartilhados": [
+    [
+      "ponto_verde:ponto_verde:1001",
+      "urpv:urpv:25"
+    ],
+    [
+      "ponto_verde:ponto_verde:1002",
+      "urpv:urpv:1"
+    ],
+    [
+      "ponto_verde:ponto_verde:101",
+      "urpv:urpv:24"
+    ],
+    [
+      "ponto_verde:ponto_verde:1041",
+      "urpv:urpv:61"
+    ],
     [
       "ponto_verde:ponto_verde:1081",
       "ponto_verde:ponto_verde:861"
@@ -128,6 +145,14 @@
       "ponto_verde:ponto_verde:303"
     ],
     [
+      "ponto_verde:ponto_verde:1241",
+      "urpv:urpv:3"
+    ],
+    [
+      "ponto_verde:ponto_verde:1381",
+      "urpv:urpv:2"
+    ],
+    [
       "ponto_verde:ponto_verde:1441",
       "ponto_verde:ponto_verde:96"
     ],
@@ -140,12 +165,40 @@
       "ponto_verde:ponto_verde:801"
     ],
     [
+      "ponto_verde:ponto_verde:223",
+      "urpv:urpv:18"
+    ],
+    [
+      "ponto_verde:ponto_verde:304",
+      "urpv:urpv:19"
+    ],
+    [
+      "ponto_verde:ponto_verde:521",
+      "urpv:urpv:15"
+    ],
+    [
+      "ponto_verde:ponto_verde:543",
+      "urpv:urpv:14"
+    ],
+    [
+      "ponto_verde:ponto_verde:544",
+      "urpv:urpv:32"
+    ],
+    [
+      "ponto_verde:ponto_verde:761",
+      "urpv:urpv:17"
+    ],
+    [
       "ponto_verde:ponto_verde:781",
       "ponto_verde:ponto_verde:801"
     ],
     [
       "ponto_verde:ponto_verde:841",
       "ponto_verde:ponto_verde:881"
+    ],
+    [
+      "ponto_verde:ponto_verde:98",
+      "urpv:urpv:26"
     ]
   ],
   "alerta": "Materiais indexados somente se citados no CSV. Confirme condições atuais com a PBH."

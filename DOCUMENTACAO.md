@@ -15,7 +15,7 @@
 | Metadados temáticos | Vocabulário de materiais, rótulos e critério de indexação |
 | Metadados administrativos | Fonte, arquivo, linha, hash, datas, codificação, separador e colunas |
 | Metadados técnicos | Formato, idioma, cobertura, CRS e ordem das coordenadas |
-| Auditoria | Relatório por fonte e linha rejeitada, duplicados integrados e possíveis sobreposições |
+| Auditoria | Relatório por fonte e linha rejeitada, duplicados integrados, coordenadas coincidentes e endereços compartilhados |
 | Transparência | Modal de fontes, dicionário, limitações e download de CSV bruto/tratado, GeoJSON e JSON |
 | Acessibilidade e celular | HTML semântico, labels, teclado, foco visível, dialogs nativos, lista alternativa ao mapa, layouts responsivos |
 
@@ -23,7 +23,7 @@
 
 Metadados inspirados nos elementos Dublin Core (título, criador, publicador, idioma, cobertura, formato, fonte, identificador e datas), sem declarar certificação ou conformidade integral com um padrão. Os campos efetivos são documentados em dist/dados/metadados.json e expostos na interface.
 
-A fonte é o conjunto de publicação; o tipo é uma característica do registro. Esses conceitos não são intercambiáveis. Cada identificação é prefixada por fonte e esquema para evitar colisões entre tipos. A integração de duplicados só ocorre quando atributos semânticos e coordenadas coincidem; todas as origens são preservadas. Sobreposições em coordenada/endereço são sinalizadas para revisão, não eliminadas por proximidade.
+A fonte é o conjunto de publicação; o tipo é uma característica do registro. Esses conceitos não são intercambiáveis. Cada identificação é prefixada por fonte e esquema para evitar colisões entre tipos. A integração de duplicados só ocorre quando atributos semânticos e coordenadas coincidem; todas as origens são preservadas. Registros com coordenadas coincidentes são sinalizados separadamente daqueles que compartilham endereço. Nenhum registro é eliminado apenas por proximidade ou coincidência de endereço.
 
 Preservação: CSVs de aquisição permanecem intactos; cópias de integridade são endereçadas por hash e snapshots de processamento ficam em historico. A visualização corrente usa somente as versões selecionadas no manifesto. A versão de referência é extraída do nome do download quando indicada; horário de download não foi inferido da data do sistema de arquivos. A retenção e destinação formal dos registros, responsáveis por revisão e relatório acadêmico completo ainda devem ser definidos pelo grupo; não foi inventada uma tabela institucional de temporalidade.
 

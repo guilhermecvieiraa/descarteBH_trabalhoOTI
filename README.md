@@ -20,7 +20,7 @@ Acesse http://127.0.0.1:4173 . Não abra index.html diretamente por duplo clique
 
 O navegador carrega GeoJSON, metadados e relatório por HTTP. Todos os filtros são aplicados à mesma coleção para sincronizar mapa, contagem e lista. Não há banco SQL necessário nesta entrega. Os dados representam uma versão de referência, não consulta em tempo real à PBH.
 
-Os arquivos de referência são `dados_brutos/20261103_ponto_verde.csv` e `dados_brutos/20261103_unidade_recebimento_pequenos_volumes.csv`. Esses CSVs, internos a esta pasta, são a entrada efetiva da plataforma. A origem declarada do arquivo fica separada do tipo identificado no registro. O importador aceita cabeçalhos URPV dentro de um conjunto declarado Ponto Verde e mantém essa origem; não reclassifica o conjunto inteiro. Duplicados exatos são integrados, preservando ambas as origens. Possíveis sobreposições não exatas ficam no relatório para revisão manual.
+Os arquivos de referência são `dados_brutos/20261103_ponto_verde.csv` e `dados_brutos/20261103_unidade_recebimento_pequenos_volumes.csv`. Esses CSVs, internos a esta pasta, são a entrada efetiva da plataforma. A origem declarada do arquivo fica separada do tipo identificado no registro. O importador aceita cabeçalhos URPV dentro de um conjunto declarado Ponto Verde e mantém essa origem; não reclassifica o conjunto inteiro. Duplicados exatos são integrados, preservando ambas as origens. O relatório de qualidade distingue coordenadas coincidentes de endereços compartilhados, preservando os registros para revisão.
 
 ## Enviar ao GitHub
 
