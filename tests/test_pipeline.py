@@ -47,5 +47,11 @@ class PipelineTests(unittest.TestCase):
             with self.assertRaises(ValueError):pipeline.processar(base,out,manifest)
             self.assertEqual((out/'pontos.geojson').read_text(encoding='utf-8'),'previous')
 
+    def test_formatacao_numero_imovel(self):
+        self.assertEqual(pipeline.formatar_numero("945.0"), "945")
+        self.assertEqual(pipeline.formatar_numero("2600.0"), "2600")
+        self.assertEqual(pipeline.formatar_numero("S/N"), "S/N")
+        self.assertEqual(pipeline.formatar_numero("12A"), "12A")
+
 
 if __name__=='__main__':unittest.main()
