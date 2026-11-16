@@ -83,3 +83,15 @@ test('captura da plataforma',async({page})=>{
   await page.goto('/');await expect(page.locator('.pin-marker')).toHaveCount(86);
   await page.waitForTimeout(1800);await page.screenshot({path:'test-results/desktop.png',fullPage:false});
 });
+
+test('material sem pontos mostra mensagem explicativa', async ({page}) => {
+  await page.goto('/');
+
+  await page.locator('[data-material="colchao"]').click();
+
+  await expect(page.locator('#result-count'))
+    .toHaveText('0 pontos encontrados');
+
+  await expect(page.locator('#empty-description'))
+    .toContainText('Colchões');
+});
