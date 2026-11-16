@@ -2,5 +2,11 @@ node_modules/
 __pycache__/
 test-results/
 playwright-report/
-.sites-local/
 *.tar.gz
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db

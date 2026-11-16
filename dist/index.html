@@ -6,7 +6,7 @@
   <meta name="description" content="Encontre pontos de descarte em Belo Horizonte. Consulte materiais, endereço, horário e origem dos dados públicos da PBH.">
   <meta name="theme-color" content="#145846">
   <title>Descarte BH — cada resíduo no seu lugar</title>
-  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="icon" href="logo.png" type="image/png">
   <link rel="stylesheet" href="vendor/leaflet.css">
   <link rel="stylesheet" href="styles.css">
   <script defer src="vendor/leaflet.js"></script>
@@ -15,7 +15,7 @@
 <body>
   <a class="skip" href="#explorar">Pular para a busca</a>
   <header class="header">
-    <a class="brand" href="#" aria-label="Descarte BH, início"><span class="brand-symbol" aria-hidden="true">↻</span><span>descarte<span class="brand-bh">bh</span><small>CADA RESÍDUO NO SEU LUGAR</small></span></a>
+    <a class="brand" href="#" aria-label="Descarte BH, início"><img class="brand-logo" src="logo.png" width="327" height="87" alt="Descarte BH — Informação para o descarte correto"></a>
     <nav aria-label="Navegação principal"><a class="active" href="#explorar">Encontrar um ponto</a><button type="button" data-open="metadata">Dados e transparência</button><button type="button" data-open="about">Sobre o projeto <span aria-hidden="true">↗</span></button></nav>
   </header>
   <main>
@@ -48,7 +48,7 @@
     </section>
     <section class="care-strip"><span class="care-icon" aria-hidden="true">♧</span><div><h2>Uma cidade melhor começa com pequenas escolhas.</h2><p>Separe os resíduos e consulte os materiais informados para cada local.</p></div><button type="button" data-open="about" class="outline">Conheça o projeto <span aria-hidden="true">↗</span></button></section>
   </main>
-  <footer><a class="brand footer-brand" href="#">↻ descarte<span class="brand-bh">bh</span></a><p>Projeto acadêmico · UFMG · Organização e Tratamento da Informação<br>Dados da Prefeitura de Belo Horizonte. Esta plataforma não substitui os canais oficiais.</p><button type="button" data-open="metadata">Fontes e metadados ↗</button></footer>
+  <footer><a class="brand footer-brand" href="#"><img class="brand-logo" src="logo.png" width="327" height="87" alt="Descarte BH — Informação para o descarte correto"></a><p>Projeto acadêmico · UFMG · Organização e Tratamento da Informação<br>Dados da Prefeitura de Belo Horizonte. Esta plataforma não substitui os canais oficiais.</p><button type="button" data-open="metadata">Fontes e metadados ↗</button></footer>
   <dialog id="detail-dialog" aria-labelledby="detail-title"><div class="dialog-top"><span class="eyebrow">INFORMAÇÕES DO PONTO</span><button type="button" class="close-dialog" aria-label="Fechar detalhes">×</button></div><div id="detail-content"></div></dialog>
   <dialog id="metadata-dialog" class="wide-dialog" aria-labelledby="metadata-title"><div class="dialog-top"><span class="eyebrow">DADOS ABERTOS · RASTREABILIDADE</span><button type="button" class="close-dialog" aria-label="Fechar metadados">×</button></div><h2 id="metadata-title">Dados e transparência</h2><p class="dialog-intro">Da fonte pública ao mapa, cada registro mantém sua origem.</p><div id="metadata-content"></div></dialog>
   <dialog id="about-dialog" aria-labelledby="about-title"><div class="dialog-top"><span class="eyebrow">INFORMAÇÃO QUE TRANSFORMA</span><button type="button" class="close-dialog" aria-label="Fechar sobre o projeto">×</button></div><h2 id="about-title">Sobre o Descarte BH</h2><p>O Descarte BH organiza informações públicas sobre locais de descarte em Belo Horizonte para aproximar o cidadão dos serviços da cidade.</p><h3>Um projeto de organização da informação</h3><p>Protótipo acadêmico do curso de Sistemas de Informação da UFMG, disciplina Organização e Tratamento da Informação (OTI071), sob orientação da professora Patrícia Nascimento Silva.</p><p>Autores: Lucas Morais de Souza, Guilherme Augusto Pires Lopes e Guilherme Carneiro Vieira.</p><h3>Como pesquisar</h3><p>Escolha materiais e informe um bairro, rua ou regional. Para ordenar por proximidade, use sua localização, localize um endereço ou marque uma posição no mapa. As distâncias são calculadas em linha reta, não pelo trajeto.</p><h3>Como interpretar os resultados</h3><p>Materiais são indexados apenas quando mencionados na descrição original. Não inferimos que uma unidade recebe um resíduo apenas pelo seu tipo. Campos ausentes aparecem como “Não informado”.</p><p>Horários são os textos do CSV, sem confirmação de funcionamento em tempo real. A plataforma não substitui os canais oficiais da PBH.</p><h3>Localização e serviços externos</h3><p>Filtros e cálculo de distância ocorrem no navegador. A localização GPS não é armazenada. Ao clicar em “Localizar endereço”, o texto é enviado ao serviço Photon/Komoot. O mapa usa OpenStreetMap; o link de rota abre um serviço externo.</p><p><a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">© OpenStreetMap contributors</a> · <a href="https://github.com/komoot/photon" target="_blank" rel="noopener noreferrer">Photon</a> · Leaflet</p></dialog>
