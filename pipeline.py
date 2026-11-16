@@ -44,6 +44,11 @@ def chave(value):
     text = unicodedata.normalize("NFD", str(value or "").strip().lower())
     return " ".join("".join(c for c in text if unicodedata.category(c) != "Mn").split())
 
+def formatar_numero(texto):
+    texto = texto.strip()
+    resultado = re.fullmatch(r"(\d+)\.0+", texto)
+
+    return resultado.group(1) if resultado else texto
 
 def materiais_literal(text):
     return [key for key, (_, regex) in MATERIALS.items() if re.search(regex, chave(text))]
@@ -127,7 +132,14 @@ def processar(entrada, saida, manifest):
                 get = lambda k: row.get(cmap.get(k, ""), "")
                 coords = para_point(get("geometria"))
                 seen.add((kind, identifier))
-                address = " ".join(get(k) for k in ("tipo_logradouro", "logradouro", "numero", "letra") if get(k))
+                partes_endereco = [
+                        get("tipo_logradouro"),
+                        get("logradouro"),
+                        formatar_numero(get("numero")),
+                        get("letra")
+                ]
+                    
+                address = " ".join(parte for parte in partes_endereco if parte)
                 origin = {"fonte": source["slug"], "nome": source["nome"], "url": source["url"],
                           "recurso_url": source.get("recurso_url"), "arquivo": path.name,
                           "data_referencia": source.get("data_referencia"), "sha256": digest,
