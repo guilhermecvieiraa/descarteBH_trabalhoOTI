@@ -177,15 +177,29 @@ def processar(entrada, saida, manifest):
         raise ValueError("Nenhum ponto válido. A versão publicada não foi substituída.")
     features.sort(key=lambda f: (chave(f["properties"]["nome"]), f["properties"]["id"]))
     # Flag possible overlaps for manual review rather than silently dropping records.
-    overlaps = []
-    for i, a in enumerate(features):
-        for b in features[i + 1:]:
-            pa, pb = a["properties"], b["properties"]
-            if a["geometry"] == b["geometry"] or (pa["endereco"] and chave(pa["endereco"]) == chave(pb["endereco"])):
-                overlaps.append([pa["id"], pb["id"]])
+overlaps = []
+enderecos_compartilhados = []
+
+for i, a in enumerate(features):
+    for b in features[i + 1:]:
+        pa, pb = a["properties"], b["properties"]
+
+        mesmas_coordenadas = a["geometry"] == b["geometry"]
+
+        mesmo_endereco = (
+            pa["endereco"]
+            and chave(pa["endereco"]) == chave(pb["endereco"])
+        )
+
+        if mesmas_coordenadas:
+            overlaps.append([pa["id"], pb["id"]])
+
+        elif mesmo_endereco:
+            enderecos_compartilhados.append([pa["id"], pb["id"]])
     report = {"processado_em_utc": timestamp, "quantidade_total": len(features), "fontes": reports,
               "rejeicoes": dict(counts), "registros_rejeitados": rejections,
               "duplicados_integrados": duplicates, "possiveis_sobreposicoes": overlaps,
+              "enderecos_compartilhados": enderecos_compartilhados,
               "alerta": "Materiais indexados somente se citados no CSV. Confirme condições atuais com a PBH."}
     metadata = {"titulo": "Descarte BH — pontos de recebimento de resíduos", "criador": "Prefeitura de Belo Horizonte / fontes declaradas",
                 "publicador": "Descarte BH — projeto acadêmico UFMG / OTI071", "idioma": "pt-BR",
