@@ -1,0 +1,152 @@
+{
+  "processado_em_utc": "2026-11-16T14:39:09+00:00",
+  "quantidade_total": 86,
+  "fontes": [
+    {
+      "slug": "ponto_verde",
+      "arquivo": "20261103_ponto_verde.csv",
+      "nome": "Ponto Verde",
+      "url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+      "recurso_url": null,
+      "data_referencia": "2026-11-03",
+      "baixado_em": null,
+      "licenca": "Consultar licença no recurso oficial",
+      "nota": "Download local disponibilizado pelo usuário; data de referência extraída do nome original. URL específica do recurso e data do download não informadas.",
+      "sha256": "8536a4d1b5fd9e9043ee1524063ad4556e557a6b17631b075c600150e1c1b9ae",
+      "cabecalhos": [
+        "ID_LEV",
+        "NOME_LEV",
+        "TIPO_MATERIAL_COLETADO",
+        "HORARIO_FUNCIONAMENTO",
+        "TIPO_LOGRADOURO",
+        "NOME_LOGRADOURO",
+        "NUMERO_IMOVEL",
+        "LETRA_IMOVEL",
+        "BAIRRO",
+        "REGIONAL",
+        "REF_LOCALIZACAO",
+        "GEOMETRIA"
+      ],
+      "codificacao": "utf-8-sig",
+      "separador": ";",
+      "linhas_lidas": 51,
+      "registros_aproveitados": 51,
+      "duplicados_integrados": 0,
+      "registros_rejeitados": 0,
+      "esquemas_encontrados": [
+        "ponto_verde"
+      ],
+      "arquivo_bruto_url": "brutos/8536a4d1b5fd9e9043ee1524063ad4556e557a6b17631b075c600150e1c1b9ae.csv"
+    },
+    {
+      "slug": "urpv",
+      "arquivo": "20261103_unidade_recebimento_pequenos_volumes.csv",
+      "nome": "Unidades de Recebimento de Pequenos Volumes",
+      "url": "https://dados.pbh.gov.br/dataset/unidadade-de-recebimento-de-pequenos-volumes-urpv",
+      "recurso_url": null,
+      "data_referencia": "2026-11-03",
+      "baixado_em": null,
+      "licenca": "Consultar licença no recurso oficial",
+      "nota": "Download local disponibilizado pelo usuário; data de referência extraída do nome original. URL específica do recurso e data do download não informadas.",
+      "sha256": "a0c2683b13c63eb7e1ff37c8c24926804bf1502426391ae0402e96dbd83fa576",
+      "cabecalhos": [
+        "ID_URPV",
+        "NOME_URPV",
+        "TIPO_MATERIAL_COLETADO",
+        "HORARIO_FUNCIONAMENTO",
+        "TIPO_LOGRADOURO",
+        "NOME_LOGRADOURO",
+        "NUMERO_IMOVEL",
+        "LETRA_IMOVEL",
+        "BAIRRO",
+        "REGIONAL",
+        "REF_LOCALIZACAO",
+        "GEOMETRIA"
+      ],
+      "codificacao": "utf-8-sig",
+      "separador": ";",
+      "linhas_lidas": 35,
+      "registros_aproveitados": 35,
+      "duplicados_integrados": 0,
+      "registros_rejeitados": 0,
+      "esquemas_encontrados": [
+        "urpv"
+      ],
+      "arquivo_bruto_url": "brutos/a0c2683b13c63eb7e1ff37c8c24926804bf1502426391ae0402e96dbd83fa576.csv"
+    }
+  ],
+  "rejeicoes": {},
+  "registros_rejeitados": [],
+  "duplicados_integrados": [],
+  "possiveis_sobreposicoes": [
+    [
+      "ponto_verde:1081",
+      "ponto_verde:861"
+    ],
+    [
+      "ponto_verde:1082",
+      "ponto_verde:1101"
+    ],
+    [
+      "ponto_verde:1082",
+      "ponto_verde:1121"
+    ],
+    [
+      "ponto_verde:1101",
+      "ponto_verde:1121"
+    ],
+    [
+      "ponto_verde:1181",
+      "ponto_verde:1201"
+    ],
+    [
+      "ponto_verde:1181",
+      "ponto_verde:182"
+    ],
+    [
+      "ponto_verde:1181",
+      "ponto_verde:781"
+    ],
+    [
+      "ponto_verde:1181",
+      "ponto_verde:801"
+    ],
+    [
+      "ponto_verde:1201",
+      "ponto_verde:182"
+    ],
+    [
+      "ponto_verde:1201",
+      "ponto_verde:781"
+    ],
+    [
+      "ponto_verde:1201",
+      "ponto_verde:801"
+    ],
+    [
+      "ponto_verde:1221",
+      "ponto_verde:303"
+    ],
+    [
+      "ponto_verde:1441",
+      "ponto_verde:96"
+    ],
+    [
+      "ponto_verde:182",
+      "ponto_verde:781"
+    ],
+    [
+      "ponto_verde:182",
+      "ponto_verde:801"
+    ],
+    [
+      "ponto_verde:781",
+      "ponto_verde:801"
+    ],
+    [
+      "ponto_verde:841",
+      "ponto_verde:881"
+    ]
+  ],
+  "alerta": "Materiais indexados somente se citados no CSV. Confirme condições atuais com a PBH."
+}

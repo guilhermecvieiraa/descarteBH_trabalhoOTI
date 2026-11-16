@@ -1,0 +1,26 @@
+{
+  "fontes": [
+    {
+      "slug": "ponto_verde",
+      "arquivo": "20261103_ponto_verde.csv",
+      "nome": "Ponto Verde",
+      "url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+      "recurso_url": null,
+      "data_referencia": "2026-11-03",
+      "baixado_em": null,
+      "licenca": "Consultar licença no recurso oficial",
+      "nota": "Download local disponibilizado pelo usuário; data de referência extraída do nome original. URL específica do recurso e data do download não informadas."
+    },
+    {
+      "slug": "urpv",
+      "arquivo": "20261103_unidade_recebimento_pequenos_volumes.csv",
+      "nome": "Unidades de Recebimento de Pequenos Volumes",
+      "url": "https://dados.pbh.gov.br/dataset/unidadade-de-recebimento-de-pequenos-volumes-urpv",
+      "recurso_url": null,
+      "data_referencia": "2026-11-03",
+      "baixado_em": null,
+      "licenca": "Consultar licença no recurso oficial",
+      "nota": "Download local disponibilizado pelo usuário; data de referência extraída do nome original. URL específica do recurso e data do download não informadas."
+    }
+  ]
+}

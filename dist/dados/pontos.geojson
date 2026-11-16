@@ -1,0 +1,3760 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.943941,
+          -19.8489313
+        ]
+      },
+      "properties": {
+        "id": "ponto_verde:ponto_verde:1001",
+        "id_original": "1001",
+        "tipo": "ponto_verde",
+        "nome": "PONTO VERDE",
+        "bairro": "Aeroporto",
+        "regional": "PAMPULHA",
+        "endereco": "AVE WASHINGTON LUIZ 945.0",
+        "referencia": "URPV AEROPORTO (ÁREA INTERNA)",
+        "horario_original": "SEG À SEX: 07H -17H, SAB, DOM, FER: 07H40MIN - 16H",
+        "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
+        "materiais_indexados": [
+          "papel",
+          "plastico",
+          "metal",
+          "vidro"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+        "origens": [
+          {
+            "fonte": "ponto_verde",
+            "nome": "Ponto Verde",
+            "url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+            "recurso_url": null,
+            "arquivo": "20261103_ponto_verde.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "8536a4d1b5fd9e9043ee1524063ad4556e557a6b17631b075c600150e1c1b9ae",
+            "linha": 34,
+            "id_registro": "ponto_verde:ponto_verde:1001"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.936403,
+          -19.8216442
+        ]
+      },
+      "properties": {
+        "id": "ponto_verde:ponto_verde:1002",
+        "id_original": "1002",
+        "tipo": "ponto_verde",
+        "nome": "PONTO VERDE",
+        "bairro": "Xodó-Marize",
+        "regional": "NORTE",
+        "endereco": "AVE LUCAS DE OLIVEIRA 505.0",
+        "referencia": "URPV JARDIM GUANABARA (ÁREA INTERNA)",
+        "horario_original": "SEG À SEX: 07H -17H, SAB, DOM, FER: 07H40MIN - 16H",
+        "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
+        "materiais_indexados": [
+          "papel",
+          "plastico",
+          "metal",
+          "vidro"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+        "origens": [
+          {
+            "fonte": "ponto_verde",
+            "nome": "Ponto Verde",
+            "url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+            "recurso_url": null,
+            "arquivo": "20261103_ponto_verde.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "8536a4d1b5fd9e9043ee1524063ad4556e557a6b17631b075c600150e1c1b9ae",
+            "linha": 35,
+            "id_registro": "ponto_verde:ponto_verde:1002"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.996079,
+          -19.8335837
+        ]
+      },
+      "properties": {
+        "id": "ponto_verde:ponto_verde:101",
+        "id_original": "101",
+        "tipo": "ponto_verde",
+        "nome": "PONTO VERDE",
+        "bairro": "Garças",
+        "regional": "PAMPULHA",
+        "endereco": "RUA REINATO FANTONI 23.0",
+        "referencia": "URPV GARÇAS (ÁREA INTERNA)",
+        "horario_original": "SEG À SEX: 07H -17H, SAB, DOM, FER: 07H40MIN - 16H",
+        "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
+        "materiais_indexados": [
+          "papel",
+          "plastico",
+          "metal",
+          "vidro"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+        "origens": [
+          {
+            "fonte": "ponto_verde",
+            "nome": "Ponto Verde",
+            "url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+            "recurso_url": null,
+            "arquivo": "20261103_ponto_verde.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "8536a4d1b5fd9e9043ee1524063ad4556e557a6b17631b075c600150e1c1b9ae",
+            "linha": 9,
+            "id_registro": "ponto_verde:ponto_verde:101"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -44.001544,
+          -19.8151504
+        ]
+      },
+      "properties": {
+        "id": "ponto_verde:ponto_verde:1021",
+        "id_original": "1021",
+        "tipo": "ponto_verde",
+        "nome": "PONTO VERDE",
+        "bairro": "Céu Azul",
+        "regional": "VENDA NOVA",
+        "endereco": "RUA LUIZ CANTAGALLI 52.0",
+        "referencia": "URPV CÉU AZUL (ÁREA INTERNA)",
+        "horario_original": "SEG À SEX: 07H -17H, SAB, DOM, FER: 07H40MIN - 16H",
+        "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
+        "materiais_indexados": [
+          "papel",
+          "plastico",
+          "metal",
+          "vidro"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+        "origens": [
+          {
+            "fonte": "ponto_verde",
+            "nome": "Ponto Verde",
+            "url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+            "recurso_url": null,
+            "arquivo": "20261103_ponto_verde.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "8536a4d1b5fd9e9043ee1524063ad4556e557a6b17631b075c600150e1c1b9ae",
+            "linha": 36,
+            "id_registro": "ponto_verde:ponto_verde:1021"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.8886778,
+          -19.9047717
+        ]
+      },
+      "properties": {
+        "id": "ponto_verde:ponto_verde:1041",
+        "id_original": "1041",
+        "tipo": "ponto_verde",
+        "nome": "PONTO VERDE",
+        "bairro": "Casa Branca",
+        "regional": "LESTE",
+        "endereco": "AVE DOS ANDRADAS 8255.0",
+        "referencia": "URPV COPASA (ÁREA INTERNA)",
+        "horario_original": "SEG À SEX: 07H -17H, SAB, DOM, FER: 07H40MIN - 16H",
+        "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
+        "materiais_indexados": [
+          "papel",
+          "plastico",
+          "metal",
+          "vidro"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+        "origens": [
+          {
+            "fonte": "ponto_verde",
+            "nome": "Ponto Verde",
+            "url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+            "recurso_url": null,
+            "arquivo": "20261103_ponto_verde.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "8536a4d1b5fd9e9043ee1524063ad4556e557a6b17631b075c600150e1c1b9ae",
+            "linha": 37,
+            "id_registro": "ponto_verde:ponto_verde:1041"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.9879578,
+          -19.9066465
+        ]
+      },
+      "properties": {
+        "id": "ponto_verde:ponto_verde:1061",
+        "id_original": "1061",
+        "tipo": "ponto_verde",
+        "nome": "PONTO VERDE",
+        "bairro": "Padre Eustáquio",
+        "regional": "NOROESTE",
+        "endereco": "ROD ANEL RODOVIARIO CELSO MELLO AZEVEDO 13100.0",
+        "referencia": "ÁREA INTERNA DO PARQUE MARIA DO SOCORRO MOREIRA, AO LADO DO CAMPO DO AEROPORTO",
+        "horario_original": "TERÇA A DOMINGO, DAS 7H ÀS 18H",
+        "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
+        "materiais_indexados": [
+          "papel",
+          "plastico",
+          "metal",
+          "vidro"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+        "origens": [
+          {
+            "fonte": "ponto_verde",
+            "nome": "Ponto Verde",
+            "url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+            "recurso_url": null,
+            "arquivo": "20261103_ponto_verde.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "8536a4d1b5fd9e9043ee1524063ad4556e557a6b17631b075c600150e1c1b9ae",
+            "linha": 38,
+            "id_registro": "ponto_verde:ponto_verde:1061"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.9604103,
+          -19.8673553
+        ]
+      },
+      "properties": {
+        "id": "ponto_verde:ponto_verde:1081",
+        "id_original": "1081",
+        "tipo": "ponto_verde",
+        "nome": "PONTO VERDE",
+        "bairro": "Campus UFMG",
+        "regional": "PAMPULHA",
+        "endereco": "RUA PROFESSOR EDMUNDO LINS",
+        "referencia": "CAMPUS UFMG (NO ESTACIONAMENTO DA FAFICH, PROXIMO A ENTRADA DA PORTARIA 4)",
+        "horario_original": "SEG A SEX 06H45 ÀS 22H, SAB DE 06H45 ÀS 13H",
+        "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
+        "materiais_indexados": [
+          "papel",
+          "plastico",
+          "metal",
+          "vidro"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+        "origens": [
+          {
+            "fonte": "ponto_verde",
+            "nome": "Ponto Verde",
+            "url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+            "recurso_url": null,
+            "arquivo": "20261103_ponto_verde.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "8536a4d1b5fd9e9043ee1524063ad4556e557a6b17631b075c600150e1c1b9ae",
+            "linha": 39,
+            "id_registro": "ponto_verde:ponto_verde:1081"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.964382,
+          -19.8699568
+        ]
+      },
+      "properties": {
+        "id": "ponto_verde:ponto_verde:1082",
+        "id_original": "1082",
+        "tipo": "ponto_verde",
+        "nome": "PONTO VERDE",
+        "bairro": "Campus UFMG",
+        "regional": "PAMPULHA",
+        "endereco": "RUA REITOR PIRES DE ALBUQUERQUE",
+        "referencia": "CAMPUS UFMG (ENTRE O CAD III E A ENGENHARIA, ENTRADA PELA PORTARIA 4)",
+        "horario_original": "SEG A SEX 06H45 ÀS 22H, SAB DE 06H45 ÀS 13H",
+        "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
+        "materiais_indexados": [
+          "papel",
+          "plastico",
+          "metal",
+          "vidro"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+        "origens": [
+          {
+            "fonte": "ponto_verde",
+            "nome": "Ponto Verde",
+            "url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+            "recurso_url": null,
+            "arquivo": "20261103_ponto_verde.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "8536a4d1b5fd9e9043ee1524063ad4556e557a6b17631b075c600150e1c1b9ae",
+            "linha": 40,
+            "id_registro": "ponto_verde:ponto_verde:1082"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.9623768,
+          -19.8671349
+        ]
+      },
+      "properties": {
+        "id": "ponto_verde:ponto_verde:1101",
+        "id_original": "1101",
+        "tipo": "ponto_verde",
+        "nome": "PONTO VERDE",
+        "bairro": "Campus UFMG",
+        "regional": "PAMPULHA",
+        "endereco": "RUA REITOR PIRES DE ALBUQUERQUE",
+        "referencia": "CAMPUS UFMG (NO ESTACIONAMENTO DA FACE,  ENTRADA PELA PORTARIA 4)",
+        "horario_original": "SEG A SEX 06H45 ÀS 22H, SAB DE 06H45 ÀS 13H",
+        "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
+        "materiais_indexados": [
+          "papel",
+          "plastico",
+          "metal",
+          "vidro"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+        "origens": [
+          {
+            "fonte": "ponto_verde",
+            "nome": "Ponto Verde",
+            "url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+            "recurso_url": null,
+            "arquivo": "20261103_ponto_verde.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "8536a4d1b5fd9e9043ee1524063ad4556e557a6b17631b075c600150e1c1b9ae",
+            "linha": 41,
+            "id_registro": "ponto_verde:ponto_verde:1101"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.9618946,
+          -19.8692048
+        ]
+      },
+      "properties": {
+        "id": "ponto_verde:ponto_verde:1121",
+        "id_original": "1121",
+        "tipo": "ponto_verde",
+        "nome": "PONTO VERDE",
+        "bairro": "Campus UFMG",
+        "regional": "PAMPULHA",
+        "endereco": "RUA REITOR PIRES DE ALBUQUERQUE",
+        "referencia": "CAMPUS UFMG (NO ESTACIONAMENTO DO IGC, ENTRADA PELA PORTARIA 4)",
+        "horario_original": "SEG A SEX 06H45 ÀS 22H, SAB DE 06H45 ÀS 13H",
+        "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
+        "materiais_indexados": [
+          "papel",
+          "plastico",
+          "metal",
+          "vidro"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+        "origens": [
+          {
+            "fonte": "ponto_verde",
+            "nome": "Ponto Verde",
+            "url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+            "recurso_url": null,
+            "arquivo": "20261103_ponto_verde.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "8536a4d1b5fd9e9043ee1524063ad4556e557a6b17631b075c600150e1c1b9ae",
+            "linha": 42,
+            "id_registro": "ponto_verde:ponto_verde:1121"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.9716127,
+          -19.8711423
+        ]
+      },
+      "properties": {
+        "id": "ponto_verde:ponto_verde:1141",
+        "id_original": "1141",
+        "tipo": "ponto_verde",
+        "nome": "PONTO VERDE",
+        "bairro": "Campus UFMG",
+        "regional": "PAMPULHA",
+        "endereco": "AVE PRESIDENTE CARLOS LUZ",
+        "referencia": "CAMPUS UFMG (NOS FUNDOS DO HOSPITAL VETERINÁRIO DA UFMG, ENTRADA PELA PORTARIA 6 - VETERINÁRIA)",
+        "horario_original": "SEG A SEX 06H45 ÀS 22H, SAB DE 06H45 ÀS 13H",
+        "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
+        "materiais_indexados": [
+          "papel",
+          "plastico",
+          "metal",
+          "vidro"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+        "origens": [
+          {
+            "fonte": "ponto_verde",
+            "nome": "Ponto Verde",
+            "url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+            "recurso_url": null,
+            "arquivo": "20261103_ponto_verde.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "8536a4d1b5fd9e9043ee1524063ad4556e557a6b17631b075c600150e1c1b9ae",
+            "linha": 43,
+            "id_registro": "ponto_verde:ponto_verde:1141"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -44.00915,
+          -19.8608487
+        ]
+      },
+      "properties": {
+        "id": "ponto_verde:ponto_verde:1181",
+        "id_original": "1181",
+        "tipo": "ponto_verde",
+        "nome": "PONTO VERDE",
+        "bairro": "Bandeirantes",
+        "regional": "PAMPULHA",
+        "endereco": "AVE OTACILIO NEGRAO DE LIMA 8000.0",
+        "referencia": "RUA INTERNA DO ZOOLÓGICO, EM FRENTE AOS BANHEIROS",
+        "horario_original": "TER À DOM: 08:00 ÀS 16:00",
+        "material_original": "METAL, PAPEL, PLÁSTICO",
+        "materiais_indexados": [
+          "papel",
+          "plastico",
+          "metal"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+        "origens": [
+          {
+            "fonte": "ponto_verde",
+            "nome": "Ponto Verde",
+            "url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+            "recurso_url": null,
+            "arquivo": "20261103_ponto_verde.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "8536a4d1b5fd9e9043ee1524063ad4556e557a6b17631b075c600150e1c1b9ae",
+            "linha": 44,
+            "id_registro": "ponto_verde:ponto_verde:1181"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -44.0073329,
+          -19.8589806
+        ]
+      },
+      "properties": {
+        "id": "ponto_verde:ponto_verde:1201",
+        "id_original": "1201",
+        "tipo": "ponto_verde",
+        "nome": "PONTO VERDE",
+        "bairro": "Bandeirantes",
+        "regional": "PAMPULHA",
+        "endereco": "AVE OTACILIO NEGRAO DE LIMA 8000.0",
+        "referencia": "RUA INTERNA DO ZOOLÓGICO, EM FRENTE AOS CERVOS",
+        "horario_original": "TER À DOM: 08:00 ÀS 16:00",
+        "material_original": "METAL, PAPEL, PLÁSTICO",
+        "materiais_indexados": [
+          "papel",
+          "plastico",
+          "metal"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+        "origens": [
+          {
+            "fonte": "ponto_verde",
+            "nome": "Ponto Verde",
+            "url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+            "recurso_url": null,
+            "arquivo": "20261103_ponto_verde.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "8536a4d1b5fd9e9043ee1524063ad4556e557a6b17631b075c600150e1c1b9ae",
+            "linha": 45,
+            "id_registro": "ponto_verde:ponto_verde:1201"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -44.0142779,
+          -19.862548
+        ]
+      },
+      "properties": {
+        "id": "ponto_verde:ponto_verde:1221",
+        "id_original": "1221",
+        "tipo": "ponto_verde",
+        "nome": "PONTO VERDE",
+        "bairro": "Bandeirantes",
+        "regional": "PAMPULHA",
+        "endereco": "AVE ANTONIO FRANCISCO LISBOA 2600.0",
+        "referencia": "RUA INTERNA DO ZOOLÓGICO, EM FRENTE AO SETOR EXTRA-ALMOXARIFADO",
+        "horario_original": "TER À DOM: 08:00 ÀS 16:00",
+        "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
+        "materiais_indexados": [
+          "papel",
+          "plastico",
+          "metal",
+          "vidro"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+        "origens": [
+          {
+            "fonte": "ponto_verde",
+            "nome": "Ponto Verde",
+            "url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+            "recurso_url": null,
+            "arquivo": "20261103_ponto_verde.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "8536a4d1b5fd9e9043ee1524063ad4556e557a6b17631b075c600150e1c1b9ae",
+            "linha": 46,
+            "id_registro": "ponto_verde:ponto_verde:1221"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.9738545,
+          -19.9232131
+        ]
+      },
+      "properties": {
+        "id": "ponto_verde:ponto_verde:1241",
+        "id_original": "1241",
+        "tipo": "ponto_verde",
+        "nome": "PONTO VERDE",
+        "bairro": "Calafate",
+        "regional": "OESTE",
+        "endereco": "AVE TERESA CRISTINA 2195.0",
+        "referencia": "ÁREA INTERNA DA URPV SILVA LOBO, DEBAIXO DO VIADUTO DA AV. SILVA LOBO",
+        "horario_original": "SEGUNDA À SEXTA, DE 7 ÀS 18 H, SÁBADOS, DOMINGOS E",
+        "material_original": "ISOPOR, METAL, PAPEL, PLÁSTICO, VIDRO",
+        "materiais_indexados": [
+          "papel",
+          "plastico",
+          "metal",
+          "vidro",
+          "isopor"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+        "origens": [
+          {
+            "fonte": "ponto_verde",
+            "nome": "Ponto Verde",
+            "url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+            "recurso_url": null,
+            "arquivo": "20261103_ponto_verde.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "8536a4d1b5fd9e9043ee1524063ad4556e557a6b17631b075c600150e1c1b9ae",
+            "linha": 47,
+            "id_registro": "ponto_verde:ponto_verde:1241"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.9127718,
+          -19.895432
+        ]
+      },
+      "properties": {
+        "id": "ponto_verde:ponto_verde:1281",
+        "id_original": "1281",
+        "tipo": "ponto_verde",
+        "nome": "PONTO VERDE",
+        "bairro": "Horto Florestal",
+        "regional": "LESTE",
+        "endereco": "RUA SANTO AGOSTINHO 1717.0",
+        "referencia": "ÁREA INTERNA DO SENAI HORTO",
+        "horario_original": "SEG A SEX DAS 07:00 ÀS 21:00",
+        "material_original": "ISOPOR, METAL, PAPEL, PLÁSTICO, VIDRO",
+        "materiais_indexados": [
+          "papel",
+          "plastico",
+          "metal",
+          "vidro",
+          "isopor"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+        "origens": [
+          {
+            "fonte": "ponto_verde",
+            "nome": "Ponto Verde",
+            "url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+            "recurso_url": null,
+            "arquivo": "20261103_ponto_verde.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "8536a4d1b5fd9e9043ee1524063ad4556e557a6b17631b075c600150e1c1b9ae",
+            "linha": 48,
+            "id_registro": "ponto_verde:ponto_verde:1281"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.9889213,
+          -19.9375644
+        ]
+      },
+      "properties": {
+        "id": "ponto_verde:ponto_verde:1301",
+        "id_original": "1301",
+        "tipo": "ponto_verde",
+        "nome": "PONTO VERDE",
+        "bairro": "Nova Gameleira",
+        "regional": "OESTE",
+        "endereco": "RUA GIL VIEIRA DE CARVALHO 160.0",
+        "referencia": "RUA DOM OSCAR ROMERO (ACESSO PELA PORTARIA 3 - DENTRO DO CONJUNTO HENRICÃO)",
+        "horario_original": "24 HORAS-DIA (APENAS MORADORES)",
+        "material_original": "ISOPOR, METAL, PAPEL, PLÁSTICO, VIDRO",
+        "materiais_indexados": [
+          "papel",
+          "plastico",
+          "metal",
+          "vidro",
+          "isopor"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+        "origens": [
+          {
+            "fonte": "ponto_verde",
+            "nome": "Ponto Verde",
+            "url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+            "recurso_url": null,
+            "arquivo": "20261103_ponto_verde.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "8536a4d1b5fd9e9043ee1524063ad4556e557a6b17631b075c600150e1c1b9ae",
+            "linha": 49,
+            "id_registro": "ponto_verde:ponto_verde:1301"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.9352363,
+          -19.8509965
+        ]
+      },
+      "properties": {
+        "id": "ponto_verde:ponto_verde:1321",
+        "id_original": "1321",
+        "tipo": "ponto_verde",
+        "nome": "PONTO VERDE",
+        "bairro": "São Bernardo",
+        "regional": "NORTE",
+        "endereco": "RUA PASTOR MURYLLO CASSETE 195.0",
+        "referencia": "ÁREA INTERNA DA GELU NORTE",
+        "horario_original": "SEG À SEX: 07:00 -17:00, SAB: 07:00 - 12:00",
+        "material_original": "ISOPOR, METAL, PAPEL, PLÁSTICO, VIDRO",
+        "materiais_indexados": [
+          "papel",
+          "plastico",
+          "metal",
+          "vidro",
+          "isopor"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+        "origens": [
+          {
+            "fonte": "ponto_verde",
+            "nome": "Ponto Verde",
+            "url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+            "recurso_url": null,
+            "arquivo": "20261103_ponto_verde.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "8536a4d1b5fd9e9043ee1524063ad4556e557a6b17631b075c600150e1c1b9ae",
+            "linha": 50,
+            "id_registro": "ponto_verde:ponto_verde:1321"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.9320894,
+          -19.8853932
+        ]
+      },
+      "properties": {
+        "id": "ponto_verde:ponto_verde:134",
+        "id_original": "134",
+        "tipo": "ponto_verde",
+        "nome": "PONTO VERDE",
+        "bairro": "Ipiranga",
+        "regional": "NORDESTE",
+        "endereco": "RUA PRINCESA LEOPOLDINA 485.0",
+        "referencia": "GELU NORDESTE (ÁREA INTERNA)",
+        "horario_original": "SEG À SEX: 07:00 ÀS 17:00, SAB: 08:00 ÀS 12:00",
+        "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
+        "materiais_indexados": [
+          "papel",
+          "plastico",
+          "metal",
+          "vidro"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+        "origens": [
+          {
+            "fonte": "ponto_verde",
+            "nome": "Ponto Verde",
+            "url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+            "recurso_url": null,
+            "arquivo": "20261103_ponto_verde.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "8536a4d1b5fd9e9043ee1524063ad4556e557a6b17631b075c600150e1c1b9ae",
+            "linha": 10,
+            "id_registro": "ponto_verde:ponto_verde:134"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.9070291,
+          -19.9012825
+        ]
+      },
+      "properties": {
+        "id": "ponto_verde:ponto_verde:1381",
+        "id_original": "1381",
+        "tipo": "ponto_verde",
+        "nome": "PONTO VERDE",
+        "bairro": "Horto Florestal",
+        "regional": "LESTE",
+        "endereco": "AVE DOS ANDRADAS 5965.0",
+        "referencia": "ÁREA INTERNA DA URPV ANDRADAS",
+        "horario_original": "SEG À SEX, DE 7 ÀS 18H, SÁB, DOM E FER 7:40 ÀS 16H",
+        "material_original": "ISOPOR, METAL, PAPEL, PLÁSTICO, VIDRO",
+        "materiais_indexados": [
+          "papel",
+          "plastico",
+          "metal",
+          "vidro",
+          "isopor"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+        "origens": [
+          {
+            "fonte": "ponto_verde",
+            "nome": "Ponto Verde",
+            "url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+            "recurso_url": null,
+            "arquivo": "20261103_ponto_verde.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "8536a4d1b5fd9e9043ee1524063ad4556e557a6b17631b075c600150e1c1b9ae",
+            "linha": 51,
+            "id_registro": "ponto_verde:ponto_verde:1381"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.9228128,
+          -19.8720522
+        ]
+      },
+      "properties": {
+        "id": "ponto_verde:ponto_verde:139",
+        "id_original": "139",
+        "tipo": "ponto_verde",
+        "nome": "PONTO VERDE",
+        "bairro": "São Paulo",
+        "regional": "NORDESTE",
+        "endereco": "RUA QUELUZITA 140.0",
+        "referencia": "CARE-NE (ÁREA INTERNA)",
+        "horario_original": "SEG À SEX: 08H ÀS 18H, SÁB E DOM: 08H ÀS 17H",
+        "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
+        "materiais_indexados": [
+          "papel",
+          "plastico",
+          "metal",
+          "vidro"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+        "origens": [
+          {
+            "fonte": "ponto_verde",
+            "nome": "Ponto Verde",
+            "url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+            "recurso_url": null,
+            "arquivo": "20261103_ponto_verde.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "8536a4d1b5fd9e9043ee1524063ad4556e557a6b17631b075c600150e1c1b9ae",
+            "linha": 11,
+            "id_registro": "ponto_verde:ponto_verde:139"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.9664582,
+          -19.8670644
+        ]
+      },
+      "properties": {
+        "id": "ponto_verde:ponto_verde:1441",
+        "id_original": "1441",
+        "tipo": "ponto_verde",
+        "nome": "PONTO VERDE",
+        "bairro": "Campus UFMG",
+        "regional": "PAMPULHA",
+        "endereco": "AVE PRESIDENTE ANTONIO CARLOS 6627.0",
+        "referencia": "NO ESTACIONAMENTO DA BIBLIOTECA CENTRAL DA UFMG (AO LADO DO ICB)",
+        "horario_original": "SEG A SEX 06H45 ÀS 22H, SAB DE 06H45 ÀS 13H",
+        "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
+        "materiais_indexados": [
+          "papel",
+          "plastico",
+          "metal",
+          "vidro"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+        "origens": [
+          {
+            "fonte": "ponto_verde",
+            "nome": "Ponto Verde",
+            "url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+            "recurso_url": null,
+            "arquivo": "20261103_ponto_verde.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "8536a4d1b5fd9e9043ee1524063ad4556e557a6b17631b075c600150e1c1b9ae",
+            "linha": 52,
+            "id_registro": "ponto_verde:ponto_verde:1441"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -44.0088188,
+          -19.859138
+        ]
+      },
+      "properties": {
+        "id": "ponto_verde:ponto_verde:182",
+        "id_original": "182",
+        "tipo": "ponto_verde",
+        "nome": "PONTO VERDE",
+        "bairro": "Bandeirantes",
+        "regional": "PAMPULHA",
+        "endereco": "AVE OTACILIO NEGRAO DE LIMA 8000.0",
+        "referencia": "RUA INTERNA DO ZOOLÓGICO, NO CANTEIRO CENTRAL ENTRE O BIOMAS E A ADMINISTRAÇÃO DO JARDIM BOTÂNICO",
+        "horario_original": "TER À DOM: 08:00 ÀS 16:00",
+        "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
+        "materiais_indexados": [
+          "papel",
+          "plastico",
+          "metal",
+          "vidro"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+        "origens": [
+          {
+            "fonte": "ponto_verde",
+            "nome": "Ponto Verde",
+            "url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+            "recurso_url": null,
+            "arquivo": "20261103_ponto_verde.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "8536a4d1b5fd9e9043ee1524063ad4556e557a6b17631b075c600150e1c1b9ae",
+            "linha": 12,
+            "id_registro": "ponto_verde:ponto_verde:182"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.9355631,
+          -19.9226108
+        ]
+      },
+      "properties": {
+        "id": "ponto_verde:ponto_verde:201",
+        "id_original": "201",
+        "tipo": "ponto_verde",
+        "nome": "PONTO VERDE",
+        "bairro": "Centro",
+        "regional": "CENTRO-SUL",
+        "endereco": "AVE AFONSO PENA 1377.0",
+        "referencia": "PARQUE MUNICIPAL AMÉRICO RENNÈ GIANETTI (ÁREA INTERNA)",
+        "horario_original": "TER À SAB: 07H ÀS 21H, DOM: 07H ÀS 17H",
+        "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
+        "materiais_indexados": [
+          "papel",
+          "plastico",
+          "metal",
+          "vidro"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+        "origens": [
+          {
+            "fonte": "ponto_verde",
+            "nome": "Ponto Verde",
+            "url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+            "recurso_url": null,
+            "arquivo": "20261103_ponto_verde.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "8536a4d1b5fd9e9043ee1524063ad4556e557a6b17631b075c600150e1c1b9ae",
+            "linha": 13,
+            "id_registro": "ponto_verde:ponto_verde:201"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.9767129,
+          -19.8026576
+        ]
+      },
+      "properties": {
+        "id": "ponto_verde:ponto_verde:223",
+        "id_original": "223",
+        "tipo": "ponto_verde",
+        "nome": "PONTO VERDE",
+        "bairro": "Letícia",
+        "regional": "VENDA NOVA",
+        "endereco": "AVE VILARINHO 4441.0",
+        "referencia": "URPV VILARINHO (ÁREA INTERNA)",
+        "horario_original": "SEG À SEX, DE 7 ÀS 18 H, SÁB, DOM DE 7:40 ÀS 16H",
+        "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
+        "materiais_indexados": [
+          "papel",
+          "plastico",
+          "metal",
+          "vidro"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+        "origens": [
+          {
+            "fonte": "ponto_verde",
+            "nome": "Ponto Verde",
+            "url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+            "recurso_url": null,
+            "arquivo": "20261103_ponto_verde.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "8536a4d1b5fd9e9043ee1524063ad4556e557a6b17631b075c600150e1c1b9ae",
+            "linha": 14,
+            "id_registro": "ponto_verde:ponto_verde:223"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -44.0121901,
+          -19.8629139
+        ]
+      },
+      "properties": {
+        "id": "ponto_verde:ponto_verde:303",
+        "id_original": "303",
+        "tipo": "ponto_verde",
+        "nome": "PONTO VERDE",
+        "bairro": "Bandeirantes",
+        "regional": "PAMPULHA",
+        "endereco": "AVE ANTONIO FRANCISCO LISBOA 2600.0",
+        "referencia": "RUA INTERNA DO ZOOLÓGICO, PRÓXIMO À SEDE ADMINISTRATIVA",
+        "horario_original": "TER À DOM: 08:00 ÀS 16:00",
+        "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
+        "materiais_indexados": [
+          "papel",
+          "plastico",
+          "metal",
+          "vidro"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+        "origens": [
+          {
+            "fonte": "ponto_verde",
+            "nome": "Ponto Verde",
+            "url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+            "recurso_url": null,
+            "arquivo": "20261103_ponto_verde.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "8536a4d1b5fd9e9043ee1524063ad4556e557a6b17631b075c600150e1c1b9ae",
+            "linha": 15,
+            "id_registro": "ponto_verde:ponto_verde:303"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.9934745,
+          -19.8733648
+        ]
+      },
+      "properties": {
+        "id": "ponto_verde:ponto_verde:304",
+        "id_original": "304",
+        "tipo": "ponto_verde",
+        "nome": "PONTO VERDE",
+        "bairro": "Paquetá",
+        "regional": "PAMPULHA",
+        "endereco": "AVE PRESIDENTE TANCREDO NEVES 4200.0",
+        "referencia": "URPV PAQUETÁ (ÁREA INTERNA)",
+        "horario_original": "SEG À SEX, DE 7 ÀS 18H, SÁB, DOM E FER 7:40 ÀS 16H",
+        "material_original": "METAL, PAPEL, PLÁSTICO",
+        "materiais_indexados": [
+          "papel",
+          "plastico",
+          "metal"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+        "origens": [
+          {
+            "fonte": "ponto_verde",
+            "nome": "Ponto Verde",
+            "url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+            "recurso_url": null,
+            "arquivo": "20261103_ponto_verde.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "8536a4d1b5fd9e9043ee1524063ad4556e557a6b17631b075c600150e1c1b9ae",
+            "linha": 16,
+            "id_registro": "ponto_verde:ponto_verde:304"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.9809798,
+          -19.9448324
+        ]
+      },
+      "properties": {
+        "id": "ponto_verde:ponto_verde:401",
+        "id_original": "401",
+        "tipo": "ponto_verde",
+        "nome": "PONTO VERDE",
+        "bairro": "Salgado Filho",
+        "regional": "OESTE",
+        "endereco": "RUA CONSELHEIRO PIRES DA MOTA 151.0",
+        "referencia": "GELU-OESTE (ÁREA INTERNA)",
+        "horario_original": "SEG À SEX: 07:00 ÀS 17:00, SAB: 08:00 ÀS 12:00",
+        "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
+        "materiais_indexados": [
+          "papel",
+          "plastico",
+          "metal",
+          "vidro"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+        "origens": [
+          {
+            "fonte": "ponto_verde",
+            "nome": "Ponto Verde",
+            "url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+            "recurso_url": null,
+            "arquivo": "20261103_ponto_verde.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "8536a4d1b5fd9e9043ee1524063ad4556e557a6b17631b075c600150e1c1b9ae",
+            "linha": 17,
+            "id_registro": "ponto_verde:ponto_verde:401"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -44.0153119,
+          -19.9101911
+        ]
+      },
+      "properties": {
+        "id": "ponto_verde:ponto_verde:521",
+        "id_original": "521",
+        "tipo": "ponto_verde",
+        "nome": "PONTO VERDE",
+        "bairro": "Califórnia",
+        "regional": "NOROESTE",
+        "endereco": "AVE AMINTAS JACQUES DE MORAES 2500.0",
+        "referencia": "URPV PINDORAMA (ÁREA INTERNA)",
+        "horario_original": "SEG À SEX: 07H -17H, SAB, DOM, FER: 07H40MIN - 16H",
+        "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
+        "materiais_indexados": [
+          "papel",
+          "plastico",
+          "metal",
+          "vidro"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+        "origens": [
+          {
+            "fonte": "ponto_verde",
+            "nome": "Ponto Verde",
+            "url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+            "recurso_url": null,
+            "arquivo": "20261103_ponto_verde.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "8536a4d1b5fd9e9043ee1524063ad4556e557a6b17631b075c600150e1c1b9ae",
+            "linha": 18,
+            "id_registro": "ponto_verde:ponto_verde:521"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.9934241,
+          -19.9297514
+        ]
+      },
+      "properties": {
+        "id": "ponto_verde:ponto_verde:543",
+        "id_original": "543",
+        "tipo": "ponto_verde",
+        "nome": "PONTO VERDE",
+        "bairro": "João Pinheiro",
+        "regional": "NOROESTE",
+        "endereco": "AVE VEREADOR CICERO ILDEFONSO 10.0",
+        "referencia": "URPV DELTA (ÁREA INTERNA)",
+        "horario_original": "SEG À SEX: 07H -17H, SAB, DOM, FER: 07H40MIN - 16H",
+        "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
+        "materiais_indexados": [
+          "papel",
+          "plastico",
+          "metal",
+          "vidro"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+        "origens": [
+          {
+            "fonte": "ponto_verde",
+            "nome": "Ponto Verde",
+            "url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+            "recurso_url": null,
+            "arquivo": "20261103_ponto_verde.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "8536a4d1b5fd9e9043ee1524063ad4556e557a6b17631b075c600150e1c1b9ae",
+            "linha": 19,
+            "id_registro": "ponto_verde:ponto_verde:543"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.9622215,
+          -19.8977405
+        ]
+      },
+      "properties": {
+        "id": "ponto_verde:ponto_verde:544",
+        "id_original": "544",
+        "tipo": "ponto_verde",
+        "nome": "PONTO VERDE",
+        "bairro": "Caiçaras",
+        "regional": "NOROESTE",
+        "endereco": "RUA FRANCISCO DE PAULA FERREIRA 101.0",
+        "referencia": "URPV DA PAZ (ÁREA INTERNA)",
+        "horario_original": "SEG À SEX: 07H -17H, SAB, DOM, FER: 07H40MIN - 16H",
+        "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
+        "materiais_indexados": [
+          "papel",
+          "plastico",
+          "metal",
+          "vidro"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+        "origens": [
+          {
+            "fonte": "ponto_verde",
+            "nome": "Ponto Verde",
+            "url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+            "recurso_url": null,
+            "arquivo": "20261103_ponto_verde.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "8536a4d1b5fd9e9043ee1524063ad4556e557a6b17631b075c600150e1c1b9ae",
+            "linha": 20,
+            "id_registro": "ponto_verde:ponto_verde:544"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.9341055,
+          -19.9215275
+        ]
+      },
+      "properties": {
+        "id": "ponto_verde:ponto_verde:741",
+        "id_original": "741",
+        "tipo": "ponto_verde",
+        "nome": "PONTO VERDE",
+        "bairro": "Centro",
+        "regional": "CENTRO-SUL",
+        "endereco": "AVE DOS ANDRADAS 800.0",
+        "referencia": "PARQUE MUNICIPAL AMÉRICO RENNÈ GIANETTI (ÁREA INTERNA)",
+        "horario_original": "TER À SAB: 07H ÀS 21H, DOM: 07H ÀS 17H",
+        "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
+        "materiais_indexados": [
+          "papel",
+          "plastico",
+          "metal",
+          "vidro"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+        "origens": [
+          {
+            "fonte": "ponto_verde",
+            "nome": "Ponto Verde",
+            "url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+            "recurso_url": null,
+            "arquivo": "20261103_ponto_verde.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "8536a4d1b5fd9e9043ee1524063ad4556e557a6b17631b075c600150e1c1b9ae",
+            "linha": 21,
+            "id_registro": "ponto_verde:ponto_verde:741"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.9871086,
+          -19.8191325
+        ]
+      },
+      "properties": {
+        "id": "ponto_verde:ponto_verde:761",
+        "id_original": "761",
+        "tipo": "ponto_verde",
+        "nome": "PONTO VERDE",
+        "bairro": "Rio Branco",
+        "regional": "VENDA NOVA",
+        "endereco": "RUA AUGUSTO DOS ANJOS 1983.0",
+        "referencia": "AREA INTERNA DA URPV RIO BRANCO",
+        "horario_original": "SEG À SEX: 07H -17H, SAB, DOM, FER: 07H40MIN - 16H",
+        "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
+        "materiais_indexados": [
+          "papel",
+          "plastico",
+          "metal",
+          "vidro"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+        "origens": [
+          {
+            "fonte": "ponto_verde",
+            "nome": "Ponto Verde",
+            "url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+            "recurso_url": null,
+            "arquivo": "20261103_ponto_verde.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "8536a4d1b5fd9e9043ee1524063ad4556e557a6b17631b075c600150e1c1b9ae",
+            "linha": 22,
+            "id_registro": "ponto_verde:ponto_verde:761"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -44.0117068,
+          -19.858638
+        ]
+      },
+      "properties": {
+        "id": "ponto_verde:ponto_verde:781",
+        "id_original": "781",
+        "tipo": "ponto_verde",
+        "nome": "PONTO VERDE",
+        "bairro": "Bandeirantes",
+        "regional": "PAMPULHA",
+        "endereco": "AVE OTACILIO NEGRAO DE LIMA 8000.0",
+        "referencia": "NA ADMINISTRAÇÃO DO JARDIM BOTÂNICO, PRÓXIMO AO VIVEIRO DE MUDAS",
+        "horario_original": "TER À DOM: 08:00 ÀS 16:00",
+        "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
+        "materiais_indexados": [
+          "papel",
+          "plastico",
+          "metal",
+          "vidro"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+        "origens": [
+          {
+            "fonte": "ponto_verde",
+            "nome": "Ponto Verde",
+            "url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+            "recurso_url": null,
+            "arquivo": "20261103_ponto_verde.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "8536a4d1b5fd9e9043ee1524063ad4556e557a6b17631b075c600150e1c1b9ae",
+            "linha": 23,
+            "id_registro": "ponto_verde:ponto_verde:781"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.9899659,
+          -19.9380254
+        ]
+      },
+      "properties": {
+        "id": "ponto_verde:ponto_verde:79",
+        "id_original": "79",
+        "tipo": "ponto_verde",
+        "nome": "PONTO VERDE",
+        "bairro": "Nova Gameleira",
+        "regional": "OESTE",
+        "endereco": "RUA VEREADOR JULIO FERREIRA 91.0",
+        "referencia": "RUA DOM OSCAR ROMERO (ACESSO PELA PORTARIA 1 - DENTRO DO CONJUNTO HENRICÃO)",
+        "horario_original": "24 HORAS-DIA (APENAS MORADORES)",
+        "material_original": "ISOPOR, METAL, PAPEL, PLÁSTICO, VIDRO",
+        "materiais_indexados": [
+          "papel",
+          "plastico",
+          "metal",
+          "vidro",
+          "isopor"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+        "origens": [
+          {
+            "fonte": "ponto_verde",
+            "nome": "Ponto Verde",
+            "url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+            "recurso_url": null,
+            "arquivo": "20261103_ponto_verde.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "8536a4d1b5fd9e9043ee1524063ad4556e557a6b17631b075c600150e1c1b9ae",
+            "linha": 2,
+            "id_registro": "ponto_verde:ponto_verde:79"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -44.0049094,
+          -19.8599467
+        ]
+      },
+      "properties": {
+        "id": "ponto_verde:ponto_verde:801",
+        "id_original": "801",
+        "tipo": "ponto_verde",
+        "nome": "PONTO VERDE",
+        "bairro": "Bandeirantes",
+        "regional": "PAMPULHA",
+        "endereco": "AVE OTACILIO NEGRAO DE LIMA 8000.0",
+        "referencia": "EM FRENTE AO AQUÁRIO DO RIO SÃO FRANCISCO",
+        "horario_original": "TER À DOM: 08:00 ÀS 16:00",
+        "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
+        "materiais_indexados": [
+          "papel",
+          "plastico",
+          "metal",
+          "vidro"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+        "origens": [
+          {
+            "fonte": "ponto_verde",
+            "nome": "Ponto Verde",
+            "url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+            "recurso_url": null,
+            "arquivo": "20261103_ponto_verde.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "8536a4d1b5fd9e9043ee1524063ad4556e557a6b17631b075c600150e1c1b9ae",
+            "linha": 24,
+            "id_registro": "ponto_verde:ponto_verde:801"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.9613344,
+          -19.8610072
+        ]
+      },
+      "properties": {
+        "id": "ponto_verde:ponto_verde:821",
+        "id_original": "821",
+        "tipo": "ponto_verde",
+        "nome": "PONTO VERDE",
+        "bairro": "Campus UFMG",
+        "regional": "PAMPULHA",
+        "endereco": "AVE PRESIDENTE ANTONIO CARLOS",
+        "referencia": "CAMPUS UFMG (ÁREA INTERNA, EM FRENTE À IMPRENSA UNIVERSITÁRIA)",
+        "horario_original": "SEG A SEX 06H45 ÀS 22H, SAB DE 06H45 ÀS 13H",
+        "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
+        "materiais_indexados": [
+          "papel",
+          "plastico",
+          "metal",
+          "vidro"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+        "origens": [
+          {
+            "fonte": "ponto_verde",
+            "nome": "Ponto Verde",
+            "url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+            "recurso_url": null,
+            "arquivo": "20261103_ponto_verde.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "8536a4d1b5fd9e9043ee1524063ad4556e557a6b17631b075c600150e1c1b9ae",
+            "linha": 25,
+            "id_registro": "ponto_verde:ponto_verde:821"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.9742836,
+          -19.8732636
+        ]
+      },
+      "properties": {
+        "id": "ponto_verde:ponto_verde:841",
+        "id_original": "841",
+        "tipo": "ponto_verde",
+        "nome": "PONTO VERDE",
+        "bairro": "Campus UFMG",
+        "regional": "PAMPULHA",
+        "endereco": "RUA QUATORZE",
+        "referencia": "CAMPUS UFMG (FACULDADE DE ODONTOLOGIA, PORTARIA AVE. PRES. CARLOS LUZ)",
+        "horario_original": "SEG A SEX 06H45 ÀS 22H, SAB DE 06H45 ÀS 13H",
+        "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
+        "materiais_indexados": [
+          "papel",
+          "plastico",
+          "metal",
+          "vidro"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+        "origens": [
+          {
+            "fonte": "ponto_verde",
+            "nome": "Ponto Verde",
+            "url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+            "recurso_url": null,
+            "arquivo": "20261103_ponto_verde.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "8536a4d1b5fd9e9043ee1524063ad4556e557a6b17631b075c600150e1c1b9ae",
+            "linha": 26,
+            "id_registro": "ponto_verde:ponto_verde:841"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.9599376,
+          -19.8699822
+        ]
+      },
+      "properties": {
+        "id": "ponto_verde:ponto_verde:861",
+        "id_original": "861",
+        "tipo": "ponto_verde",
+        "nome": "PONTO VERDE",
+        "bairro": "Campus UFMG",
+        "regional": "PAMPULHA",
+        "endereco": "RUA PROFESSOR EDMUNDO LINS",
+        "referencia": "CAMPUS UFMG (RESTAURANTE SETORIAL I, PORTARIA AVE. MANOEL LOPES DE SIQUEIRA)",
+        "horario_original": "SEG A SEX 06H45 ÀS 22H, SAB DE 06H45 ÀS 13H",
+        "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
+        "materiais_indexados": [
+          "papel",
+          "plastico",
+          "metal",
+          "vidro"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+        "origens": [
+          {
+            "fonte": "ponto_verde",
+            "nome": "Ponto Verde",
+            "url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+            "recurso_url": null,
+            "arquivo": "20261103_ponto_verde.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "8536a4d1b5fd9e9043ee1524063ad4556e557a6b17631b075c600150e1c1b9ae",
+            "linha": 27,
+            "id_registro": "ponto_verde:ponto_verde:861"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.9755408,
+          -19.8754718
+        ]
+      },
+      "properties": {
+        "id": "ponto_verde:ponto_verde:881",
+        "id_original": "881",
+        "tipo": "ponto_verde",
+        "nome": "PONTO VERDE",
+        "bairro": "Campus UFMG",
+        "regional": "PAMPULHA",
+        "endereco": "RUA QUATORZE",
+        "referencia": "CAMPUS UFMG (FACULDADE DE EDUCAÇÃO FÍSICA, PORTARIA AVE. PRES. CARLOS LUZ)",
+        "horario_original": "SEG A SEX 06H45 ÀS 22H, SAB DE 06H45 ÀS 13H",
+        "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
+        "materiais_indexados": [
+          "papel",
+          "plastico",
+          "metal",
+          "vidro"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+        "origens": [
+          {
+            "fonte": "ponto_verde",
+            "nome": "Ponto Verde",
+            "url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+            "recurso_url": null,
+            "arquivo": "20261103_ponto_verde.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "8536a4d1b5fd9e9043ee1524063ad4556e557a6b17631b075c600150e1c1b9ae",
+            "linha": 28,
+            "id_registro": "ponto_verde:ponto_verde:881"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.964221,
+          -19.8300807
+        ]
+      },
+      "properties": {
+        "id": "ponto_verde:ponto_verde:90",
+        "id_original": "90",
+        "tipo": "ponto_verde",
+        "nome": "PONTO VERDE",
+        "bairro": "Santa Branca",
+        "regional": "PAMPULHA",
+        "endereco": "RUA SAO JOSE DO DIVINO 100.0",
+        "referencia": "GELU-P (ÁREA INTERNA)",
+        "horario_original": "SEG À SEX: 07:00 ÀS 17:00, SAB: 08:00 ÀS 12:00",
+        "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
+        "materiais_indexados": [
+          "papel",
+          "plastico",
+          "metal",
+          "vidro"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+        "origens": [
+          {
+            "fonte": "ponto_verde",
+            "nome": "Ponto Verde",
+            "url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+            "recurso_url": null,
+            "arquivo": "20261103_ponto_verde.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "8536a4d1b5fd9e9043ee1524063ad4556e557a6b17631b075c600150e1c1b9ae",
+            "linha": 3,
+            "id_registro": "ponto_verde:ponto_verde:90"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.9591218,
+          -19.8680477
+        ]
+      },
+      "properties": {
+        "id": "ponto_verde:ponto_verde:901",
+        "id_original": "901",
+        "tipo": "ponto_verde",
+        "nome": "PONTO VERDE",
+        "bairro": "Campus UFMG",
+        "regional": "PAMPULHA",
+        "endereco": "RUA DOUTOR FERNANDO DE MELO VIANA",
+        "referencia": "CAMPUS UFMG - FACULDADE DE EDUCAÇÃO (FAE)-CENTRO PEDAGÓGICO, ENTRADA PELA AV. PRES. ANTÔNIO CARLOS",
+        "horario_original": "SEG A SEX 06H45 ÀS 22H, SAB DE 06H45 ÀS 13H",
+        "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
+        "materiais_indexados": [
+          "papel",
+          "plastico",
+          "metal",
+          "vidro"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+        "origens": [
+          {
+            "fonte": "ponto_verde",
+            "nome": "Ponto Verde",
+            "url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+            "recurso_url": null,
+            "arquivo": "20261103_ponto_verde.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "8536a4d1b5fd9e9043ee1524063ad4556e557a6b17631b075c600150e1c1b9ae",
+            "linha": 29,
+            "id_registro": "ponto_verde:ponto_verde:901"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.996523,
+          -19.8604668
+        ]
+      },
+      "properties": {
+        "id": "ponto_verde:ponto_verde:92",
+        "id_original": "92",
+        "tipo": "ponto_verde",
+        "nome": "PONTO VERDE",
+        "bairro": "Lagoa da Pampulha",
+        "regional": "PAMPULHA",
+        "endereco": "AVE OTACILIO NEGRAO DE LIMA 7111.0",
+        "referencia": "ÁREA INTERNA DO PARQUE ECOLÓGICO DA PAMPULHA",
+        "horario_original": "TER À DOM: 08:00 ÀS 16:00",
+        "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
+        "materiais_indexados": [
+          "papel",
+          "plastico",
+          "metal",
+          "vidro"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+        "origens": [
+          {
+            "fonte": "ponto_verde",
+            "nome": "Ponto Verde",
+            "url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+            "recurso_url": null,
+            "arquivo": "20261103_ponto_verde.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "8536a4d1b5fd9e9043ee1524063ad4556e557a6b17631b075c600150e1c1b9ae",
+            "linha": 4,
+            "id_registro": "ponto_verde:ponto_verde:92"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.9665634,
+          -19.8631843
+        ]
+      },
+      "properties": {
+        "id": "ponto_verde:ponto_verde:921",
+        "id_original": "921",
+        "tipo": "ponto_verde",
+        "nome": "PONTO VERDE",
+        "bairro": "Campus UFMG",
+        "regional": "PAMPULHA",
+        "endereco": "RUA ONZE",
+        "referencia": "UFMG - UNID. ADM. II - RUA PROFESSOR AMÍLCAR VIANA MARTINS (ENTRADA PELA AV. ANTÔNIO ABRAHÃO CARAM",
+        "horario_original": "SEG A SEX 06H45 ÀS 22H, SAB DE 06H45 ÀS 13H",
+        "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
+        "materiais_indexados": [
+          "papel",
+          "plastico",
+          "metal",
+          "vidro"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+        "origens": [
+          {
+            "fonte": "ponto_verde",
+            "nome": "Ponto Verde",
+            "url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+            "recurso_url": null,
+            "arquivo": "20261103_ponto_verde.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "8536a4d1b5fd9e9043ee1524063ad4556e557a6b17631b075c600150e1c1b9ae",
+            "linha": 30,
+            "id_registro": "ponto_verde:ponto_verde:921"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -44.002942,
+          -19.862726
+        ]
+      },
+      "properties": {
+        "id": "ponto_verde:ponto_verde:94",
+        "id_original": "94",
+        "tipo": "ponto_verde",
+        "nome": "PONTO VERDE",
+        "bairro": "Bandeirantes",
+        "regional": "PAMPULHA",
+        "endereco": "RUA POLYCARPO DE MAGALHAES VIOTTI 450.0",
+        "referencia": "ESTAÇÃO DE RECICLAGEM DE ENTULHO PAMPULHA (ÁREA INTERNA)",
+        "horario_original": "DE SEGUNDA À SEXTA, DE 08H ÀS 11H E DE 12H ÀS 16H",
+        "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
+        "materiais_indexados": [
+          "papel",
+          "plastico",
+          "metal",
+          "vidro"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+        "origens": [
+          {
+            "fonte": "ponto_verde",
+            "nome": "Ponto Verde",
+            "url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+            "recurso_url": null,
+            "arquivo": "20261103_ponto_verde.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "8536a4d1b5fd9e9043ee1524063ad4556e557a6b17631b075c600150e1c1b9ae",
+            "linha": 5,
+            "id_registro": "ponto_verde:ponto_verde:94"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.9641555,
+          -19.8725217
+        ]
+      },
+      "properties": {
+        "id": "ponto_verde:ponto_verde:941",
+        "id_original": "941",
+        "tipo": "ponto_verde",
+        "nome": "PONTO VERDE",
+        "bairro": "Campus UFMG",
+        "regional": "PAMPULHA",
+        "endereco": "RUA C",
+        "referencia": "CAMPUS UFMG (COLTEC, RUA C., ENTRADA PELA AVENIDA PERIMETRAL SUL, PORTARIA 3)",
+        "horario_original": "SEG A SEX 06H45 ÀS 22H, SAB DE 06H45 ÀS 13H",
+        "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
+        "materiais_indexados": [
+          "papel",
+          "plastico",
+          "metal",
+          "vidro"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+        "origens": [
+          {
+            "fonte": "ponto_verde",
+            "nome": "Ponto Verde",
+            "url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+            "recurso_url": null,
+            "arquivo": "20261103_ponto_verde.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "8536a4d1b5fd9e9043ee1524063ad4556e557a6b17631b075c600150e1c1b9ae",
+            "linha": 31,
+            "id_registro": "ponto_verde:ponto_verde:941"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.9684141,
+          -19.8691822
+        ]
+      },
+      "properties": {
+        "id": "ponto_verde:ponto_verde:96",
+        "id_original": "96",
+        "tipo": "ponto_verde",
+        "nome": "PONTO VERDE",
+        "bairro": "Campus UFMG",
+        "regional": "PAMPULHA",
+        "endereco": "AVE PRESIDENTE ANTONIO CARLOS 6627.0",
+        "referencia": "FACULDADE DE FARMÁCIA (ESTACIONAMENTO)",
+        "horario_original": "SEG A SEX 06H45 ÀS 22H, SAB DE 06H45 ÀS 13H",
+        "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
+        "materiais_indexados": [
+          "papel",
+          "plastico",
+          "metal",
+          "vidro"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+        "origens": [
+          {
+            "fonte": "ponto_verde",
+            "nome": "Ponto Verde",
+            "url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+            "recurso_url": null,
+            "arquivo": "20261103_ponto_verde.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "8536a4d1b5fd9e9043ee1524063ad4556e557a6b17631b075c600150e1c1b9ae",
+            "linha": 6,
+            "id_registro": "ponto_verde:ponto_verde:96"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.9659565,
+          -19.8727903
+        ]
+      },
+      "properties": {
+        "id": "ponto_verde:ponto_verde:961",
+        "id_original": "961",
+        "tipo": "ponto_verde",
+        "nome": "PONTO VERDE",
+        "bairro": "Campus UFMG",
+        "regional": "PAMPULHA",
+        "endereco": "RUA PROFESSOR MARIO WERNECK",
+        "referencia": "CAMPUS UFMG (CDTN, RUA PROFESSOR MARIO WERNECK, ENTRADA PELA AVENIDA PERIMETRAL SUL, PORTARIA 3)",
+        "horario_original": "SEG A SEX 06H45 ÀS 22H, SAB DE 06H45 ÀS 13H",
+        "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
+        "materiais_indexados": [
+          "papel",
+          "plastico",
+          "metal",
+          "vidro"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+        "origens": [
+          {
+            "fonte": "ponto_verde",
+            "nome": "Ponto Verde",
+            "url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+            "recurso_url": null,
+            "arquivo": "20261103_ponto_verde.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "8536a4d1b5fd9e9043ee1524063ad4556e557a6b17631b075c600150e1c1b9ae",
+            "linha": 32,
+            "id_registro": "ponto_verde:ponto_verde:961"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.9750352,
+          -19.8847171
+        ]
+      },
+      "properties": {
+        "id": "ponto_verde:ponto_verde:962",
+        "id_original": "962",
+        "tipo": "ponto_verde",
+        "nome": "PONTO VERDE",
+        "bairro": "Engenho Nogueira",
+        "regional": "PAMPULHA",
+        "endereco": "RUA PROFESSOR JOSE VIEIRA DE MENDONCA 770.0",
+        "referencia": "ÁREA INTERNA DO BHTEC - PARQUE TECNOLÓGICO DE BELO HORIZONTE",
+        "horario_original": "SEG A SEX DE 08 AS 18H (APENAS FUNCIONÁRIOS)",
+        "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
+        "materiais_indexados": [
+          "papel",
+          "plastico",
+          "metal",
+          "vidro"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+        "origens": [
+          {
+            "fonte": "ponto_verde",
+            "nome": "Ponto Verde",
+            "url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+            "recurso_url": null,
+            "arquivo": "20261103_ponto_verde.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "8536a4d1b5fd9e9043ee1524063ad4556e557a6b17631b075c600150e1c1b9ae",
+            "linha": 33,
+            "id_registro": "ponto_verde:ponto_verde:962"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.936629,
+          -19.8573988
+        ]
+      },
+      "properties": {
+        "id": "ponto_verde:ponto_verde:98",
+        "id_original": "98",
+        "tipo": "ponto_verde",
+        "nome": "PONTO VERDE",
+        "bairro": "Dona Clara",
+        "regional": "PAMPULHA",
+        "endereco": "RUA RITA ALVES CASTANHEIRA 50.0",
+        "referencia": "ÁREA INTERNA DA URPV DONA CLARA",
+        "horario_original": "SEG À SEX: 07H -17H, SAB, DOM, FER: 07H40MIN - 16H",
+        "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
+        "materiais_indexados": [
+          "papel",
+          "plastico",
+          "metal",
+          "vidro"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+        "origens": [
+          {
+            "fonte": "ponto_verde",
+            "nome": "Ponto Verde",
+            "url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+            "recurso_url": null,
+            "arquivo": "20261103_ponto_verde.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "8536a4d1b5fd9e9043ee1524063ad4556e557a6b17631b075c600150e1c1b9ae",
+            "linha": 7,
+            "id_registro": "ponto_verde:ponto_verde:98"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.9596585,
+          -19.864062
+        ]
+      },
+      "properties": {
+        "id": "ponto_verde:ponto_verde:99",
+        "id_original": "99",
+        "tipo": "ponto_verde",
+        "nome": "PONTO VERDE",
+        "bairro": "Campus UFMG",
+        "regional": "PAMPULHA",
+        "endereco": "AVE REITOR MENDES PIMENTEL",
+        "referencia": "CAMPUS UFMG (ÁREA INTERNA, EM FRENTE À EMEI ALAÍDE DE LISBOA)",
+        "horario_original": "SEG A SEX 06H45 ÀS 22H, SAB DE 06H45 ÀS 13H",
+        "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
+        "materiais_indexados": [
+          "papel",
+          "plastico",
+          "metal",
+          "vidro"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+        "origens": [
+          {
+            "fonte": "ponto_verde",
+            "nome": "Ponto Verde",
+            "url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+            "recurso_url": null,
+            "arquivo": "20261103_ponto_verde.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "8536a4d1b5fd9e9043ee1524063ad4556e557a6b17631b075c600150e1c1b9ae",
+            "linha": 8,
+            "id_registro": "ponto_verde:ponto_verde:99"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.9439301,
+          -19.8489883
+        ]
+      },
+      "properties": {
+        "id": "urpv:urpv:25",
+        "id_original": "25",
+        "tipo": "urpv",
+        "nome": "URPV AEROPORTO",
+        "bairro": "São Bernardo",
+        "regional": "NORTE",
+        "endereco": "AVE WASHINGTON LUIZ 945",
+        "referencia": "ENTRE RUA EDUARDO QUENTEL E RUA EDNA QUENTEL",
+        "horario_original": "SEGUNDA À SEXTA, DE 7 ÀS 18 H, SÁBADOS, DOMINGOS E FERIADOS, DE 7:40 ÀS 16:00 H",
+        "material_original": "CARCAÇAS DE ELETRODOMÉSTICOS, ENTULHO, MADEIRA, MÓVEIS INSERVÍVEIS, PNEUS, RESÍDUOS DE PODA E TERRA, VOLUMOSOS",
+        "materiais_indexados": [
+          "entulho",
+          "poda",
+          "terra",
+          "pneu",
+          "madeira",
+          "moveis",
+          "volumosos",
+          "carcacas_eletrodomesticos"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/unidadade-de-recebimento-de-pequenos-volumes-urpv",
+        "origens": [
+          {
+            "fonte": "urpv",
+            "nome": "Unidades de Recebimento de Pequenos Volumes",
+            "url": "https://dados.pbh.gov.br/dataset/unidadade-de-recebimento-de-pequenos-volumes-urpv",
+            "recurso_url": null,
+            "arquivo": "20261103_unidade_recebimento_pequenos_volumes.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "a0c2683b13c63eb7e1ff37c8c24926804bf1502426391ae0402e96dbd83fa576",
+            "linha": 26,
+            "id_registro": "urpv:urpv:25"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.9068826,
+          -19.9011808
+        ]
+      },
+      "properties": {
+        "id": "urpv:urpv:2",
+        "id_original": "2",
+        "tipo": "urpv",
+        "nome": "URPV ANDRADAS",
+        "bairro": "Horto Florestal",
+        "regional": "LESTE",
+        "endereco": "AVE DOS ANDRADAS 5965",
+        "referencia": "ENTRE RUA DA BALANÇA E AVENIDA PASTOR ANSELMO SILVESTRE",
+        "horario_original": "SEGUNDA À SEXTA, DE 7 ÀS 18 H, SÁBADOS, DOMINGOS E FERIADOS, DE 7:40 ÀS 16:00 H",
+        "material_original": "CARCAÇAS DE ELETRODOMÉSTICOS, ENTULHO, MADEIRA, MÓVEIS INSERVÍVEIS, PNEUS, RESÍDUOS DE PODA E TERRA, VOLUMOSOS",
+        "materiais_indexados": [
+          "entulho",
+          "poda",
+          "terra",
+          "pneu",
+          "madeira",
+          "moveis",
+          "volumosos",
+          "carcacas_eletrodomesticos"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/unidadade-de-recebimento-de-pequenos-volumes-urpv",
+        "origens": [
+          {
+            "fonte": "urpv",
+            "nome": "Unidades de Recebimento de Pequenos Volumes",
+            "url": "https://dados.pbh.gov.br/dataset/unidadade-de-recebimento-de-pequenos-volumes-urpv",
+            "recurso_url": null,
+            "arquivo": "20261103_unidade_recebimento_pequenos_volumes.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "a0c2683b13c63eb7e1ff37c8c24926804bf1502426391ae0402e96dbd83fa576",
+            "linha": 3,
+            "id_registro": "urpv:urpv:2"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -44.0289765,
+          -19.9762956
+        ]
+      },
+      "properties": {
+        "id": "urpv:urpv:11",
+        "id_original": "11",
+        "tipo": "urpv",
+        "nome": "URPV ÁTILA DE PAIVA",
+        "bairro": "Átila de Paiva",
+        "regional": "BARREIRO",
+        "endereco": "AVE DO CANAL 38",
+        "referencia": "ENTRE RUA APOLO OITO E RUA LOURIVAL JOSE DO NASCIMENTO",
+        "horario_original": "SEGUNDA À SEXTA, DE 7 ÀS 18 H, SÁBADOS, DOMINGOS E FERIADOS, DE 7:40 ÀS 16:00 H",
+        "material_original": "CARCAÇAS DE ELETRODOMÉSTICOS, ENTULHO, MADEIRA, MÓVEIS INSERVÍVEIS, PNEUS, RESÍDUOS DE PODA E TERRA, VOLUMOSOS",
+        "materiais_indexados": [
+          "entulho",
+          "poda",
+          "terra",
+          "pneu",
+          "madeira",
+          "moveis",
+          "volumosos",
+          "carcacas_eletrodomesticos"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/unidadade-de-recebimento-de-pequenos-volumes-urpv",
+        "origens": [
+          {
+            "fonte": "urpv",
+            "nome": "Unidades de Recebimento de Pequenos Volumes",
+            "url": "https://dados.pbh.gov.br/dataset/unidadade-de-recebimento-de-pequenos-volumes-urpv",
+            "recurso_url": null,
+            "arquivo": "20261103_unidade_recebimento_pequenos_volumes.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "a0c2683b13c63eb7e1ff37c8c24926804bf1502426391ae0402e96dbd83fa576",
+            "linha": 12,
+            "id_registro": "urpv:urpv:11"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.9480326,
+          -19.8299696
+        ]
+      },
+      "properties": {
+        "id": "urpv:urpv:34",
+        "id_original": "34",
+        "tipo": "urpv",
+        "nome": "URPV BACURAUS",
+        "bairro": "Campo Alegre",
+        "regional": "NORTE",
+        "endereco": "RUA LOTUS 2",
+        "referencia": "ENTRE RUA DOS BACURAUS E RUA ADOLFO BEZERRA DE MENEZES",
+        "horario_original": "SEGUNDA À SEXTA, DE 7 ÀS 18 H, SÁBADOS, DOMINGOS E FERIADOS, DE 7:40 ÀS 16:00 H",
+        "material_original": "CARCAÇAS DE ELETRODOMÉSTICOS, ENTULHO, MADEIRA, MÓVEIS INSERVÍVEIS, PNEUS, RESÍDUOS DE PODA E TERRA, VOLUMOSOS",
+        "materiais_indexados": [
+          "entulho",
+          "poda",
+          "terra",
+          "pneu",
+          "madeira",
+          "moveis",
+          "volumosos",
+          "carcacas_eletrodomesticos"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/unidadade-de-recebimento-de-pequenos-volumes-urpv",
+        "origens": [
+          {
+            "fonte": "urpv",
+            "nome": "Unidades de Recebimento de Pequenos Volumes",
+            "url": "https://dados.pbh.gov.br/dataset/unidadade-de-recebimento-de-pequenos-volumes-urpv",
+            "recurso_url": null,
+            "arquivo": "20261103_unidade_recebimento_pequenos_volumes.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "a0c2683b13c63eb7e1ff37c8c24926804bf1502426391ae0402e96dbd83fa576",
+            "linha": 35,
+            "id_registro": "urpv:urpv:34"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.9726592,
+          -19.9368762
+        ]
+      },
+      "properties": {
+        "id": "urpv:urpv:13",
+        "id_original": "13",
+        "tipo": "urpv",
+        "nome": "URPV BARÃO",
+        "bairro": "Nova Suissa",
+        "regional": "OESTE",
+        "endereco": "RUA CACUI 121",
+        "referencia": "RUA DAS FLORES E RUA JOSÉ MACHADO",
+        "horario_original": "SEGUNDA À SEXTA, DE 7 ÀS 18 H, SÁBADOS, DOMINGOS E FERIADOS, DE 7:40 ÀS 16:00 H",
+        "material_original": "CARCAÇAS DE ELETRODOMÉSTICOS, ENTULHO, MADEIRA, MÓVEIS INSERVÍVEIS, PNEUS, RESÍDUOS DE PODA E TERRA, VOLUMOSOS",
+        "materiais_indexados": [
+          "entulho",
+          "poda",
+          "terra",
+          "pneu",
+          "madeira",
+          "moveis",
+          "volumosos",
+          "carcacas_eletrodomesticos"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/unidadade-de-recebimento-de-pequenos-volumes-urpv",
+        "origens": [
+          {
+            "fonte": "urpv",
+            "nome": "Unidades de Recebimento de Pequenos Volumes",
+            "url": "https://dados.pbh.gov.br/dataset/unidadade-de-recebimento-de-pequenos-volumes-urpv",
+            "recurso_url": null,
+            "arquivo": "20261103_unidade_recebimento_pequenos_volumes.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "a0c2683b13c63eb7e1ff37c8c24926804bf1502426391ae0402e96dbd83fa576",
+            "linha": 14,
+            "id_registro": "urpv:urpv:13"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.9319046,
+          -19.8092628
+        ]
+      },
+      "properties": {
+        "id": "urpv:urpv:33",
+        "id_original": "33",
+        "tipo": "urpv",
+        "nome": "URPV BOTÃO DE ROSAS",
+        "bairro": "Etelvina Carneiro",
+        "regional": "NORTE",
+        "endereco": "RUA CHEFLERA 1",
+        "referencia": "NO FINAL DA RUA, APÓS ESQUINA COM RUA ÁGUAS DE MARÇO",
+        "horario_original": "SEGUNDA À SEXTA, DE 7 ÀS 18 H, SÁBADOS, DOMINGOS E FERIADOS, DE 7:40 ÀS 16:00 H",
+        "material_original": "CARCAÇAS DE ELETRODOMÉSTICOS, ENTULHO, MADEIRA, MÓVEIS INSERVÍVEIS, PNEUS, RESÍDUOS DE PODA E TERRA, VOLUMOSOS",
+        "materiais_indexados": [
+          "entulho",
+          "poda",
+          "terra",
+          "pneu",
+          "madeira",
+          "moveis",
+          "volumosos",
+          "carcacas_eletrodomesticos"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/unidadade-de-recebimento-de-pequenos-volumes-urpv",
+        "origens": [
+          {
+            "fonte": "urpv",
+            "nome": "Unidades de Recebimento de Pequenos Volumes",
+            "url": "https://dados.pbh.gov.br/dataset/unidadade-de-recebimento-de-pequenos-volumes-urpv",
+            "recurso_url": null,
+            "arquivo": "20261103_unidade_recebimento_pequenos_volumes.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "a0c2683b13c63eb7e1ff37c8c24926804bf1502426391ae0402e96dbd83fa576",
+            "linha": 34,
+            "id_registro": "urpv:urpv:33"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.8672663,
+          -19.8305523
+        ]
+      },
+      "properties": {
+        "id": "urpv:urpv:30",
+        "id_original": "30",
+        "tipo": "urpv",
+        "nome": "URPV CAPITÃO EDUARDO",
+        "bairro": "Conjunto Capitão Eduardo",
+        "regional": "NORDESTE",
+        "endereco": "RUA MARCO AURELIO PRATES 186",
+        "referencia": "ENTRE RUA VÉU DA NOIVA E RUA MÉRICA GARZON FERREIRA",
+        "horario_original": "SEGUNDA À SEXTA, DE 7 ÀS 18 H, SÁBADOS, DOMINGOS E FERIADOS, DE 7:40 ÀS 16:00 H",
+        "material_original": "CARCAÇAS DE ELETRODOMÉSTICOS, ENTULHO, MADEIRA, MÓVEIS INSERVÍVEIS, PNEUS, RESÍDUOS DE PODA E TERRA, VOLUMOSOS",
+        "materiais_indexados": [
+          "entulho",
+          "poda",
+          "terra",
+          "pneu",
+          "madeira",
+          "moveis",
+          "volumosos",
+          "carcacas_eletrodomesticos"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/unidadade-de-recebimento-de-pequenos-volumes-urpv",
+        "origens": [
+          {
+            "fonte": "urpv",
+            "nome": "Unidades de Recebimento de Pequenos Volumes",
+            "url": "https://dados.pbh.gov.br/dataset/unidadade-de-recebimento-de-pequenos-volumes-urpv",
+            "recurso_url": null,
+            "arquivo": "20261103_unidade_recebimento_pequenos_volumes.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "a0c2683b13c63eb7e1ff37c8c24926804bf1502426391ae0402e96dbd83fa576",
+            "linha": 31,
+            "id_registro": "urpv:urpv:30"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -44.0016487,
+          -19.8151835
+        ]
+      },
+      "properties": {
+        "id": "urpv:urpv:31",
+        "id_original": "31",
+        "tipo": "urpv",
+        "nome": "URPV CÉU AZUL",
+        "bairro": "Céu Azul",
+        "regional": "VENDA NOVA",
+        "endereco": "RUA RADIALISTA JOAO ALVES 52",
+        "referencia": "ENTRE RUA MARIA GERTRUDES SANTOS E RUA SARAH CARVALHO MACHADO",
+        "horario_original": "SEGUNDA À SEXTA, DE 7 ÀS 18 H, SÁBADOS, DOMINGOS E FERIADOS, DE 7:40 ÀS 16:00 H",
+        "material_original": "CARCAÇAS DE ELETRODOMÉSTICOS, ENTULHO, MADEIRA, MÓVEIS INSERVÍVEIS, PNEUS, RESÍDUOS DE PODA E TERRA, VOLUMOSOS",
+        "materiais_indexados": [
+          "entulho",
+          "poda",
+          "terra",
+          "pneu",
+          "madeira",
+          "moveis",
+          "volumosos",
+          "carcacas_eletrodomesticos"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/unidadade-de-recebimento-de-pequenos-volumes-urpv",
+        "origens": [
+          {
+            "fonte": "urpv",
+            "nome": "Unidades de Recebimento de Pequenos Volumes",
+            "url": "https://dados.pbh.gov.br/dataset/unidadade-de-recebimento-de-pequenos-volumes-urpv",
+            "recurso_url": null,
+            "arquivo": "20261103_unidade_recebimento_pequenos_volumes.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "a0c2683b13c63eb7e1ff37c8c24926804bf1502426391ae0402e96dbd83fa576",
+            "linha": 32,
+            "id_registro": "urpv:urpv:31"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.8887295,
+          -19.9046682
+        ]
+      },
+      "properties": {
+        "id": "urpv:urpv:61",
+        "id_original": "61",
+        "tipo": "urpv",
+        "nome": "URPV COPASA",
+        "bairro": "Casa Branca",
+        "regional": "LESTE",
+        "endereco": "AVE DOS ANDRADAS 8255",
+        "referencia": "ENTRE RUA SEISCENTOS E VINTE E NOVE E VIADUTO E ALDACYR DIAS LOPES",
+        "horario_original": "SEGUNDA À SEXTA, DE 7 ÀS 18 H, SÁBADOS, DOMINGOS E FERIADOS, DE 7:40 ÀS 16:00 H",
+        "material_original": "CARCAÇAS DE ELETRODOMÉSTICOS, ENTULHO, MADEIRA, MÓVEIS INSERVÍVEIS, PNEUS, RESÍDUOS DE PODA E TERRA, VOLUMOSOS",
+        "materiais_indexados": [
+          "entulho",
+          "poda",
+          "terra",
+          "pneu",
+          "madeira",
+          "moveis",
+          "volumosos",
+          "carcacas_eletrodomesticos"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/unidadade-de-recebimento-de-pequenos-volumes-urpv",
+        "origens": [
+          {
+            "fonte": "urpv",
+            "nome": "Unidades de Recebimento de Pequenos Volumes",
+            "url": "https://dados.pbh.gov.br/dataset/unidadade-de-recebimento-de-pequenos-volumes-urpv",
+            "recurso_url": null,
+            "arquivo": "20261103_unidade_recebimento_pequenos_volumes.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "a0c2683b13c63eb7e1ff37c8c24926804bf1502426391ae0402e96dbd83fa576",
+            "linha": 36,
+            "id_registro": "urpv:urpv:61"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.9622012,
+          -19.8979178
+        ]
+      },
+      "properties": {
+        "id": "urpv:urpv:32",
+        "id_original": "32",
+        "tipo": "urpv",
+        "nome": "URPV DA PAZ",
+        "bairro": "Caiçaras",
+        "regional": "NOROESTE",
+        "endereco": "RUA FRANCISCO DE PAULA FERREIRA 101",
+        "referencia": "AVENIDA AMÉRICO VESPÚCIO",
+        "horario_original": "SEGUNDA À SEXTA, DE 7 ÀS 18 H, SÁBADOS, DOMINGOS E FERIADOS, DE 7:40 ÀS 16:00 H",
+        "material_original": "CARCAÇAS DE ELETRODOMÉSTICOS, ENTULHO, MADEIRA, MÓVEIS INSERVÍVEIS, PNEUS, RESÍDUOS DE PODA E TERRA, VOLUMOSOS",
+        "materiais_indexados": [
+          "entulho",
+          "poda",
+          "terra",
+          "pneu",
+          "madeira",
+          "moveis",
+          "volumosos",
+          "carcacas_eletrodomesticos"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/unidadade-de-recebimento-de-pequenos-volumes-urpv",
+        "origens": [
+          {
+            "fonte": "urpv",
+            "nome": "Unidades de Recebimento de Pequenos Volumes",
+            "url": "https://dados.pbh.gov.br/dataset/unidadade-de-recebimento-de-pequenos-volumes-urpv",
+            "recurso_url": null,
+            "arquivo": "20261103_unidade_recebimento_pequenos_volumes.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "a0c2683b13c63eb7e1ff37c8c24926804bf1502426391ae0402e96dbd83fa576",
+            "linha": 33,
+            "id_registro": "urpv:urpv:32"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.9932749,
+          -19.9298532
+        ]
+      },
+      "properties": {
+        "id": "urpv:urpv:14",
+        "id_original": "14",
+        "tipo": "urpv",
+        "nome": "URPV DELTA",
+        "bairro": "João Pinheiro",
+        "regional": "NOROESTE",
+        "endereco": "AVE VEREADOR CICERO ILDEFONSO 10",
+        "referencia": "ENTRE VIADUTO PRESIDENTE JOÃO GOULART E AVENIDA PRESIDENTE JUSCELINO KUBITSCHEK",
+        "horario_original": "SEGUNDA À SEXTA, DE 7 ÀS 18 H, SÁBADOS, DOMINGOS E FERIADOS, DE 7:40 ÀS 16:00 H",
+        "material_original": "CARCAÇAS DE ELETRODOMÉSTICOS, ENTULHO, MADEIRA, MÓVEIS INSERVÍVEIS, PNEUS, RESÍDUOS DE PODA E TERRA, VOLUMOSOS",
+        "materiais_indexados": [
+          "entulho",
+          "poda",
+          "terra",
+          "pneu",
+          "madeira",
+          "moveis",
+          "volumosos",
+          "carcacas_eletrodomesticos"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/unidadade-de-recebimento-de-pequenos-volumes-urpv",
+        "origens": [
+          {
+            "fonte": "urpv",
+            "nome": "Unidades de Recebimento de Pequenos Volumes",
+            "url": "https://dados.pbh.gov.br/dataset/unidadade-de-recebimento-de-pequenos-volumes-urpv",
+            "recurso_url": null,
+            "arquivo": "20261103_unidade_recebimento_pequenos_volumes.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "a0c2683b13c63eb7e1ff37c8c24926804bf1502426391ae0402e96dbd83fa576",
+            "linha": 15,
+            "id_registro": "urpv:urpv:14"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.9367334,
+          -19.8572427
+        ]
+      },
+      "properties": {
+        "id": "urpv:urpv:26",
+        "id_original": "26",
+        "tipo": "urpv",
+        "nome": "URPV DONA CLARA",
+        "bairro": "Dona Clara",
+        "regional": "PAMPULHA",
+        "endereco": "RUA RITA ALVES CASTANHEIRA 50",
+        "referencia": "NO FINAL DA RUA, APÓS RUA MINISTRO OROZIMBO NONATO",
+        "horario_original": "SEGUNDA À SEXTA, DE 7 ÀS 18 H, SÁBADOS, DOMINGOS E FERIADOS, DE 7:40 ÀS 16:00 H",
+        "material_original": "CARCAÇAS DE ELETRODOMÉSTICOS, ENTULHO, MADEIRA, MÓVEIS INSERVÍVEIS, PNEUS, RESÍDUOS DE PODA E TERRA, VOLUMOSOS",
+        "materiais_indexados": [
+          "entulho",
+          "poda",
+          "terra",
+          "pneu",
+          "madeira",
+          "moveis",
+          "volumosos",
+          "carcacas_eletrodomesticos"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/unidadade-de-recebimento-de-pequenos-volumes-urpv",
+        "origens": [
+          {
+            "fonte": "urpv",
+            "nome": "Unidades de Recebimento de Pequenos Volumes",
+            "url": "https://dados.pbh.gov.br/dataset/unidadade-de-recebimento-de-pequenos-volumes-urpv",
+            "recurso_url": null,
+            "arquivo": "20261103_unidade_recebimento_pequenos_volumes.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "a0c2683b13c63eb7e1ff37c8c24926804bf1502426391ae0402e96dbd83fa576",
+            "linha": 27,
+            "id_registro": "urpv:urpv:26"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -44.0015187,
+          -19.999317
+        ]
+      },
+      "properties": {
+        "id": "urpv:urpv:7",
+        "id_original": "7",
+        "tipo": "urpv",
+        "nome": "URPV FLÁVIO DE OLIVEIRA",
+        "bairro": "Flávio Marques Lisboa",
+        "regional": "BARREIRO",
+        "endereco": "RUA FLAMENGO 2",
+        "referencia": "RUA ITAPETININGA",
+        "horario_original": "SEGUNDA À SEXTA, DE 7 ÀS 18 H, SÁBADOS, DOMINGOS E FERIADOS, DE 7:40 ÀS 16:00 H",
+        "material_original": "CARCAÇAS DE ELETRODOMÉSTICOS, ENTULHO, MADEIRA, MÓVEIS INSERVÍVEIS, PNEUS, RESÍDUOS DE PODA E TERRA, VOLUMOSOS",
+        "materiais_indexados": [
+          "entulho",
+          "poda",
+          "terra",
+          "pneu",
+          "madeira",
+          "moveis",
+          "volumosos",
+          "carcacas_eletrodomesticos"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/unidadade-de-recebimento-de-pequenos-volumes-urpv",
+        "origens": [
+          {
+            "fonte": "urpv",
+            "nome": "Unidades de Recebimento de Pequenos Volumes",
+            "url": "https://dados.pbh.gov.br/dataset/unidadade-de-recebimento-de-pequenos-volumes-urpv",
+            "recurso_url": null,
+            "arquivo": "20261103_unidade_recebimento_pequenos_volumes.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "a0c2683b13c63eb7e1ff37c8c24926804bf1502426391ae0402e96dbd83fa576",
+            "linha": 8,
+            "id_registro": "urpv:urpv:7"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.9848713,
+          -19.9492039
+        ]
+      },
+      "properties": {
+        "id": "urpv:urpv:10",
+        "id_original": "10",
+        "tipo": "urpv",
+        "nome": "URPV FLORES",
+        "bairro": "Betânia",
+        "regional": "OESTE",
+        "endereco": "RUA JOSE FURLETTI 45",
+        "referencia": "ENTRE AVENIDA TEREZA CRISTINA E RUA FELICÍSSIMO",
+        "horario_original": "SEGUNDA À SEXTA, DE 7 ÀS 18 H, SÁBADOS, DOMINGOS E FERIADOS, DE 7:40 ÀS 16:00 H",
+        "material_original": "CARCAÇAS DE ELETRODOMÉSTICOS, ENTULHO, MADEIRA, MÓVEIS INSERVÍVEIS, PNEUS, RESÍDUOS DE PODA E TERRA, VOLUMOSOS",
+        "materiais_indexados": [
+          "entulho",
+          "poda",
+          "terra",
+          "pneu",
+          "madeira",
+          "moveis",
+          "volumosos",
+          "carcacas_eletrodomesticos"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/unidadade-de-recebimento-de-pequenos-volumes-urpv",
+        "origens": [
+          {
+            "fonte": "urpv",
+            "nome": "Unidades de Recebimento de Pequenos Volumes",
+            "url": "https://dados.pbh.gov.br/dataset/unidadade-de-recebimento-de-pequenos-volumes-urpv",
+            "recurso_url": null,
+            "arquivo": "20261103_unidade_recebimento_pequenos_volumes.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "a0c2683b13c63eb7e1ff37c8c24926804bf1502426391ae0402e96dbd83fa576",
+            "linha": 11,
+            "id_registro": "urpv:urpv:10"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.9960451,
+          -19.833637
+        ]
+      },
+      "properties": {
+        "id": "urpv:urpv:24",
+        "id_original": "24",
+        "tipo": "urpv",
+        "nome": "URPV GARÇAS",
+        "bairro": "Garças",
+        "regional": "PAMPULHA",
+        "endereco": "RUA REINATO FANTONI 23",
+        "referencia": "ENTRE RUA PROFESSOR RIVADÁVIA GUSMÃO E AVENIDA FRANCISCO NEGRÃO DE LIMA",
+        "horario_original": "SEGUNDA À SEXTA, DE 7 ÀS 18 H, SÁBADOS, DOMINGOS E FERIADOS, DE 7:40 ÀS 16:00 H",
+        "material_original": "CARCAÇAS DE ELETRODOMÉSTICOS, ENTULHO, MADEIRA, MÓVEIS INSERVÍVEIS, PNEUS, RESÍDUOS DE PODA E TERRA, VOLUMOSOS",
+        "materiais_indexados": [
+          "entulho",
+          "poda",
+          "terra",
+          "pneu",
+          "madeira",
+          "moveis",
+          "volumosos",
+          "carcacas_eletrodomesticos"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/unidadade-de-recebimento-de-pequenos-volumes-urpv",
+        "origens": [
+          {
+            "fonte": "urpv",
+            "nome": "Unidades de Recebimento de Pequenos Volumes",
+            "url": "https://dados.pbh.gov.br/dataset/unidadade-de-recebimento-de-pequenos-volumes-urpv",
+            "recurso_url": null,
+            "arquivo": "20261103_unidade_recebimento_pequenos_volumes.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "a0c2683b13c63eb7e1ff37c8c24926804bf1502426391ae0402e96dbd83fa576",
+            "linha": 25,
+            "id_registro": "urpv:urpv:24"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.9361719,
+          -19.8215365
+        ]
+      },
+      "properties": {
+        "id": "urpv:urpv:1",
+        "id_original": "1",
+        "tipo": "urpv",
+        "nome": "URPV JARDIM GUANABARA",
+        "bairro": "Xodó-Marize",
+        "regional": "NORTE",
+        "endereco": "AVE LUCAS DE OLIVEIRA 505",
+        "referencia": "ENTRE RUA PROFESSOR RUBENS GUELLI E RUA PROFESSORA ZILDA REVERT",
+        "horario_original": "SEGUNDA À SEXTA, DE 7 ÀS 18 H, SÁBADOS, DOMINGOS E FERIADOS, DE 7:40 ÀS 16:00 H",
+        "material_original": "CARCAÇAS DE ELETRODOMÉSTICOS, ENTULHO, MADEIRA, MÓVEIS INSERVÍVEIS, PNEUS, RESÍDUOS DE PODA E TERRA, VOLUMOSOS",
+        "materiais_indexados": [
+          "entulho",
+          "poda",
+          "terra",
+          "pneu",
+          "madeira",
+          "moveis",
+          "volumosos",
+          "carcacas_eletrodomesticos"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/unidadade-de-recebimento-de-pequenos-volumes-urpv",
+        "origens": [
+          {
+            "fonte": "urpv",
+            "nome": "Unidades de Recebimento de Pequenos Volumes",
+            "url": "https://dados.pbh.gov.br/dataset/unidadade-de-recebimento-de-pequenos-volumes-urpv",
+            "recurso_url": null,
+            "arquivo": "20261103_unidade_recebimento_pequenos_volumes.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "a0c2683b13c63eb7e1ff37c8c24926804bf1502426391ae0402e96dbd83fa576",
+            "linha": 2,
+            "id_registro": "urpv:urpv:1"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -44.036393,
+          -20.0042197
+        ]
+      },
+      "properties": {
+        "id": "urpv:urpv:5",
+        "id_original": "5",
+        "tipo": "urpv",
+        "nome": "URPV JATOBÁ",
+        "bairro": "Vale do Jatobá",
+        "regional": "BARREIRO",
+        "endereco": "AVE AGENOR NONATO DE SOUZA 8",
+        "referencia": "NO FINAL DA RUA, APÓS A RUA FRANCISCO MARTINS MARQUES",
+        "horario_original": "SEGUNDA À SEXTA, DE 7 ÀS 18 H, SÁBADOS, DOMINGOS E FERIADOS, DE 7:40 ÀS 16:00 H",
+        "material_original": "CARCAÇAS DE ELETRODOMÉSTICOS, ENTULHO, MADEIRA, MÓVEIS INSERVÍVEIS, PNEUS, RESÍDUOS DE PODA E TERRA, VOLUMOSOS",
+        "materiais_indexados": [
+          "entulho",
+          "poda",
+          "terra",
+          "pneu",
+          "madeira",
+          "moveis",
+          "volumosos",
+          "carcacas_eletrodomesticos"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/unidadade-de-recebimento-de-pequenos-volumes-urpv",
+        "origens": [
+          {
+            "fonte": "urpv",
+            "nome": "Unidades de Recebimento de Pequenos Volumes",
+            "url": "https://dados.pbh.gov.br/dataset/unidadade-de-recebimento-de-pequenos-volumes-urpv",
+            "recurso_url": null,
+            "arquivo": "20261103_unidade_recebimento_pequenos_volumes.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "a0c2683b13c63eb7e1ff37c8c24926804bf1502426391ae0402e96dbd83fa576",
+            "linha": 6,
+            "id_registro": "urpv:urpv:5"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.9557297,
+          -19.8656366
+        ]
+      },
+      "properties": {
+        "id": "urpv:urpv:29",
+        "id_original": "29",
+        "tipo": "urpv",
+        "nome": "URPV LIBERDADE",
+        "bairro": "Liberdade",
+        "regional": "PAMPULHA",
+        "endereco": "RUA FLOR DE INDIO 105",
+        "referencia": "ENTRE AVENIDA PRESIDENTE ANTÔNIO CARLOS E RUA AIMÉE SEMPLE MCPHERSON",
+        "horario_original": "SEGUNDA À SEXTA, DE 7 ÀS 18 H, SÁBADOS, DOMINGOS E FERIADOS, DE 7:40 ÀS 16:00 H",
+        "material_original": "CARCAÇAS DE ELETRODOMÉSTICOS, ENTULHO, MADEIRA, MÓVEIS INSERVÍVEIS, PNEUS, RESÍDUOS DE PODA E TERRA, VOLUMOSOS",
+        "materiais_indexados": [
+          "entulho",
+          "poda",
+          "terra",
+          "pneu",
+          "madeira",
+          "moveis",
+          "volumosos",
+          "carcacas_eletrodomesticos"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/unidadade-de-recebimento-de-pequenos-volumes-urpv",
+        "origens": [
+          {
+            "fonte": "urpv",
+            "nome": "Unidades de Recebimento de Pequenos Volumes",
+            "url": "https://dados.pbh.gov.br/dataset/unidadade-de-recebimento-de-pequenos-volumes-urpv",
+            "recurso_url": null,
+            "arquivo": "20261103_unidade_recebimento_pequenos_volumes.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "a0c2683b13c63eb7e1ff37c8c24926804bf1502426391ae0402e96dbd83fa576",
+            "linha": 30,
+            "id_registro": "urpv:urpv:29"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -44.0516447,
+          -19.9847884
+        ]
+      },
+      "properties": {
+        "id": "urpv:urpv:8",
+        "id_original": "8",
+        "tipo": "urpv",
+        "nome": "URPV LINDÉIA",
+        "bairro": "Lindéia",
+        "regional": "BARREIRO",
+        "endereco": "RUA ANTONIO DE SOUZA GOMES 110",
+        "referencia": "ENTRE RUA DOUTOR GERALDO STARLING SOARES E RUA SEBASTIÃO DOS SANTOS",
+        "horario_original": "SEGUNDA À SEXTA, DE 7 ÀS 18 H, SÁBADOS, DOMINGOS E FERIADOS, DE 7:40 ÀS 16:00 H",
+        "material_original": "CARCAÇAS DE ELETRODOMÉSTICOS, ENTULHO, MADEIRA, MÓVEIS INSERVÍVEIS, PNEUS, RESÍDUOS DE PODA E TERRA, VOLUMOSOS",
+        "materiais_indexados": [
+          "entulho",
+          "poda",
+          "terra",
+          "pneu",
+          "madeira",
+          "moveis",
+          "volumosos",
+          "carcacas_eletrodomesticos"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/unidadade-de-recebimento-de-pequenos-volumes-urpv",
+        "origens": [
+          {
+            "fonte": "urpv",
+            "nome": "Unidades de Recebimento de Pequenos Volumes",
+            "url": "https://dados.pbh.gov.br/dataset/unidadade-de-recebimento-de-pequenos-volumes-urpv",
+            "recurso_url": null,
+            "arquivo": "20261103_unidade_recebimento_pequenos_volumes.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "a0c2683b13c63eb7e1ff37c8c24926804bf1502426391ae0402e96dbd83fa576",
+            "linha": 9,
+            "id_registro": "urpv:urpv:8"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.9078449,
+          -19.9313508
+        ]
+      },
+      "properties": {
+        "id": "urpv:urpv:28",
+        "id_original": "28",
+        "tipo": "urpv",
+        "nome": "URPV MEM DE SÁ",
+        "bairro": "Vila Novo São Lucas",
+        "regional": "CENTRO-SUL",
+        "endereco": "AVE MEM DE SA 1806",
+        "referencia": "ENTRE RUA GERALDINA DE ALMEIDA E RUA AMÉRICA",
+        "horario_original": "SEGUNDA À SEXTA, DE 7 ÀS 18 H, SÁBADOS, DOMINGOS E FERIADOS, DE 7:40 ÀS 16:00 H",
+        "material_original": "CARCAÇAS DE ELETRODOMÉSTICOS, ENTULHO, MADEIRA, MÓVEIS INSERVÍVEIS, PNEUS, RESÍDUOS DE PODA E TERRA, VOLUMOSOS",
+        "materiais_indexados": [
+          "entulho",
+          "poda",
+          "terra",
+          "pneu",
+          "madeira",
+          "moveis",
+          "volumosos",
+          "carcacas_eletrodomesticos"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/unidadade-de-recebimento-de-pequenos-volumes-urpv",
+        "origens": [
+          {
+            "fonte": "urpv",
+            "nome": "Unidades de Recebimento de Pequenos Volumes",
+            "url": "https://dados.pbh.gov.br/dataset/unidadade-de-recebimento-de-pequenos-volumes-urpv",
+            "recurso_url": null,
+            "arquivo": "20261103_unidade_recebimento_pequenos_volumes.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "a0c2683b13c63eb7e1ff37c8c24926804bf1502426391ae0402e96dbd83fa576",
+            "linha": 29,
+            "id_registro": "urpv:urpv:28"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.9998424,
+          -19.9821894
+        ]
+      },
+      "properties": {
+        "id": "urpv:urpv:6",
+        "id_original": "6",
+        "tipo": "urpv",
+        "nome": "URPV MILIONÁRIOS",
+        "bairro": "Milionários",
+        "regional": "BARREIRO",
+        "endereco": "RUA DONA LUIZA 865",
+        "referencia": "ENTRE RUA DOS CRUZEIRENSES E RUA FERNANDES DE MOURA",
+        "horario_original": "SEGUNDA À SEXTA, DE 7 ÀS 18 H, SÁBADOS, DOMINGOS E FERIADOS, DE 7:40 ÀS 16:00 H",
+        "material_original": "CARCAÇAS DE ELETRODOMÉSTICOS, ENTULHO, MADEIRA, MÓVEIS INSERVÍVEIS, PNEUS, RESÍDUOS DE PODA E TERRA, VOLUMOSOS",
+        "materiais_indexados": [
+          "entulho",
+          "poda",
+          "terra",
+          "pneu",
+          "madeira",
+          "moveis",
+          "volumosos",
+          "carcacas_eletrodomesticos"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/unidadade-de-recebimento-de-pequenos-volumes-urpv",
+        "origens": [
+          {
+            "fonte": "urpv",
+            "nome": "Unidades de Recebimento de Pequenos Volumes",
+            "url": "https://dados.pbh.gov.br/dataset/unidadade-de-recebimento-de-pequenos-volumes-urpv",
+            "recurso_url": null,
+            "arquivo": "20261103_unidade_recebimento_pequenos_volumes.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "a0c2683b13c63eb7e1ff37c8c24926804bf1502426391ae0402e96dbd83fa576",
+            "linha": 7,
+            "id_registro": "urpv:urpv:6"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.9933808,
+          -19.8734121
+        ]
+      },
+      "properties": {
+        "id": "urpv:urpv:19",
+        "id_original": "19",
+        "tipo": "urpv",
+        "nome": "URPV PAQUETÁ",
+        "bairro": "Paquetá",
+        "regional": "PAMPULHA",
+        "endereco": "AVE PRESIDENTE TANCREDO NEVES 4200",
+        "referencia": "ENTRE RUA MONTE SINAI E RUA FREI MARTINHO BURNIER",
+        "horario_original": "SEGUNDA À SEXTA, DE 7 ÀS 18 H, SÁBADOS, DOMINGOS E FERIADOS, DE 7:40 ÀS 16:00 H",
+        "material_original": "CARCAÇAS DE ELETRODOMÉSTICOS, ENTULHO, MADEIRA, MÓVEIS INSERVÍVEIS, PNEUS, RESÍDUOS DE PODA E TERRA, VOLUMOSOS",
+        "materiais_indexados": [
+          "entulho",
+          "poda",
+          "terra",
+          "pneu",
+          "madeira",
+          "moveis",
+          "volumosos",
+          "carcacas_eletrodomesticos"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/unidadade-de-recebimento-de-pequenos-volumes-urpv",
+        "origens": [
+          {
+            "fonte": "urpv",
+            "nome": "Unidades de Recebimento de Pequenos Volumes",
+            "url": "https://dados.pbh.gov.br/dataset/unidadade-de-recebimento-de-pequenos-volumes-urpv",
+            "recurso_url": null,
+            "arquivo": "20261103_unidade_recebimento_pequenos_volumes.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "a0c2683b13c63eb7e1ff37c8c24926804bf1502426391ae0402e96dbd83fa576",
+            "linha": 20,
+            "id_registro": "urpv:urpv:19"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -44.0150326,
+          -19.9103721
+        ]
+      },
+      "properties": {
+        "id": "urpv:urpv:15",
+        "id_original": "15",
+        "tipo": "urpv",
+        "nome": "URPV PINDORAMA",
+        "bairro": "Califórnia",
+        "regional": "NOROESTE",
+        "endereco": "AVE AMINTAS JACQUES DE MORAES 2500",
+        "referencia": "NO FINAL DA AVENIDA, APÓS A ESQUINA COM RUA JATIR",
+        "horario_original": "SEGUNDA À SEXTA, DE 7 ÀS 18 H, SÁBADOS, DOMINGOS E FERIADOS, DE 7:40 ÀS 16:00 H",
+        "material_original": "CARCAÇAS DE ELETRODOMÉSTICOS, ENTULHO, MADEIRA, MÓVEIS INSERVÍVEIS, PNEUS, RESÍDUOS DE PODA E TERRA, VOLUMOSOS",
+        "materiais_indexados": [
+          "entulho",
+          "poda",
+          "terra",
+          "pneu",
+          "madeira",
+          "moveis",
+          "volumosos",
+          "carcacas_eletrodomesticos"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/unidadade-de-recebimento-de-pequenos-volumes-urpv",
+        "origens": [
+          {
+            "fonte": "urpv",
+            "nome": "Unidades de Recebimento de Pequenos Volumes",
+            "url": "https://dados.pbh.gov.br/dataset/unidadade-de-recebimento-de-pequenos-volumes-urpv",
+            "recurso_url": null,
+            "arquivo": "20261103_unidade_recebimento_pequenos_volumes.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "a0c2683b13c63eb7e1ff37c8c24926804bf1502426391ae0402e96dbd83fa576",
+            "linha": 16,
+            "id_registro": "urpv:urpv:15"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.9870375,
+          -19.8192311
+        ]
+      },
+      "properties": {
+        "id": "urpv:urpv:17",
+        "id_original": "17",
+        "tipo": "urpv",
+        "nome": "URPV RIO BRANCO",
+        "bairro": "Rio Branco",
+        "regional": "VENDA NOVA",
+        "endereco": "RUA AUGUSTO DOS ANJOS 1983",
+        "referencia": "ENTRE RUA UM MIL QUINHENTOS E OITENTA E UM E RUA MARIA LUCIA PETIT",
+        "horario_original": "SEGUNDA À SEXTA, DE 7 ÀS 18 H, SÁBADOS, DOMINGOS E FERIADOS, DE 7:40 ÀS 16:00 H",
+        "material_original": "CARCAÇAS DE ELETRODOMÉSTICOS, ENTULHO, MADEIRA, MÓVEIS INSERVÍVEIS, PNEUS, RESÍDUOS DE PODA E TERRA, VOLUMOSOS",
+        "materiais_indexados": [
+          "entulho",
+          "poda",
+          "terra",
+          "pneu",
+          "madeira",
+          "moveis",
+          "volumosos",
+          "carcacas_eletrodomesticos"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/unidadade-de-recebimento-de-pequenos-volumes-urpv",
+        "origens": [
+          {
+            "fonte": "urpv",
+            "nome": "Unidades de Recebimento de Pequenos Volumes",
+            "url": "https://dados.pbh.gov.br/dataset/unidadade-de-recebimento-de-pequenos-volumes-urpv",
+            "recurso_url": null,
+            "arquivo": "20261103_unidade_recebimento_pequenos_volumes.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "a0c2683b13c63eb7e1ff37c8c24926804bf1502426391ae0402e96dbd83fa576",
+            "linha": 18,
+            "id_registro": "urpv:urpv:17"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.9719649,
+          -19.8372124
+        ]
+      },
+      "properties": {
+        "id": "urpv:urpv:16",
+        "id_original": "16",
+        "tipo": "urpv",
+        "nome": "URPV SANTA AMÉLIA",
+        "bairro": "Santa Amélia",
+        "regional": "PAMPULHA",
+        "endereco": "AVE DEPUTADO ANUAR MENHEN 550",
+        "referencia": "ENTRE RUA RODRIGO LAGE DE OLIVEIRA E RUA CONCEIÇÃO MAIA",
+        "horario_original": "SEGUNDA À SEXTA, DE 7 ÀS 18 H, SÁBADOS, DOMINGOS E FERIADOS, DE 7:40 ÀS 16:00 H",
+        "material_original": "CARCAÇAS DE ELETRODOMÉSTICOS, ENTULHO, MADEIRA, MÓVEIS INSERVÍVEIS, PNEUS, RESÍDUOS DE PODA E TERRA, VOLUMOSOS",
+        "materiais_indexados": [
+          "entulho",
+          "poda",
+          "terra",
+          "pneu",
+          "madeira",
+          "moveis",
+          "volumosos",
+          "carcacas_eletrodomesticos"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/unidadade-de-recebimento-de-pequenos-volumes-urpv",
+        "origens": [
+          {
+            "fonte": "urpv",
+            "nome": "Unidades de Recebimento de Pequenos Volumes",
+            "url": "https://dados.pbh.gov.br/dataset/unidadade-de-recebimento-de-pequenos-volumes-urpv",
+            "recurso_url": null,
+            "arquivo": "20261103_unidade_recebimento_pequenos_volumes.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "a0c2683b13c63eb7e1ff37c8c24926804bf1502426391ae0402e96dbd83fa576",
+            "linha": 17,
+            "id_registro": "urpv:urpv:16"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.9459669,
+          -19.9512711
+        ]
+      },
+      "properties": {
+        "id": "urpv:urpv:22",
+        "id_original": "22",
+        "tipo": "urpv",
+        "nome": "URPV SANTA LÚCIA",
+        "bairro": "Santa Lúcia",
+        "regional": "CENTRO-SUL",
+        "endereco": "AVE ARTUR BERNARDES 3951",
+        "referencia": "RUA MURILLO MORAES DE ANDRADE E RUA PRINCIPAL",
+        "horario_original": "SEGUNDA À SEXTA, DE 7 ÀS 18 H, SÁBADOS, DOMINGOS E FERIADOS, DE 7:40 ÀS 16:00 H",
+        "material_original": "CARCAÇAS DE ELETRODOMÉSTICOS, ENTULHO, MADEIRA, MÓVEIS INSERVÍVEIS, PNEUS, RESÍDUOS DE PODA E TERRA, VOLUMOSOS",
+        "materiais_indexados": [
+          "entulho",
+          "poda",
+          "terra",
+          "pneu",
+          "madeira",
+          "moveis",
+          "volumosos",
+          "carcacas_eletrodomesticos"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/unidadade-de-recebimento-de-pequenos-volumes-urpv",
+        "origens": [
+          {
+            "fonte": "urpv",
+            "nome": "Unidades de Recebimento de Pequenos Volumes",
+            "url": "https://dados.pbh.gov.br/dataset/unidadade-de-recebimento-de-pequenos-volumes-urpv",
+            "recurso_url": null,
+            "arquivo": "20261103_unidade_recebimento_pequenos_volumes.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "a0c2683b13c63eb7e1ff37c8c24926804bf1502426391ae0402e96dbd83fa576",
+            "linha": 23,
+            "id_registro": "urpv:urpv:22"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.965355,
+          -19.821051
+        ]
+      },
+      "properties": {
+        "id": "urpv:urpv:23",
+        "id_original": "23",
+        "tipo": "urpv",
+        "nome": "URPV SÃO JOÃO BATISTA",
+        "bairro": "São João Batista",
+        "regional": "VENDA NOVA",
+        "endereco": "RUA ELCE RIBEIRO 340",
+        "referencia": "ENTRE RUA BERNARDINO OLIVEIRA PENA E RUA MARIA ANTONINA ALVES",
+        "horario_original": "SEGUNDA À SEXTA, DE 7 ÀS 18 H, SÁBADOS, DOMINGOS E FERIADOS, DE 7:40 ÀS 16:00 H",
+        "material_original": "CARCAÇAS DE ELETRODOMÉSTICOS, ENTULHO, MADEIRA, MÓVEIS INSERVÍVEIS, PNEUS, RESÍDUOS DE PODA E TERRA, VOLUMOSOS",
+        "materiais_indexados": [
+          "entulho",
+          "poda",
+          "terra",
+          "pneu",
+          "madeira",
+          "moveis",
+          "volumosos",
+          "carcacas_eletrodomesticos"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/unidadade-de-recebimento-de-pequenos-volumes-urpv",
+        "origens": [
+          {
+            "fonte": "urpv",
+            "nome": "Unidades de Recebimento de Pequenos Volumes",
+            "url": "https://dados.pbh.gov.br/dataset/unidadade-de-recebimento-de-pequenos-volumes-urpv",
+            "recurso_url": null,
+            "arquivo": "20261103_unidade_recebimento_pequenos_volumes.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "a0c2683b13c63eb7e1ff37c8c24926804bf1502426391ae0402e96dbd83fa576",
+            "linha": 24,
+            "id_registro": "urpv:urpv:23"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.9954642,
+          -19.8997031
+        ]
+      },
+      "properties": {
+        "id": "urpv:urpv:4",
+        "id_original": "4",
+        "tipo": "urpv",
+        "nome": "URPV SÃO JOSÉ",
+        "bairro": "Manacás",
+        "regional": "PAMPULHA",
+        "endereco": "RUA CRISTIANO PEREIRA SALGADO 200",
+        "referencia": "ENTRE RUA MATHILDE SOUZA BOY E AVENIDA PRESIDENTE TANCREDO NEVES",
+        "horario_original": "SEGUNDA À SEXTA, DE 7 ÀS 18 H, SÁBADOS, DOMINGOS E FERIADOS, DE 7:40 ÀS 16:00 H",
+        "material_original": "CARCAÇAS DE ELETRODOMÉSTICOS, ENTULHO, MADEIRA, MÓVEIS INSERVÍVEIS, PNEUS, RESÍDUOS DE PODA E TERRA, VOLUMOSOS",
+        "materiais_indexados": [
+          "entulho",
+          "poda",
+          "terra",
+          "pneu",
+          "madeira",
+          "moveis",
+          "volumosos",
+          "carcacas_eletrodomesticos"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/unidadade-de-recebimento-de-pequenos-volumes-urpv",
+        "origens": [
+          {
+            "fonte": "urpv",
+            "nome": "Unidades de Recebimento de Pequenos Volumes",
+            "url": "https://dados.pbh.gov.br/dataset/unidadade-de-recebimento-de-pequenos-volumes-urpv",
+            "recurso_url": null,
+            "arquivo": "20261103_unidade_recebimento_pequenos_volumes.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "a0c2683b13c63eb7e1ff37c8c24926804bf1502426391ae0402e96dbd83fa576",
+            "linha": 5,
+            "id_registro": "urpv:urpv:4"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.9272359,
+          -19.8697293
+        ]
+      },
+      "properties": {
+        "id": "urpv:urpv:27",
+        "id_original": "27",
+        "tipo": "urpv",
+        "nome": "URPV SÃO PAULO",
+        "bairro": "São Paulo",
+        "regional": "NORDESTE",
+        "endereco": "RUA JACYR JOSÉ JACINTO 35",
+        "referencia": "ENTRE RUA ANGATURAMA E RUA QUELUZITA",
+        "horario_original": "SEGUNDA À SEXTA, DE 7 ÀS 18 H, SÁBADOS, DOMINGOS E FERIADOS, DE 7:40 ÀS 16:00 H",
+        "material_original": "CARCAÇAS DE ELETRODOMÉSTICOS, ENTULHO, MADEIRA, MÓVEIS INSERVÍVEIS, PNEUS, RESÍDUOS DE PODA E TERRA, VOLUMOSOS",
+        "materiais_indexados": [
+          "entulho",
+          "poda",
+          "terra",
+          "pneu",
+          "madeira",
+          "moveis",
+          "volumosos",
+          "carcacas_eletrodomesticos"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/unidadade-de-recebimento-de-pequenos-volumes-urpv",
+        "origens": [
+          {
+            "fonte": "urpv",
+            "nome": "Unidades de Recebimento de Pequenos Volumes",
+            "url": "https://dados.pbh.gov.br/dataset/unidadade-de-recebimento-de-pequenos-volumes-urpv",
+            "recurso_url": null,
+            "arquivo": "20261103_unidade_recebimento_pequenos_volumes.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "a0c2683b13c63eb7e1ff37c8c24926804bf1502426391ae0402e96dbd83fa576",
+            "linha": 28,
+            "id_registro": "urpv:urpv:27"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.9202929,
+          -19.8417886
+        ]
+      },
+      "properties": {
+        "id": "urpv:urpv:20",
+        "id_original": "20",
+        "tipo": "urpv",
+        "nome": "URPV SARAMENHA",
+        "bairro": "Tupi B",
+        "regional": "NORTE",
+        "endereco": "AVE BASILIO DA GAMA 5",
+        "referencia": "ENTRE AVENIDA SARAMENHA E RUA HERMES FONTES",
+        "horario_original": "SEGUNDA À SEXTA, DE 7 ÀS 18 H, SÁBADOS, DOMINGOS E FERIADOS, DE 7:40 ÀS 16:00 H",
+        "material_original": "CARCAÇAS DE ELETRODOMÉSTICOS, ENTULHO, MADEIRA, MÓVEIS INSERVÍVEIS, PNEUS, RESÍDUOS DE PODA E TERRA, VOLUMOSOS",
+        "materiais_indexados": [
+          "entulho",
+          "poda",
+          "terra",
+          "pneu",
+          "madeira",
+          "moveis",
+          "volumosos",
+          "carcacas_eletrodomesticos"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/unidadade-de-recebimento-de-pequenos-volumes-urpv",
+        "origens": [
+          {
+            "fonte": "urpv",
+            "nome": "Unidades de Recebimento de Pequenos Volumes",
+            "url": "https://dados.pbh.gov.br/dataset/unidadade-de-recebimento-de-pequenos-volumes-urpv",
+            "recurso_url": null,
+            "arquivo": "20261103_unidade_recebimento_pequenos_volumes.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "a0c2683b13c63eb7e1ff37c8c24926804bf1502426391ae0402e96dbd83fa576",
+            "linha": 21,
+            "id_registro": "urpv:urpv:20"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.9739991,
+          -19.9231171
+        ]
+      },
+      "properties": {
+        "id": "urpv:urpv:3",
+        "id_original": "3",
+        "tipo": "urpv",
+        "nome": "URPV SILVA LOBO",
+        "bairro": "Calafate",
+        "regional": "OESTE",
+        "endereco": "AVE TERESA CRISTINA 2195",
+        "referencia": "SOB O VIADUTO DEPUTADO ULYSSES GUIMARÃES",
+        "horario_original": "SEGUNDA À SEXTA, DE 7 ÀS 18 H, SÁBADOS, DOMINGOS E FERIADOS, DE 7:40 ÀS 16:00 H",
+        "material_original": "CARCAÇAS DE ELETRODOMÉSTICOS, ENTULHO, MADEIRA, MÓVEIS INSERVÍVEIS, PNEUS, RESÍDUOS DE PODA E TERRA, VOLUMOSOS",
+        "materiais_indexados": [
+          "entulho",
+          "poda",
+          "terra",
+          "pneu",
+          "madeira",
+          "moveis",
+          "volumosos",
+          "carcacas_eletrodomesticos"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/unidadade-de-recebimento-de-pequenos-volumes-urpv",
+        "origens": [
+          {
+            "fonte": "urpv",
+            "nome": "Unidades de Recebimento de Pequenos Volumes",
+            "url": "https://dados.pbh.gov.br/dataset/unidadade-de-recebimento-de-pequenos-volumes-urpv",
+            "recurso_url": null,
+            "arquivo": "20261103_unidade_recebimento_pequenos_volumes.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "a0c2683b13c63eb7e1ff37c8c24926804bf1502426391ae0402e96dbd83fa576",
+            "linha": 4,
+            "id_registro": "urpv:urpv:3"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -44.0016734,
+          -19.9571783
+        ]
+      },
+      "properties": {
+        "id": "urpv:urpv:9",
+        "id_original": "9",
+        "tipo": "urpv",
+        "nome": "URPV TEREZA CRISTINA",
+        "bairro": "Bairro das Indústrias II",
+        "regional": "OESTE",
+        "endereco": "AVE TERESA CRISTINA 11013",
+        "referencia": "ENTRE RUA DEMIZA E RUA POHLIG HECKEL",
+        "horario_original": "SEGUNDA À SEXTA, DE 7 ÀS 18 H, SÁBADOS, DOMINGOS E FERIADOS, DE 7:40 ÀS 16:00 H",
+        "material_original": "CARCAÇAS DE ELETRODOMÉSTICOS, ENTULHO, MADEIRA, MÓVEIS INSERVÍVEIS, PNEUS, RESÍDUOS DE PODA E TERRA, VOLUMOSOS",
+        "materiais_indexados": [
+          "entulho",
+          "poda",
+          "terra",
+          "pneu",
+          "madeira",
+          "moveis",
+          "volumosos",
+          "carcacas_eletrodomesticos"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/unidadade-de-recebimento-de-pequenos-volumes-urpv",
+        "origens": [
+          {
+            "fonte": "urpv",
+            "nome": "Unidades de Recebimento de Pequenos Volumes",
+            "url": "https://dados.pbh.gov.br/dataset/unidadade-de-recebimento-de-pequenos-volumes-urpv",
+            "recurso_url": null,
+            "arquivo": "20261103_unidade_recebimento_pequenos_volumes.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "a0c2683b13c63eb7e1ff37c8c24926804bf1502426391ae0402e96dbd83fa576",
+            "linha": 10,
+            "id_registro": "urpv:urpv:9"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -44.0464773,
+          -19.984047
+        ]
+      },
+      "properties": {
+        "id": "urpv:urpv:12",
+        "id_original": "12",
+        "tipo": "urpv",
+        "nome": "URPV TÚNEL DE IBIRITÉ",
+        "bairro": "Túnel de Ibirité",
+        "regional": "BARREIRO",
+        "endereco": "RUA MARLY PASSOS 10",
+        "referencia": "ENTRE RUA SABINO JOSÉ FERREIRA E RUA ABELARDO CHACRINHA BARBOSA",
+        "horario_original": "SEGUNDA À SEXTA, DE 7 ÀS 18 H, SÁBADOS, DOMINGOS E FERIADOS, DE 7:40 ÀS 16:00 H",
+        "material_original": "CARCAÇAS DE ELETRODOMÉSTICOS, ENTULHO, MADEIRA, MÓVEIS INSERVÍVEIS, PNEUS, RESÍDUOS DE PODA E TERRA, VOLUMOSOS",
+        "materiais_indexados": [
+          "entulho",
+          "poda",
+          "terra",
+          "pneu",
+          "madeira",
+          "moveis",
+          "volumosos",
+          "carcacas_eletrodomesticos"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/unidadade-de-recebimento-de-pequenos-volumes-urpv",
+        "origens": [
+          {
+            "fonte": "urpv",
+            "nome": "Unidades de Recebimento de Pequenos Volumes",
+            "url": "https://dados.pbh.gov.br/dataset/unidadade-de-recebimento-de-pequenos-volumes-urpv",
+            "recurso_url": null,
+            "arquivo": "20261103_unidade_recebimento_pequenos_volumes.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "a0c2683b13c63eb7e1ff37c8c24926804bf1502426391ae0402e96dbd83fa576",
+            "linha": 13,
+            "id_registro": "urpv:urpv:12"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.9765527,
+          -19.8026273
+        ]
+      },
+      "properties": {
+        "id": "urpv:urpv:18",
+        "id_original": "18",
+        "tipo": "urpv",
+        "nome": "URPV VILARINHO",
+        "bairro": "Letícia",
+        "regional": "VENDA NOVA",
+        "endereco": "AVE VILARINHO 4441",
+        "referencia": "ENTRE RUA ALBERTO AMBRÓSIO DOS SANTOS E RUA REPÚBLICA TCHECA",
+        "horario_original": "SEGUNDA À SEXTA, DE 7 ÀS 18 H, SÁBADOS, DOMINGOS E FERIADOS, DE 7:40 ÀS 16:00 H",
+        "material_original": "CARCAÇAS DE ELETRODOMÉSTICOS, ENTULHO, MADEIRA, MÓVEIS INSERVÍVEIS, PNEUS, RESÍDUOS DE PODA E TERRA, VOLUMOSOS",
+        "materiais_indexados": [
+          "entulho",
+          "poda",
+          "terra",
+          "pneu",
+          "madeira",
+          "moveis",
+          "volumosos",
+          "carcacas_eletrodomesticos"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/unidadade-de-recebimento-de-pequenos-volumes-urpv",
+        "origens": [
+          {
+            "fonte": "urpv",
+            "nome": "Unidades de Recebimento de Pequenos Volumes",
+            "url": "https://dados.pbh.gov.br/dataset/unidadade-de-recebimento-de-pequenos-volumes-urpv",
+            "recurso_url": null,
+            "arquivo": "20261103_unidade_recebimento_pequenos_volumes.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "a0c2683b13c63eb7e1ff37c8c24926804bf1502426391ae0402e96dbd83fa576",
+            "linha": 19,
+            "id_registro": "urpv:urpv:18"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.9192351,
+          -19.854029
+        ]
+      },
+      "properties": {
+        "id": "urpv:urpv:21",
+        "id_original": "21",
+        "tipo": "urpv",
+        "nome": "URPV ZUMBI",
+        "bairro": "São Gabriel",
+        "regional": "NORDESTE",
+        "endereco": "RUA ZUMBI 72",
+        "referencia": "ENTRE AVENIDA ESPLANADA E RUA GENERAL ASTOLFO FERREIRA MENDES",
+        "horario_original": "SEGUNDA À SEXTA, DE 7 ÀS 18 H, SÁBADOS, DOMINGOS E FERIADOS, DE 7:40 ÀS 16:00 H",
+        "material_original": "CARCAÇAS DE ELETRODOMÉSTICOS, ENTULHO, MADEIRA, MÓVEIS INSERVÍVEIS, PNEUS, RESÍDUOS DE PODA E TERRA, VOLUMOSOS",
+        "materiais_indexados": [
+          "entulho",
+          "poda",
+          "terra",
+          "pneu",
+          "madeira",
+          "moveis",
+          "volumosos",
+          "carcacas_eletrodomesticos"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/unidadade-de-recebimento-de-pequenos-volumes-urpv",
+        "origens": [
+          {
+            "fonte": "urpv",
+            "nome": "Unidades de Recebimento de Pequenos Volumes",
+            "url": "https://dados.pbh.gov.br/dataset/unidadade-de-recebimento-de-pequenos-volumes-urpv",
+            "recurso_url": null,
+            "arquivo": "20261103_unidade_recebimento_pequenos_volumes.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "a0c2683b13c63eb7e1ff37c8c24926804bf1502426391ae0402e96dbd83fa576",
+            "linha": 22,
+            "id_registro": "urpv:urpv:21"
+          }
+        ]
+      }
+    }
+  ]
+}

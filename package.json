@@ -1,0 +1,14 @@
+{
+  "name": "descarte-bh",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "python -m http.server 4173 --bind 127.0.0.1 --directory dist",
+    "data": "python pipeline.py",
+    "test": "node --test tests/search.test.mjs",
+    "test:browser": "playwright test"
+  },
+  "dependencies": { "leaflet": "1.9.4" },
+  "devDependencies": { "@playwright/test": "^1.56.0" }
+}

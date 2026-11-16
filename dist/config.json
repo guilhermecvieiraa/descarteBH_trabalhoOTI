@@ -1,0 +1,6 @@
+{
+  "geocoder": "https://photon.komoot.io/api/",
+  "tile_url": "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+  "tile_attribution": "© <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
+  "geocoder_bbox": [-44.2, -20.2, -43.7, -19.6]
+}
