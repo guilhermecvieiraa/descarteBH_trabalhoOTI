@@ -38,6 +38,52 @@ class PipelineTests(unittest.TestCase):
             self.assertEqual(len(report['registros_rejeitados']),2)
             self.assertIsNone(report['fontes'][0].get('baixado_em'))
 
+    def test_galpao_mapping_preserves_association_materials_and_provenance(self):
+        with tempfile.TemporaryDirectory() as directory:
+            base = Path(directory)
+            source_file = base / "20261103_galpao_reciclagem.csv"
+            headers = [
+                "ID_GALPAO_RECICLAGEM", "NOME_GALPAO_RECICLAGEM",
+                "NOME_ASSOCIACAO_COOPERATIVA", "TIPO_RESIDUOS",
+                "TIPO_LOGRADOURO", "NOME_LOGRADOURO", "NUM_IMOVEL",
+                "NOME_BAIRRO_POPULAR", "HORARIO_FUNCIONAMENTO", "GEOMETRIA",
+            ]
+            with source_file.open("w", encoding="utf-8", newline="") as stream:
+                writer = csv.writer(stream, delimiter=";")
+                writer.writerow(headers)
+                writer.writerow([
+                    "1", "ITUIUTABA", "ASMARE", "ISOPOR,METAL,PAPEL,PLÁSTICO,VIDRO",
+                    "RUA", "ITUIUTABA", "460", "PRADO", "SEGUNDA A SEXTA, DAS 9H ÀS 16H",
+                    "POINT (608697.00 7797140.28)",
+                ])
+            manifest = {"fontes": [{
+                "slug": "galpao", "tipo": "galpao", "arquivo": source_file.name,
+                "nome": "Galpão de Reciclagem", "url": "https://dados.pbh.gov.br/dataset/galpao-reciclagem",
+                "data_referencia": "2026-11-03",
+                "mapeamento": {
+                    "id": "ID_GALPAO_RECICLAGEM", "nome": "NOME_GALPAO_RECICLAGEM",
+                    "associacao": "NOME_ASSOCIACAO_COOPERATIVA", "material": "TIPO_RESIDUOS",
+                    "horario": "HORARIO_FUNCIONAMENTO", "tipo_logradouro": "TIPO_LOGRADOURO",
+                    "logradouro": "NOME_LOGRADOURO", "numero": "NUM_IMOVEL",
+                    "bairro": "NOME_BAIRRO_POPULAR", "geometria": "GEOMETRIA",
+                },
+            }]}
+            output = base / "dist" / "dados"
+            with patch.object(pipeline, "BASE", base):
+                report = pipeline.processar(base, output, manifest)
+
+            geo = json.loads((output / "pontos.geojson").read_text(encoding="utf-8"))
+            feature = geo["features"][0]
+            properties = feature["properties"]
+            metadata = json.loads((output / "metadados.json").read_text(encoding="utf-8"))
+            self.assertEqual(properties["tipo"], "galpao")
+            self.assertEqual(properties["associacao_cooperativa"], "ASMARE")
+            self.assertEqual(properties["materiais_indexados"], ["papel", "plastico", "metal", "vidro", "isopor"])
+            self.assertEqual(properties["origens"][0]["arquivo"], source_file.name)
+            self.assertEqual(report["quantidade_total"], 1)
+            self.assertEqual(report["rejeicoes"], {})
+            self.assertIn("associacao_cooperativa", metadata["campos"])
+
     def test_rejected_batch_does_not_replace_published_data(self):
         with tempfile.TemporaryDirectory() as directory:
             base=Path(directory);out=base/'saida';out.mkdir()

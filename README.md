@@ -23,7 +23,7 @@ Acesse http://127.0.0.1:4173 . Não abra index.html diretamente por duplo clique
 
 O navegador carrega GeoJSON, metadados e relatório por HTTP. Todos os filtros são aplicados à mesma coleção para sincronizar mapa, contagem e lista. Não há banco SQL necessário nesta entrega. Os dados representam uma versão de referência, não consulta em tempo real à PBH.
 
-Os arquivos de referência são `dados_brutos/20261103_ponto_verde.csv` e `dados_brutos/20261103_unidade_recebimento_pequenos_volumes.csv`. Esses CSVs, internos a esta pasta, são a entrada efetiva da plataforma. A origem declarada do arquivo fica separada do tipo identificado no registro. O importador aceita cabeçalhos URPV dentro de um conjunto declarado Ponto Verde e mantém essa origem; não reclassifica o conjunto inteiro. Duplicados exatos são integrados, preservando ambas as origens. O relatório de qualidade distingue coordenadas coincidentes de endereços compartilhados, preservando os registros para revisão.
+Os arquivos de referência são `dados_brutos/20261103_ponto_verde.csv`, `dados_brutos/20261103_unidade_recebimento_pequenos_volumes.csv` e `dados_brutos/20261103_galpao_reciclagem.csv`. Esses CSVs são as entradas efetivas da plataforma. A origem declarada do arquivo fica separada do tipo identificado no registro. O importador aceita cabeçalhos URPV dentro de um conjunto declarado Ponto Verde e mantém essa origem; não reclassifica o conjunto inteiro. Duplicados exatos são integrados, preservando ambas as origens. O relatório de qualidade distingue coordenadas coincidentes de endereços compartilhados, preservando os registros para revisão.
 
 ## Enviar alterações ao GitHub
 
@@ -71,7 +71,7 @@ Documentação oficial: https://docs.github.com/en/pages/getting-started-with-gi
 
 O pipeline preserva CSV bruto por SHA-256 em `dist/dados/brutos` e snapshots de metadados/relatório em `historico`. Não concatena automaticamente arquivos antigos: somente fontes explicitamente configuradas entram no mapa. Um lote sem pontos válidos não substitui a saída anterior. Campos de proveniência desconhecidos são nulos. Os hashes permitem verificar integridade, não autenticidade da publicação.
 
-Galpão Reciclagem exige CSV real e mapeamento validado em `fontes.json`; nenhum ponto fictício foi acrescentado.
+Galpão Reciclagem entra na plataforma por uma fonte e um mapeamento explícitos em `fontes.json`. A associação/cooperativa é preservada nos dados e nos detalhes do ponto quando o CSV a informa; campos ausentes, como e-mail, regional e referência nessa versão do arquivo, permanecem não informados.
 
 ## Localização e serviços
 

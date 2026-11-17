@@ -10,7 +10,7 @@
 | Classificação literal | materiais_literal; texto original preservado; sem inferência pelo equipamento |
 | Busca avançada | Material múltiplo (qualquer/todos), texto de localização sem acentos, regional e tipo em interseção |
 | Localização | Endereço geocodificado selecionado pelo usuário, GPS ou marcação no mapa; raio, ordenação por distância e sugestão dos cinco pontos mais próximos quando não há resultados dentro do raio || Georreferenciamento | pyproj EPSG:31983 → EPSG:4326; ordem GeoJSON longitude, latitude |
-| Metadados descritivos | Identificador, nome, endereço, referência, bairro, regional, horário e material original |
+| Metadados descritivos | Identificador, nome, associação/cooperativa quando disponível, endereço, referência, bairro, regional, horário e material original |
 | Metadados temáticos | Vocabulário de materiais, rótulos e critério de indexação |
 | Metadados administrativos | Fonte, arquivo, linha, hash, datas, codificação, separador e colunas |
 | Metadados técnicos | Formato, idioma, cobertura, CRS e ordem das coordenadas |
@@ -39,7 +39,7 @@ erDiagram
   PROCESSAMENTO ||--o{ REJEICAO : documenta
   FONTE { string slug PK string nome string url }
   VERSAO_ARQUIVO { string sha256 PK string arquivo date referencia string recurso_url datetime baixado_em }
-  PONTO { string id PK string tipo string nome string endereco string bairro string regional float longitude float latitude string horario_original string material_original }
+  PONTO { string id PK string tipo string nome string associacao_cooperativa string endereco string bairro string regional float longitude float latitude string horario_original string material_original }
   ORIGEM_REGISTRO { string ponto_id FK string sha256 FK string id_registro int linha }
   MATERIAL { string id PK string rotulo }
   PROCESSAMENTO { datetime processado_em PK int quantidade_total }
@@ -47,6 +47,8 @@ erDiagram
 ```
 
 O modelo é lógico. A implementação desta entrega usa documentos GeoJSON/JSON e não exige SQL.
+
+O manifesto configura Ponto Verde, URPV e Galpão de Reciclagem. O CSV de Galpão usa um mapeamento explícito entre os cabeçalhos `ID_GALPAO_RECICLAGEM`, `NOME_GALPAO_RECICLAGEM`, `TIPO_RESIDUOS`, `NOME_BAIRRO_POPULAR` e os demais campos presentes no arquivo. A associação/cooperativa é preservada em `associacao_cooperativa`. O dicionário consultado menciona um campo de e-mail, mas ele não existe no CSV recebido e não é preenchido.
 
 ## Busca complementar por proximidade
 

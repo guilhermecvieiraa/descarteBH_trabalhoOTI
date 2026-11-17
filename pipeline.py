@@ -147,6 +147,7 @@ def processar(entrada, saida, manifest):
                 props = {"id": f"{source['slug']}:{kind}:{identifier}", "id_original": identifier,
                          "tipo": kind, "nome": row[name_field], "bairro": get("bairro"),
                          "regional": get("regional"), "endereco": address, "referencia": get("referencia"),
+                         "associacao_cooperativa": get("associacao"),
                          "horario_original": get("horario"), "material_original": get("material"),
                          "materiais_indexados": materiais_literal(get("material")),
                          "origem_url": source["url"], "origens": [origin]}
@@ -209,7 +210,8 @@ def processar(entrada, saida, manifest):
                 "materiais": [{"id": k, "nome": v[0], "quantidade": sum(k in f["properties"]["materiais_indexados"] for f in features)} for k, v in MATERIALS.items()],
                 "criterio_indexacao": "Correspondência literal normalizada, sem inferir materiais pelo tipo de equipamento.",
                 "campos": {"id": "Identificador prefixado pela fonte de origem", "tipo": "Tipo identificado pelo esquema do registro, separado da origem",
-                           "nome": "Nome original da unidade", "endereco": "Logradouro, número e letra da fonte",
+                           "nome": "Nome original da unidade", "associacao_cooperativa": "Associação ou cooperativa responsável, quando informada",
+                           "endereco": "Logradouro, número e letra da fonte",
                            "bairro": "Bairro informado", "regional": "Regional informada", "referencia": "Referência de localização original",
                            "material_original": "Descrição preservada dos materiais", "materiais_indexados": "Vocabulário literal para recuperação",
                            "horario_original": "Horário preservado, sem inferência de aberto agora", "origens": "Fonte, URL, arquivo, linha, referência temporal e SHA-256"},

@@ -1,0 +1,252 @@
+{
+  "processado_em_utc": "2026-11-17T17:10:46+00:00",
+  "quantidade_total": 94,
+  "fontes": [
+    {
+      "slug": "ponto_verde",
+      "arquivo": "20261103_ponto_verde.csv",
+      "nome": "Ponto Verde",
+      "url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+      "recurso_url": null,
+      "data_referencia": "2026-11-03",
+      "baixado_em": null,
+      "licenca": "Consultar licença no recurso oficial",
+      "nota": "Download local disponibilizado pelo usuário; data de referência extraída do nome original. URL específica do recurso e data do download não informadas.",
+      "sha256": "8536a4d1b5fd9e9043ee1524063ad4556e557a6b17631b075c600150e1c1b9ae",
+      "cabecalhos": [
+        "ID_LEV",
+        "NOME_LEV",
+        "TIPO_MATERIAL_COLETADO",
+        "HORARIO_FUNCIONAMENTO",
+        "TIPO_LOGRADOURO",
+        "NOME_LOGRADOURO",
+        "NUMERO_IMOVEL",
+        "LETRA_IMOVEL",
+        "BAIRRO",
+        "REGIONAL",
+        "REF_LOCALIZACAO",
+        "GEOMETRIA"
+      ],
+      "codificacao": "utf-8-sig",
+      "separador": ";",
+      "linhas_lidas": 51,
+      "registros_aproveitados": 51,
+      "duplicados_integrados": 0,
+      "registros_rejeitados": 0,
+      "esquemas_encontrados": [
+        "ponto_verde"
+      ],
+      "arquivo_bruto_url": "brutos/8536a4d1b5fd9e9043ee1524063ad4556e557a6b17631b075c600150e1c1b9ae.csv"
+    },
+    {
+      "slug": "urpv",
+      "arquivo": "20261103_unidade_recebimento_pequenos_volumes.csv",
+      "nome": "Unidades de Recebimento de Pequenos Volumes",
+      "url": "https://dados.pbh.gov.br/dataset/unidadade-de-recebimento-de-pequenos-volumes-urpv",
+      "recurso_url": null,
+      "data_referencia": "2026-11-03",
+      "baixado_em": null,
+      "licenca": "Consultar licença no recurso oficial",
+      "nota": "Download local disponibilizado pelo usuário; data de referência extraída do nome original. URL específica do recurso e data do download não informadas.",
+      "sha256": "a0c2683b13c63eb7e1ff37c8c24926804bf1502426391ae0402e96dbd83fa576",
+      "cabecalhos": [
+        "ID_URPV",
+        "NOME_URPV",
+        "TIPO_MATERIAL_COLETADO",
+        "HORARIO_FUNCIONAMENTO",
+        "TIPO_LOGRADOURO",
+        "NOME_LOGRADOURO",
+        "NUMERO_IMOVEL",
+        "LETRA_IMOVEL",
+        "BAIRRO",
+        "REGIONAL",
+        "REF_LOCALIZACAO",
+        "GEOMETRIA"
+      ],
+      "codificacao": "utf-8-sig",
+      "separador": ";",
+      "linhas_lidas": 35,
+      "registros_aproveitados": 35,
+      "duplicados_integrados": 0,
+      "registros_rejeitados": 0,
+      "esquemas_encontrados": [
+        "urpv"
+      ],
+      "arquivo_bruto_url": "brutos/a0c2683b13c63eb7e1ff37c8c24926804bf1502426391ae0402e96dbd83fa576.csv"
+    },
+    {
+      "slug": "galpao",
+      "tipo": "galpao",
+      "arquivo": "20261103_galpao_reciclagem.csv",
+      "nome": "Galpão de Reciclagem",
+      "url": "https://dados.pbh.gov.br/dataset/galpao-reciclagem",
+      "recurso_url": null,
+      "data_referencia": "2026-11-03",
+      "baixado_em": null,
+      "licenca": "Consultar licença no recurso oficial",
+      "nota": "Arquivo CSV disponibilizado pelo usuário; data de referência extraída do nome original. URL específica do recurso e data do download não informadas.",
+      "mapeamento": {
+        "id": "ID_GALPAO_RECICLAGEM",
+        "nome": "NOME_GALPAO_RECICLAGEM",
+        "associacao": "NOME_ASSOCIACAO_COOPERATIVA",
+        "material": "TIPO_RESIDUOS",
+        "horario": "HORARIO_FUNCIONAMENTO",
+        "tipo_logradouro": "TIPO_LOGRADOURO",
+        "logradouro": "NOME_LOGRADOURO",
+        "numero": "NUM_IMOVEL",
+        "bairro": "NOME_BAIRRO_POPULAR",
+        "geometria": "GEOMETRIA"
+      },
+      "sha256": "92abb874c1ef3e2f6262d8165e98e97cb5badd7e13b5f5796ecb00f6b1dcf314",
+      "cabecalhos": [
+        "ID_GALPAO_RECICLAGEM",
+        "NOME_GALPAO_RECICLAGEM",
+        "NOME_ASSOCIACAO_COOPERATIVA",
+        "TIPO_RESIDUOS",
+        "TIPO_LOGRADOURO",
+        "NOME_LOGRADOURO",
+        "NUM_IMOVEL",
+        "NOME_BAIRRO_POPULAR",
+        "HORARIO_FUNCIONAMENTO",
+        "GEOMETRIA"
+      ],
+      "codificacao": "utf-8-sig",
+      "separador": ";",
+      "linhas_lidas": 8,
+      "registros_aproveitados": 8,
+      "duplicados_integrados": 0,
+      "registros_rejeitados": 0,
+      "esquemas_encontrados": [
+        "galpao"
+      ],
+      "arquivo_bruto_url": "brutos/92abb874c1ef3e2f6262d8165e98e97cb5badd7e13b5f5796ecb00f6b1dcf314.csv"
+    }
+  ],
+  "rejeicoes": {},
+  "registros_rejeitados": [],
+  "duplicados_integrados": [],
+  "possiveis_sobreposicoes": [],
+  "enderecos_compartilhados": [
+    [
+      "ponto_verde:ponto_verde:1001",
+      "urpv:urpv:25"
+    ],
+    [
+      "ponto_verde:ponto_verde:1002",
+      "urpv:urpv:1"
+    ],
+    [
+      "ponto_verde:ponto_verde:101",
+      "urpv:urpv:24"
+    ],
+    [
+      "ponto_verde:ponto_verde:1041",
+      "urpv:urpv:61"
+    ],
+    [
+      "ponto_verde:ponto_verde:1081",
+      "ponto_verde:ponto_verde:861"
+    ],
+    [
+      "ponto_verde:ponto_verde:1082",
+      "ponto_verde:ponto_verde:1101"
+    ],
+    [
+      "ponto_verde:ponto_verde:1082",
+      "ponto_verde:ponto_verde:1121"
+    ],
+    [
+      "ponto_verde:ponto_verde:1101",
+      "ponto_verde:ponto_verde:1121"
+    ],
+    [
+      "ponto_verde:ponto_verde:1181",
+      "ponto_verde:ponto_verde:1201"
+    ],
+    [
+      "ponto_verde:ponto_verde:1181",
+      "ponto_verde:ponto_verde:182"
+    ],
+    [
+      "ponto_verde:ponto_verde:1181",
+      "ponto_verde:ponto_verde:781"
+    ],
+    [
+      "ponto_verde:ponto_verde:1181",
+      "ponto_verde:ponto_verde:801"
+    ],
+    [
+      "ponto_verde:ponto_verde:1201",
+      "ponto_verde:ponto_verde:182"
+    ],
+    [
+      "ponto_verde:ponto_verde:1201",
+      "ponto_verde:ponto_verde:781"
+    ],
+    [
+      "ponto_verde:ponto_verde:1201",
+      "ponto_verde:ponto_verde:801"
+    ],
+    [
+      "ponto_verde:ponto_verde:1221",
+      "ponto_verde:ponto_verde:303"
+    ],
+    [
+      "ponto_verde:ponto_verde:1241",
+      "urpv:urpv:3"
+    ],
+    [
+      "ponto_verde:ponto_verde:1381",
+      "urpv:urpv:2"
+    ],
+    [
+      "ponto_verde:ponto_verde:1441",
+      "ponto_verde:ponto_verde:96"
+    ],
+    [
+      "ponto_verde:ponto_verde:182",
+      "ponto_verde:ponto_verde:781"
+    ],
+    [
+      "ponto_verde:ponto_verde:182",
+      "ponto_verde:ponto_verde:801"
+    ],
+    [
+      "ponto_verde:ponto_verde:223",
+      "urpv:urpv:18"
+    ],
+    [
+      "ponto_verde:ponto_verde:304",
+      "urpv:urpv:19"
+    ],
+    [
+      "ponto_verde:ponto_verde:521",
+      "urpv:urpv:15"
+    ],
+    [
+      "ponto_verde:ponto_verde:543",
+      "urpv:urpv:14"
+    ],
+    [
+      "ponto_verde:ponto_verde:544",
+      "urpv:urpv:32"
+    ],
+    [
+      "ponto_verde:ponto_verde:761",
+      "urpv:urpv:17"
+    ],
+    [
+      "ponto_verde:ponto_verde:781",
+      "ponto_verde:ponto_verde:801"
+    ],
+    [
+      "ponto_verde:ponto_verde:841",
+      "ponto_verde:ponto_verde:881"
+    ],
+    [
+      "ponto_verde:ponto_verde:98",
+      "urpv:urpv:26"
+    ]
+  ],
+  "alerta": "Materiais indexados somente se citados no CSV. Confirme condições atuais com a PBH."
+}

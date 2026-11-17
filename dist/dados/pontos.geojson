@@ -6,6 +6,314 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -43.9543605,
+          -19.8720913
+        ]
+      },
+      "properties": {
+        "id": "galpao:galpao:21",
+        "id_original": "21",
+        "tipo": "galpao",
+        "nome": "ANTÔNIO CARLOS",
+        "bairro": "SÃO FRANCISCO",
+        "regional": "",
+        "endereco": "AVE PRESIDENTE ANTONIO CARLOS 4070",
+        "referencia": "",
+        "associacao_cooperativa": "COOMARP",
+        "horario_original": "SEGUNDA A SEXTA, DAS 07H ÀS 17H",
+        "material_original": "ISOPOR,METAL,PAPEL,PLÁSTICO,VIDRO",
+        "materiais_indexados": [
+          "papel",
+          "plastico",
+          "metal",
+          "vidro",
+          "isopor"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/galpao-reciclagem",
+        "origens": [
+          {
+            "fonte": "galpao",
+            "nome": "Galpão de Reciclagem",
+            "url": "https://dados.pbh.gov.br/dataset/galpao-reciclagem",
+            "recurso_url": null,
+            "arquivo": "20261103_galpao_reciclagem.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "92abb874c1ef3e2f6262d8165e98e97cb5badd7e13b5f5796ecb00f6b1dcf314",
+            "linha": 7,
+            "id_registro": "galpao:galpao:21"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -44.0028869,
+          -19.9406831
+        ]
+      },
+      "properties": {
+        "id": "galpao:galpao:2",
+        "id_original": "2",
+        "tipo": "galpao",
+        "nome": "ASSOCIRECICLE",
+        "bairro": "JARDINÓPOLIS",
+        "regional": "",
+        "endereco": "AVE GOVERNADOR BENEDICTO VALLADARES 2868",
+        "referencia": "",
+        "associacao_cooperativa": "ASSOCIRECICLE",
+        "horario_original": "SEGUNDA A SEXTA, DAS 7H ÀS 16H",
+        "material_original": "ISOPOR,METAL,PAPEL,PLÁSTICO,VIDRO",
+        "materiais_indexados": [
+          "papel",
+          "plastico",
+          "metal",
+          "vidro",
+          "isopor"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/galpao-reciclagem",
+        "origens": [
+          {
+            "fonte": "galpao",
+            "nome": "Galpão de Reciclagem",
+            "url": "https://dados.pbh.gov.br/dataset/galpao-reciclagem",
+            "recurso_url": null,
+            "arquivo": "20261103_galpao_reciclagem.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "92abb874c1ef3e2f6262d8165e98e97cb5badd7e13b5f5796ecb00f6b1dcf314",
+            "linha": 6,
+            "id_registro": "galpao:galpao:2"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.9613652,
+          -19.8815457
+        ]
+      },
+      "properties": {
+        "id": "galpao:galpao:22",
+        "id_original": "22",
+        "tipo": "galpao",
+        "nome": "CALDAS DA RAINHA",
+        "bairro": "SÃO FRANCISCO",
+        "regional": "",
+        "endereco": "RUA CALDAS DA RAINHA 2083",
+        "referencia": "",
+        "associacao_cooperativa": "COOMARP",
+        "horario_original": "SEGUNDA A SEXTA, DAS 07H ÀS 17H",
+        "material_original": "ISOPOR,METAL,PAPEL,PLÁSTICO,VIDRO",
+        "materiais_indexados": [
+          "papel",
+          "plastico",
+          "metal",
+          "vidro",
+          "isopor"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/galpao-reciclagem",
+        "origens": [
+          {
+            "fonte": "galpao",
+            "nome": "Galpão de Reciclagem",
+            "url": "https://dados.pbh.gov.br/dataset/galpao-reciclagem",
+            "recurso_url": null,
+            "arquivo": "20261103_galpao_reciclagem.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "92abb874c1ef3e2f6262d8165e98e97cb5badd7e13b5f5796ecb00f6b1dcf314",
+            "linha": 4,
+            "id_registro": "galpao:galpao:22"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -44.043751,
+          -20.0025392
+        ]
+      },
+      "properties": {
+        "id": "galpao:galpao:23",
+        "id_original": "23",
+        "tipo": "galpao",
+        "nome": "COOPEMAR",
+        "bairro": "CDI JATOBÁ",
+        "regional": "",
+        "endereco": "AVE SOLFERINA RICCI PACE 1250",
+        "referencia": "",
+        "associacao_cooperativa": "COOPEMAR",
+        "horario_original": "SEG A SEX DE 8H ÀS 17H, SÁBADOS DE 8H ÀS 14H",
+        "material_original": "ISOPOR,METAL,PAPEL,PLÁSTICO,VIDRO",
+        "materiais_indexados": [
+          "papel",
+          "plastico",
+          "metal",
+          "vidro",
+          "isopor"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/galpao-reciclagem",
+        "origens": [
+          {
+            "fonte": "galpao",
+            "nome": "Galpão de Reciclagem",
+            "url": "https://dados.pbh.gov.br/dataset/galpao-reciclagem",
+            "recurso_url": null,
+            "arquivo": "20261103_galpao_reciclagem.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "92abb874c1ef3e2f6262d8165e98e97cb5badd7e13b5f5796ecb00f6b1dcf314",
+            "linha": 3,
+            "id_registro": "galpao:galpao:23"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -44.0375977,
+          -20.0048118
+        ]
+      },
+      "properties": {
+        "id": "galpao:galpao:41",
+        "id_original": "41",
+        "tipo": "galpao",
+        "nome": "COOPERSOLI",
+        "bairro": "VALE DO JATOBÁ",
+        "regional": "",
+        "endereco": "RUA JOSE MOREIRA DA SILVA 11",
+        "referencia": "",
+        "associacao_cooperativa": "COOPERSOLI",
+        "horario_original": "SEGUNDA A SEXTA, DE 8H ÀS 17H",
+        "material_original": "ISOPOR,METAL,PAPEL,PLÁSTICO,VIDRO",
+        "materiais_indexados": [
+          "papel",
+          "plastico",
+          "metal",
+          "vidro",
+          "isopor"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/galpao-reciclagem",
+        "origens": [
+          {
+            "fonte": "galpao",
+            "nome": "Galpão de Reciclagem",
+            "url": "https://dados.pbh.gov.br/dataset/galpao-reciclagem",
+            "recurso_url": null,
+            "arquivo": "20261103_galpao_reciclagem.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "92abb874c1ef3e2f6262d8165e98e97cb5badd7e13b5f5796ecb00f6b1dcf314",
+            "linha": 9,
+            "id_registro": "galpao:galpao:41"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.8873724,
+          -19.9128826
+        ]
+      },
+      "properties": {
+        "id": "galpao:galpao:42",
+        "id_original": "42",
+        "tipo": "galpao",
+        "nome": "GRANJA DE FREITAS",
+        "bairro": "GRANJA DE FREITAS",
+        "regional": "",
+        "endereco": "RUA MONTE REAL 59",
+        "referencia": "",
+        "associacao_cooperativa": "COOPESOL",
+        "horario_original": "SEG A SEX 08:00 ÀS 17H",
+        "material_original": "ISOPOR,METAL,PAPEL,PLÁSTICO,VIDRO",
+        "materiais_indexados": [
+          "papel",
+          "plastico",
+          "metal",
+          "vidro",
+          "isopor"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/galpao-reciclagem",
+        "origens": [
+          {
+            "fonte": "galpao",
+            "nome": "Galpão de Reciclagem",
+            "url": "https://dados.pbh.gov.br/dataset/galpao-reciclagem",
+            "recurso_url": null,
+            "arquivo": "20261103_galpao_reciclagem.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "92abb874c1ef3e2f6262d8165e98e97cb5badd7e13b5f5796ecb00f6b1dcf314",
+            "linha": 8,
+            "id_registro": "galpao:galpao:42"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.9614575,
+          -19.9190559
+        ]
+      },
+      "properties": {
+        "id": "galpao:galpao:1",
+        "id_original": "1",
+        "tipo": "galpao",
+        "nome": "ITUIUTABA",
+        "bairro": "PRADO",
+        "regional": "",
+        "endereco": "RUA ITUIUTABA 460",
+        "referencia": "",
+        "associacao_cooperativa": "ASMARE",
+        "horario_original": "SEGUNDA A SEXTA, DAS 9H ÀS 16H",
+        "material_original": "ISOPOR,METAL,PAPEL,PLÁSTICO,VIDRO",
+        "materiais_indexados": [
+          "papel",
+          "plastico",
+          "metal",
+          "vidro",
+          "isopor"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/galpao-reciclagem",
+        "origens": [
+          {
+            "fonte": "galpao",
+            "nome": "Galpão de Reciclagem",
+            "url": "https://dados.pbh.gov.br/dataset/galpao-reciclagem",
+            "recurso_url": null,
+            "arquivo": "20261103_galpao_reciclagem.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "92abb874c1ef3e2f6262d8165e98e97cb5badd7e13b5f5796ecb00f6b1dcf314",
+            "linha": 2,
+            "id_registro": "galpao:galpao:1"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -43.943941,
           -19.8489313
         ]
@@ -19,6 +327,7 @@
         "regional": "PAMPULHA",
         "endereco": "AVE WASHINGTON LUIZ 945",
         "referencia": "URPV AEROPORTO (ÁREA INTERNA)",
+        "associacao_cooperativa": "",
         "horario_original": "SEG À SEX: 07H -17H, SAB, DOM, FER: 07H40MIN - 16H",
         "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
         "materiais_indexados": [
@@ -61,6 +370,7 @@
         "regional": "NORTE",
         "endereco": "AVE LUCAS DE OLIVEIRA 505",
         "referencia": "URPV JARDIM GUANABARA (ÁREA INTERNA)",
+        "associacao_cooperativa": "",
         "horario_original": "SEG À SEX: 07H -17H, SAB, DOM, FER: 07H40MIN - 16H",
         "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
         "materiais_indexados": [
@@ -103,6 +413,7 @@
         "regional": "PAMPULHA",
         "endereco": "RUA REINATO FANTONI 23",
         "referencia": "URPV GARÇAS (ÁREA INTERNA)",
+        "associacao_cooperativa": "",
         "horario_original": "SEG À SEX: 07H -17H, SAB, DOM, FER: 07H40MIN - 16H",
         "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
         "materiais_indexados": [
@@ -145,6 +456,7 @@
         "regional": "VENDA NOVA",
         "endereco": "RUA LUIZ CANTAGALLI 52",
         "referencia": "URPV CÉU AZUL (ÁREA INTERNA)",
+        "associacao_cooperativa": "",
         "horario_original": "SEG À SEX: 07H -17H, SAB, DOM, FER: 07H40MIN - 16H",
         "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
         "materiais_indexados": [
@@ -187,6 +499,7 @@
         "regional": "LESTE",
         "endereco": "AVE DOS ANDRADAS 8255",
         "referencia": "URPV COPASA (ÁREA INTERNA)",
+        "associacao_cooperativa": "",
         "horario_original": "SEG À SEX: 07H -17H, SAB, DOM, FER: 07H40MIN - 16H",
         "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
         "materiais_indexados": [
@@ -229,6 +542,7 @@
         "regional": "NOROESTE",
         "endereco": "ROD ANEL RODOVIARIO CELSO MELLO AZEVEDO 13100",
         "referencia": "ÁREA INTERNA DO PARQUE MARIA DO SOCORRO MOREIRA, AO LADO DO CAMPO DO AEROPORTO",
+        "associacao_cooperativa": "",
         "horario_original": "TERÇA A DOMINGO, DAS 7H ÀS 18H",
         "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
         "materiais_indexados": [
@@ -271,6 +585,7 @@
         "regional": "PAMPULHA",
         "endereco": "RUA PROFESSOR EDMUNDO LINS",
         "referencia": "CAMPUS UFMG (NO ESTACIONAMENTO DA FAFICH, PROXIMO A ENTRADA DA PORTARIA 4)",
+        "associacao_cooperativa": "",
         "horario_original": "SEG A SEX 06H45 ÀS 22H, SAB DE 06H45 ÀS 13H",
         "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
         "materiais_indexados": [
@@ -313,6 +628,7 @@
         "regional": "PAMPULHA",
         "endereco": "RUA REITOR PIRES DE ALBUQUERQUE",
         "referencia": "CAMPUS UFMG (ENTRE O CAD III E A ENGENHARIA, ENTRADA PELA PORTARIA 4)",
+        "associacao_cooperativa": "",
         "horario_original": "SEG A SEX 06H45 ÀS 22H, SAB DE 06H45 ÀS 13H",
         "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
         "materiais_indexados": [
@@ -355,6 +671,7 @@
         "regional": "PAMPULHA",
         "endereco": "RUA REITOR PIRES DE ALBUQUERQUE",
         "referencia": "CAMPUS UFMG (NO ESTACIONAMENTO DA FACE,  ENTRADA PELA PORTARIA 4)",
+        "associacao_cooperativa": "",
         "horario_original": "SEG A SEX 06H45 ÀS 22H, SAB DE 06H45 ÀS 13H",
         "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
         "materiais_indexados": [
@@ -397,6 +714,7 @@
         "regional": "PAMPULHA",
         "endereco": "RUA REITOR PIRES DE ALBUQUERQUE",
         "referencia": "CAMPUS UFMG (NO ESTACIONAMENTO DO IGC, ENTRADA PELA PORTARIA 4)",
+        "associacao_cooperativa": "",
         "horario_original": "SEG A SEX 06H45 ÀS 22H, SAB DE 06H45 ÀS 13H",
         "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
         "materiais_indexados": [
@@ -439,6 +757,7 @@
         "regional": "PAMPULHA",
         "endereco": "AVE PRESIDENTE CARLOS LUZ",
         "referencia": "CAMPUS UFMG (NOS FUNDOS DO HOSPITAL VETERINÁRIO DA UFMG, ENTRADA PELA PORTARIA 6 - VETERINÁRIA)",
+        "associacao_cooperativa": "",
         "horario_original": "SEG A SEX 06H45 ÀS 22H, SAB DE 06H45 ÀS 13H",
         "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
         "materiais_indexados": [
@@ -481,6 +800,7 @@
         "regional": "PAMPULHA",
         "endereco": "AVE OTACILIO NEGRAO DE LIMA 8000",
         "referencia": "RUA INTERNA DO ZOOLÓGICO, EM FRENTE AOS BANHEIROS",
+        "associacao_cooperativa": "",
         "horario_original": "TER À DOM: 08:00 ÀS 16:00",
         "material_original": "METAL, PAPEL, PLÁSTICO",
         "materiais_indexados": [
@@ -522,6 +842,7 @@
         "regional": "PAMPULHA",
         "endereco": "AVE OTACILIO NEGRAO DE LIMA 8000",
         "referencia": "RUA INTERNA DO ZOOLÓGICO, EM FRENTE AOS CERVOS",
+        "associacao_cooperativa": "",
         "horario_original": "TER À DOM: 08:00 ÀS 16:00",
         "material_original": "METAL, PAPEL, PLÁSTICO",
         "materiais_indexados": [
@@ -563,6 +884,7 @@
         "regional": "PAMPULHA",
         "endereco": "AVE ANTONIO FRANCISCO LISBOA 2600",
         "referencia": "RUA INTERNA DO ZOOLÓGICO, EM FRENTE AO SETOR EXTRA-ALMOXARIFADO",
+        "associacao_cooperativa": "",
         "horario_original": "TER À DOM: 08:00 ÀS 16:00",
         "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
         "materiais_indexados": [
@@ -605,6 +927,7 @@
         "regional": "OESTE",
         "endereco": "AVE TERESA CRISTINA 2195",
         "referencia": "ÁREA INTERNA DA URPV SILVA LOBO, DEBAIXO DO VIADUTO DA AV. SILVA LOBO",
+        "associacao_cooperativa": "",
         "horario_original": "SEGUNDA À SEXTA, DE 7 ÀS 18 H, SÁBADOS, DOMINGOS E",
         "material_original": "ISOPOR, METAL, PAPEL, PLÁSTICO, VIDRO",
         "materiais_indexados": [
@@ -648,6 +971,7 @@
         "regional": "LESTE",
         "endereco": "RUA SANTO AGOSTINHO 1717",
         "referencia": "ÁREA INTERNA DO SENAI HORTO",
+        "associacao_cooperativa": "",
         "horario_original": "SEG A SEX DAS 07:00 ÀS 21:00",
         "material_original": "ISOPOR, METAL, PAPEL, PLÁSTICO, VIDRO",
         "materiais_indexados": [
@@ -691,6 +1015,7 @@
         "regional": "OESTE",
         "endereco": "RUA GIL VIEIRA DE CARVALHO 160",
         "referencia": "RUA DOM OSCAR ROMERO (ACESSO PELA PORTARIA 3 - DENTRO DO CONJUNTO HENRICÃO)",
+        "associacao_cooperativa": "",
         "horario_original": "24 HORAS-DIA (APENAS MORADORES)",
         "material_original": "ISOPOR, METAL, PAPEL, PLÁSTICO, VIDRO",
         "materiais_indexados": [
@@ -734,6 +1059,7 @@
         "regional": "NORTE",
         "endereco": "RUA PASTOR MURYLLO CASSETE 195",
         "referencia": "ÁREA INTERNA DA GELU NORTE",
+        "associacao_cooperativa": "",
         "horario_original": "SEG À SEX: 07:00 -17:00, SAB: 07:00 - 12:00",
         "material_original": "ISOPOR, METAL, PAPEL, PLÁSTICO, VIDRO",
         "materiais_indexados": [
@@ -777,6 +1103,7 @@
         "regional": "NORDESTE",
         "endereco": "RUA PRINCESA LEOPOLDINA 485",
         "referencia": "GELU NORDESTE (ÁREA INTERNA)",
+        "associacao_cooperativa": "",
         "horario_original": "SEG À SEX: 07:00 ÀS 17:00, SAB: 08:00 ÀS 12:00",
         "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
         "materiais_indexados": [
@@ -819,6 +1146,7 @@
         "regional": "LESTE",
         "endereco": "AVE DOS ANDRADAS 5965",
         "referencia": "ÁREA INTERNA DA URPV ANDRADAS",
+        "associacao_cooperativa": "",
         "horario_original": "SEG À SEX, DE 7 ÀS 18H, SÁB, DOM E FER 7:40 ÀS 16H",
         "material_original": "ISOPOR, METAL, PAPEL, PLÁSTICO, VIDRO",
         "materiais_indexados": [
@@ -862,6 +1190,7 @@
         "regional": "NORDESTE",
         "endereco": "RUA QUELUZITA 140",
         "referencia": "CARE-NE (ÁREA INTERNA)",
+        "associacao_cooperativa": "",
         "horario_original": "SEG À SEX: 08H ÀS 18H, SÁB E DOM: 08H ÀS 17H",
         "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
         "materiais_indexados": [
@@ -904,6 +1233,7 @@
         "regional": "PAMPULHA",
         "endereco": "AVE PRESIDENTE ANTONIO CARLOS 6627",
         "referencia": "NO ESTACIONAMENTO DA BIBLIOTECA CENTRAL DA UFMG (AO LADO DO ICB)",
+        "associacao_cooperativa": "",
         "horario_original": "SEG A SEX 06H45 ÀS 22H, SAB DE 06H45 ÀS 13H",
         "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
         "materiais_indexados": [
@@ -946,6 +1276,7 @@
         "regional": "PAMPULHA",
         "endereco": "AVE OTACILIO NEGRAO DE LIMA 8000",
         "referencia": "RUA INTERNA DO ZOOLÓGICO, NO CANTEIRO CENTRAL ENTRE O BIOMAS E A ADMINISTRAÇÃO DO JARDIM BOTÂNICO",
+        "associacao_cooperativa": "",
         "horario_original": "TER À DOM: 08:00 ÀS 16:00",
         "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
         "materiais_indexados": [
@@ -988,6 +1319,7 @@
         "regional": "CENTRO-SUL",
         "endereco": "AVE AFONSO PENA 1377",
         "referencia": "PARQUE MUNICIPAL AMÉRICO RENNÈ GIANETTI (ÁREA INTERNA)",
+        "associacao_cooperativa": "",
         "horario_original": "TER À SAB: 07H ÀS 21H, DOM: 07H ÀS 17H",
         "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
         "materiais_indexados": [
@@ -1030,6 +1362,7 @@
         "regional": "VENDA NOVA",
         "endereco": "AVE VILARINHO 4441",
         "referencia": "URPV VILARINHO (ÁREA INTERNA)",
+        "associacao_cooperativa": "",
         "horario_original": "SEG À SEX, DE 7 ÀS 18 H, SÁB, DOM DE 7:40 ÀS 16H",
         "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
         "materiais_indexados": [
@@ -1072,6 +1405,7 @@
         "regional": "PAMPULHA",
         "endereco": "AVE ANTONIO FRANCISCO LISBOA 2600",
         "referencia": "RUA INTERNA DO ZOOLÓGICO, PRÓXIMO À SEDE ADMINISTRATIVA",
+        "associacao_cooperativa": "",
         "horario_original": "TER À DOM: 08:00 ÀS 16:00",
         "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
         "materiais_indexados": [
@@ -1114,6 +1448,7 @@
         "regional": "PAMPULHA",
         "endereco": "AVE PRESIDENTE TANCREDO NEVES 4200",
         "referencia": "URPV PAQUETÁ (ÁREA INTERNA)",
+        "associacao_cooperativa": "",
         "horario_original": "SEG À SEX, DE 7 ÀS 18H, SÁB, DOM E FER 7:40 ÀS 16H",
         "material_original": "METAL, PAPEL, PLÁSTICO",
         "materiais_indexados": [
@@ -1155,6 +1490,7 @@
         "regional": "OESTE",
         "endereco": "RUA CONSELHEIRO PIRES DA MOTA 151",
         "referencia": "GELU-OESTE (ÁREA INTERNA)",
+        "associacao_cooperativa": "",
         "horario_original": "SEG À SEX: 07:00 ÀS 17:00, SAB: 08:00 ÀS 12:00",
         "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
         "materiais_indexados": [
@@ -1197,6 +1533,7 @@
         "regional": "NOROESTE",
         "endereco": "AVE AMINTAS JACQUES DE MORAES 2500",
         "referencia": "URPV PINDORAMA (ÁREA INTERNA)",
+        "associacao_cooperativa": "",
         "horario_original": "SEG À SEX: 07H -17H, SAB, DOM, FER: 07H40MIN - 16H",
         "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
         "materiais_indexados": [
@@ -1239,6 +1576,7 @@
         "regional": "NOROESTE",
         "endereco": "AVE VEREADOR CICERO ILDEFONSO 10",
         "referencia": "URPV DELTA (ÁREA INTERNA)",
+        "associacao_cooperativa": "",
         "horario_original": "SEG À SEX: 07H -17H, SAB, DOM, FER: 07H40MIN - 16H",
         "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
         "materiais_indexados": [
@@ -1281,6 +1619,7 @@
         "regional": "NOROESTE",
         "endereco": "RUA FRANCISCO DE PAULA FERREIRA 101",
         "referencia": "URPV DA PAZ (ÁREA INTERNA)",
+        "associacao_cooperativa": "",
         "horario_original": "SEG À SEX: 07H -17H, SAB, DOM, FER: 07H40MIN - 16H",
         "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
         "materiais_indexados": [
@@ -1323,6 +1662,7 @@
         "regional": "CENTRO-SUL",
         "endereco": "AVE DOS ANDRADAS 800",
         "referencia": "PARQUE MUNICIPAL AMÉRICO RENNÈ GIANETTI (ÁREA INTERNA)",
+        "associacao_cooperativa": "",
         "horario_original": "TER À SAB: 07H ÀS 21H, DOM: 07H ÀS 17H",
         "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
         "materiais_indexados": [
@@ -1365,6 +1705,7 @@
         "regional": "VENDA NOVA",
         "endereco": "RUA AUGUSTO DOS ANJOS 1983",
         "referencia": "AREA INTERNA DA URPV RIO BRANCO",
+        "associacao_cooperativa": "",
         "horario_original": "SEG À SEX: 07H -17H, SAB, DOM, FER: 07H40MIN - 16H",
         "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
         "materiais_indexados": [
@@ -1407,6 +1748,7 @@
         "regional": "PAMPULHA",
         "endereco": "AVE OTACILIO NEGRAO DE LIMA 8000",
         "referencia": "NA ADMINISTRAÇÃO DO JARDIM BOTÂNICO, PRÓXIMO AO VIVEIRO DE MUDAS",
+        "associacao_cooperativa": "",
         "horario_original": "TER À DOM: 08:00 ÀS 16:00",
         "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
         "materiais_indexados": [
@@ -1449,6 +1791,7 @@
         "regional": "OESTE",
         "endereco": "RUA VEREADOR JULIO FERREIRA 91",
         "referencia": "RUA DOM OSCAR ROMERO (ACESSO PELA PORTARIA 1 - DENTRO DO CONJUNTO HENRICÃO)",
+        "associacao_cooperativa": "",
         "horario_original": "24 HORAS-DIA (APENAS MORADORES)",
         "material_original": "ISOPOR, METAL, PAPEL, PLÁSTICO, VIDRO",
         "materiais_indexados": [
@@ -1492,6 +1835,7 @@
         "regional": "PAMPULHA",
         "endereco": "AVE OTACILIO NEGRAO DE LIMA 8000",
         "referencia": "EM FRENTE AO AQUÁRIO DO RIO SÃO FRANCISCO",
+        "associacao_cooperativa": "",
         "horario_original": "TER À DOM: 08:00 ÀS 16:00",
         "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
         "materiais_indexados": [
@@ -1534,6 +1878,7 @@
         "regional": "PAMPULHA",
         "endereco": "AVE PRESIDENTE ANTONIO CARLOS",
         "referencia": "CAMPUS UFMG (ÁREA INTERNA, EM FRENTE À IMPRENSA UNIVERSITÁRIA)",
+        "associacao_cooperativa": "",
         "horario_original": "SEG A SEX 06H45 ÀS 22H, SAB DE 06H45 ÀS 13H",
         "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
         "materiais_indexados": [
@@ -1576,6 +1921,7 @@
         "regional": "PAMPULHA",
         "endereco": "RUA QUATORZE",
         "referencia": "CAMPUS UFMG (FACULDADE DE ODONTOLOGIA, PORTARIA AVE. PRES. CARLOS LUZ)",
+        "associacao_cooperativa": "",
         "horario_original": "SEG A SEX 06H45 ÀS 22H, SAB DE 06H45 ÀS 13H",
         "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
         "materiais_indexados": [
@@ -1618,6 +1964,7 @@
         "regional": "PAMPULHA",
         "endereco": "RUA PROFESSOR EDMUNDO LINS",
         "referencia": "CAMPUS UFMG (RESTAURANTE SETORIAL I, PORTARIA AVE. MANOEL LOPES DE SIQUEIRA)",
+        "associacao_cooperativa": "",
         "horario_original": "SEG A SEX 06H45 ÀS 22H, SAB DE 06H45 ÀS 13H",
         "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
         "materiais_indexados": [
@@ -1660,6 +2007,7 @@
         "regional": "PAMPULHA",
         "endereco": "RUA QUATORZE",
         "referencia": "CAMPUS UFMG (FACULDADE DE EDUCAÇÃO FÍSICA, PORTARIA AVE. PRES. CARLOS LUZ)",
+        "associacao_cooperativa": "",
         "horario_original": "SEG A SEX 06H45 ÀS 22H, SAB DE 06H45 ÀS 13H",
         "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
         "materiais_indexados": [
@@ -1702,6 +2050,7 @@
         "regional": "PAMPULHA",
         "endereco": "RUA SAO JOSE DO DIVINO 100",
         "referencia": "GELU-P (ÁREA INTERNA)",
+        "associacao_cooperativa": "",
         "horario_original": "SEG À SEX: 07:00 ÀS 17:00, SAB: 08:00 ÀS 12:00",
         "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
         "materiais_indexados": [
@@ -1744,6 +2093,7 @@
         "regional": "PAMPULHA",
         "endereco": "RUA DOUTOR FERNANDO DE MELO VIANA",
         "referencia": "CAMPUS UFMG - FACULDADE DE EDUCAÇÃO (FAE)-CENTRO PEDAGÓGICO, ENTRADA PELA AV. PRES. ANTÔNIO CARLOS",
+        "associacao_cooperativa": "",
         "horario_original": "SEG A SEX 06H45 ÀS 22H, SAB DE 06H45 ÀS 13H",
         "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
         "materiais_indexados": [
@@ -1786,6 +2136,7 @@
         "regional": "PAMPULHA",
         "endereco": "AVE OTACILIO NEGRAO DE LIMA 7111",
         "referencia": "ÁREA INTERNA DO PARQUE ECOLÓGICO DA PAMPULHA",
+        "associacao_cooperativa": "",
         "horario_original": "TER À DOM: 08:00 ÀS 16:00",
         "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
         "materiais_indexados": [
@@ -1828,6 +2179,7 @@
         "regional": "PAMPULHA",
         "endereco": "RUA ONZE",
         "referencia": "UFMG - UNID. ADM. II - RUA PROFESSOR AMÍLCAR VIANA MARTINS (ENTRADA PELA AV. ANTÔNIO ABRAHÃO CARAM",
+        "associacao_cooperativa": "",
         "horario_original": "SEG A SEX 06H45 ÀS 22H, SAB DE 06H45 ÀS 13H",
         "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
         "materiais_indexados": [
@@ -1870,6 +2222,7 @@
         "regional": "PAMPULHA",
         "endereco": "RUA POLYCARPO DE MAGALHAES VIOTTI 450",
         "referencia": "ESTAÇÃO DE RECICLAGEM DE ENTULHO PAMPULHA (ÁREA INTERNA)",
+        "associacao_cooperativa": "",
         "horario_original": "DE SEGUNDA À SEXTA, DE 08H ÀS 11H E DE 12H ÀS 16H",
         "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
         "materiais_indexados": [
@@ -1912,6 +2265,7 @@
         "regional": "PAMPULHA",
         "endereco": "RUA C",
         "referencia": "CAMPUS UFMG (COLTEC, RUA C., ENTRADA PELA AVENIDA PERIMETRAL SUL, PORTARIA 3)",
+        "associacao_cooperativa": "",
         "horario_original": "SEG A SEX 06H45 ÀS 22H, SAB DE 06H45 ÀS 13H",
         "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
         "materiais_indexados": [
@@ -1954,6 +2308,7 @@
         "regional": "PAMPULHA",
         "endereco": "AVE PRESIDENTE ANTONIO CARLOS 6627",
         "referencia": "FACULDADE DE FARMÁCIA (ESTACIONAMENTO)",
+        "associacao_cooperativa": "",
         "horario_original": "SEG A SEX 06H45 ÀS 22H, SAB DE 06H45 ÀS 13H",
         "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
         "materiais_indexados": [
@@ -1996,6 +2351,7 @@
         "regional": "PAMPULHA",
         "endereco": "RUA PROFESSOR MARIO WERNECK",
         "referencia": "CAMPUS UFMG (CDTN, RUA PROFESSOR MARIO WERNECK, ENTRADA PELA AVENIDA PERIMETRAL SUL, PORTARIA 3)",
+        "associacao_cooperativa": "",
         "horario_original": "SEG A SEX 06H45 ÀS 22H, SAB DE 06H45 ÀS 13H",
         "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
         "materiais_indexados": [
@@ -2038,6 +2394,7 @@
         "regional": "PAMPULHA",
         "endereco": "RUA PROFESSOR JOSE VIEIRA DE MENDONCA 770",
         "referencia": "ÁREA INTERNA DO BHTEC - PARQUE TECNOLÓGICO DE BELO HORIZONTE",
+        "associacao_cooperativa": "",
         "horario_original": "SEG A SEX DE 08 AS 18H (APENAS FUNCIONÁRIOS)",
         "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
         "materiais_indexados": [
@@ -2080,6 +2437,7 @@
         "regional": "PAMPULHA",
         "endereco": "RUA RITA ALVES CASTANHEIRA 50",
         "referencia": "ÁREA INTERNA DA URPV DONA CLARA",
+        "associacao_cooperativa": "",
         "horario_original": "SEG À SEX: 07H -17H, SAB, DOM, FER: 07H40MIN - 16H",
         "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
         "materiais_indexados": [
@@ -2122,6 +2480,7 @@
         "regional": "PAMPULHA",
         "endereco": "AVE REITOR MENDES PIMENTEL",
         "referencia": "CAMPUS UFMG (ÁREA INTERNA, EM FRENTE À EMEI ALAÍDE DE LISBOA)",
+        "associacao_cooperativa": "",
         "horario_original": "SEG A SEX 06H45 ÀS 22H, SAB DE 06H45 ÀS 13H",
         "material_original": "METAL, PAPEL, PLÁSTICO, VIDRO",
         "materiais_indexados": [
@@ -2164,6 +2523,7 @@
         "regional": "NORTE",
         "endereco": "AVE WASHINGTON LUIZ 945",
         "referencia": "ENTRE RUA EDUARDO QUENTEL E RUA EDNA QUENTEL",
+        "associacao_cooperativa": "",
         "horario_original": "SEGUNDA À SEXTA, DE 7 ÀS 18 H, SÁBADOS, DOMINGOS E FERIADOS, DE 7:40 ÀS 16:00 H",
         "material_original": "CARCAÇAS DE ELETRODOMÉSTICOS, ENTULHO, MADEIRA, MÓVEIS INSERVÍVEIS, PNEUS, RESÍDUOS DE PODA E TERRA, VOLUMOSOS",
         "materiais_indexados": [
@@ -2210,6 +2570,7 @@
         "regional": "LESTE",
         "endereco": "AVE DOS ANDRADAS 5965",
         "referencia": "ENTRE RUA DA BALANÇA E AVENIDA PASTOR ANSELMO SILVESTRE",
+        "associacao_cooperativa": "",
         "horario_original": "SEGUNDA À SEXTA, DE 7 ÀS 18 H, SÁBADOS, DOMINGOS E FERIADOS, DE 7:40 ÀS 16:00 H",
         "material_original": "CARCAÇAS DE ELETRODOMÉSTICOS, ENTULHO, MADEIRA, MÓVEIS INSERVÍVEIS, PNEUS, RESÍDUOS DE PODA E TERRA, VOLUMOSOS",
         "materiais_indexados": [
@@ -2256,6 +2617,7 @@
         "regional": "BARREIRO",
         "endereco": "AVE DO CANAL 38",
         "referencia": "ENTRE RUA APOLO OITO E RUA LOURIVAL JOSE DO NASCIMENTO",
+        "associacao_cooperativa": "",
         "horario_original": "SEGUNDA À SEXTA, DE 7 ÀS 18 H, SÁBADOS, DOMINGOS E FERIADOS, DE 7:40 ÀS 16:00 H",
         "material_original": "CARCAÇAS DE ELETRODOMÉSTICOS, ENTULHO, MADEIRA, MÓVEIS INSERVÍVEIS, PNEUS, RESÍDUOS DE PODA E TERRA, VOLUMOSOS",
         "materiais_indexados": [
@@ -2302,6 +2664,7 @@
         "regional": "NORTE",
         "endereco": "RUA LOTUS 2",
         "referencia": "ENTRE RUA DOS BACURAUS E RUA ADOLFO BEZERRA DE MENEZES",
+        "associacao_cooperativa": "",
         "horario_original": "SEGUNDA À SEXTA, DE 7 ÀS 18 H, SÁBADOS, DOMINGOS E FERIADOS, DE 7:40 ÀS 16:00 H",
         "material_original": "CARCAÇAS DE ELETRODOMÉSTICOS, ENTULHO, MADEIRA, MÓVEIS INSERVÍVEIS, PNEUS, RESÍDUOS DE PODA E TERRA, VOLUMOSOS",
         "materiais_indexados": [
@@ -2348,6 +2711,7 @@
         "regional": "OESTE",
         "endereco": "RUA CACUI 121",
         "referencia": "RUA DAS FLORES E RUA JOSÉ MACHADO",
+        "associacao_cooperativa": "",
         "horario_original": "SEGUNDA À SEXTA, DE 7 ÀS 18 H, SÁBADOS, DOMINGOS E FERIADOS, DE 7:40 ÀS 16:00 H",
         "material_original": "CARCAÇAS DE ELETRODOMÉSTICOS, ENTULHO, MADEIRA, MÓVEIS INSERVÍVEIS, PNEUS, RESÍDUOS DE PODA E TERRA, VOLUMOSOS",
         "materiais_indexados": [
@@ -2394,6 +2758,7 @@
         "regional": "NORTE",
         "endereco": "RUA CHEFLERA 1",
         "referencia": "NO FINAL DA RUA, APÓS ESQUINA COM RUA ÁGUAS DE MARÇO",
+        "associacao_cooperativa": "",
         "horario_original": "SEGUNDA À SEXTA, DE 7 ÀS 18 H, SÁBADOS, DOMINGOS E FERIADOS, DE 7:40 ÀS 16:00 H",
         "material_original": "CARCAÇAS DE ELETRODOMÉSTICOS, ENTULHO, MADEIRA, MÓVEIS INSERVÍVEIS, PNEUS, RESÍDUOS DE PODA E TERRA, VOLUMOSOS",
         "materiais_indexados": [
@@ -2440,6 +2805,7 @@
         "regional": "NORDESTE",
         "endereco": "RUA MARCO AURELIO PRATES 186",
         "referencia": "ENTRE RUA VÉU DA NOIVA E RUA MÉRICA GARZON FERREIRA",
+        "associacao_cooperativa": "",
         "horario_original": "SEGUNDA À SEXTA, DE 7 ÀS 18 H, SÁBADOS, DOMINGOS E FERIADOS, DE 7:40 ÀS 16:00 H",
         "material_original": "CARCAÇAS DE ELETRODOMÉSTICOS, ENTULHO, MADEIRA, MÓVEIS INSERVÍVEIS, PNEUS, RESÍDUOS DE PODA E TERRA, VOLUMOSOS",
         "materiais_indexados": [
@@ -2486,6 +2852,7 @@
         "regional": "VENDA NOVA",
         "endereco": "RUA RADIALISTA JOAO ALVES 52",
         "referencia": "ENTRE RUA MARIA GERTRUDES SANTOS E RUA SARAH CARVALHO MACHADO",
+        "associacao_cooperativa": "",
         "horario_original": "SEGUNDA À SEXTA, DE 7 ÀS 18 H, SÁBADOS, DOMINGOS E FERIADOS, DE 7:40 ÀS 16:00 H",
         "material_original": "CARCAÇAS DE ELETRODOMÉSTICOS, ENTULHO, MADEIRA, MÓVEIS INSERVÍVEIS, PNEUS, RESÍDUOS DE PODA E TERRA, VOLUMOSOS",
         "materiais_indexados": [
@@ -2532,6 +2899,7 @@
         "regional": "LESTE",
         "endereco": "AVE DOS ANDRADAS 8255",
         "referencia": "ENTRE RUA SEISCENTOS E VINTE E NOVE E VIADUTO E ALDACYR DIAS LOPES",
+        "associacao_cooperativa": "",
         "horario_original": "SEGUNDA À SEXTA, DE 7 ÀS 18 H, SÁBADOS, DOMINGOS E FERIADOS, DE 7:40 ÀS 16:00 H",
         "material_original": "CARCAÇAS DE ELETRODOMÉSTICOS, ENTULHO, MADEIRA, MÓVEIS INSERVÍVEIS, PNEUS, RESÍDUOS DE PODA E TERRA, VOLUMOSOS",
         "materiais_indexados": [
@@ -2578,6 +2946,7 @@
         "regional": "NOROESTE",
         "endereco": "RUA FRANCISCO DE PAULA FERREIRA 101",
         "referencia": "AVENIDA AMÉRICO VESPÚCIO",
+        "associacao_cooperativa": "",
         "horario_original": "SEGUNDA À SEXTA, DE 7 ÀS 18 H, SÁBADOS, DOMINGOS E FERIADOS, DE 7:40 ÀS 16:00 H",
         "material_original": "CARCAÇAS DE ELETRODOMÉSTICOS, ENTULHO, MADEIRA, MÓVEIS INSERVÍVEIS, PNEUS, RESÍDUOS DE PODA E TERRA, VOLUMOSOS",
         "materiais_indexados": [
@@ -2624,6 +2993,7 @@
         "regional": "NOROESTE",
         "endereco": "AVE VEREADOR CICERO ILDEFONSO 10",
         "referencia": "ENTRE VIADUTO PRESIDENTE JOÃO GOULART E AVENIDA PRESIDENTE JUSCELINO KUBITSCHEK",
+        "associacao_cooperativa": "",
         "horario_original": "SEGUNDA À SEXTA, DE 7 ÀS 18 H, SÁBADOS, DOMINGOS E FERIADOS, DE 7:40 ÀS 16:00 H",
         "material_original": "CARCAÇAS DE ELETRODOMÉSTICOS, ENTULHO, MADEIRA, MÓVEIS INSERVÍVEIS, PNEUS, RESÍDUOS DE PODA E TERRA, VOLUMOSOS",
         "materiais_indexados": [
@@ -2670,6 +3040,7 @@
         "regional": "PAMPULHA",
         "endereco": "RUA RITA ALVES CASTANHEIRA 50",
         "referencia": "NO FINAL DA RUA, APÓS RUA MINISTRO OROZIMBO NONATO",
+        "associacao_cooperativa": "",
         "horario_original": "SEGUNDA À SEXTA, DE 7 ÀS 18 H, SÁBADOS, DOMINGOS E FERIADOS, DE 7:40 ÀS 16:00 H",
         "material_original": "CARCAÇAS DE ELETRODOMÉSTICOS, ENTULHO, MADEIRA, MÓVEIS INSERVÍVEIS, PNEUS, RESÍDUOS DE PODA E TERRA, VOLUMOSOS",
         "materiais_indexados": [
@@ -2716,6 +3087,7 @@
         "regional": "BARREIRO",
         "endereco": "RUA FLAMENGO 2",
         "referencia": "RUA ITAPETININGA",
+        "associacao_cooperativa": "",
         "horario_original": "SEGUNDA À SEXTA, DE 7 ÀS 18 H, SÁBADOS, DOMINGOS E FERIADOS, DE 7:40 ÀS 16:00 H",
         "material_original": "CARCAÇAS DE ELETRODOMÉSTICOS, ENTULHO, MADEIRA, MÓVEIS INSERVÍVEIS, PNEUS, RESÍDUOS DE PODA E TERRA, VOLUMOSOS",
         "materiais_indexados": [
@@ -2762,6 +3134,7 @@
         "regional": "OESTE",
         "endereco": "RUA JOSE FURLETTI 45",
         "referencia": "ENTRE AVENIDA TEREZA CRISTINA E RUA FELICÍSSIMO",
+        "associacao_cooperativa": "",
         "horario_original": "SEGUNDA À SEXTA, DE 7 ÀS 18 H, SÁBADOS, DOMINGOS E FERIADOS, DE 7:40 ÀS 16:00 H",
         "material_original": "CARCAÇAS DE ELETRODOMÉSTICOS, ENTULHO, MADEIRA, MÓVEIS INSERVÍVEIS, PNEUS, RESÍDUOS DE PODA E TERRA, VOLUMOSOS",
         "materiais_indexados": [
@@ -2808,6 +3181,7 @@
         "regional": "PAMPULHA",
         "endereco": "RUA REINATO FANTONI 23",
         "referencia": "ENTRE RUA PROFESSOR RIVADÁVIA GUSMÃO E AVENIDA FRANCISCO NEGRÃO DE LIMA",
+        "associacao_cooperativa": "",
         "horario_original": "SEGUNDA À SEXTA, DE 7 ÀS 18 H, SÁBADOS, DOMINGOS E FERIADOS, DE 7:40 ÀS 16:00 H",
         "material_original": "CARCAÇAS DE ELETRODOMÉSTICOS, ENTULHO, MADEIRA, MÓVEIS INSERVÍVEIS, PNEUS, RESÍDUOS DE PODA E TERRA, VOLUMOSOS",
         "materiais_indexados": [
@@ -2854,6 +3228,7 @@
         "regional": "NORTE",
         "endereco": "AVE LUCAS DE OLIVEIRA 505",
         "referencia": "ENTRE RUA PROFESSOR RUBENS GUELLI E RUA PROFESSORA ZILDA REVERT",
+        "associacao_cooperativa": "",
         "horario_original": "SEGUNDA À SEXTA, DE 7 ÀS 18 H, SÁBADOS, DOMINGOS E FERIADOS, DE 7:40 ÀS 16:00 H",
         "material_original": "CARCAÇAS DE ELETRODOMÉSTICOS, ENTULHO, MADEIRA, MÓVEIS INSERVÍVEIS, PNEUS, RESÍDUOS DE PODA E TERRA, VOLUMOSOS",
         "materiais_indexados": [
@@ -2900,6 +3275,7 @@
         "regional": "BARREIRO",
         "endereco": "AVE AGENOR NONATO DE SOUZA 8",
         "referencia": "NO FINAL DA RUA, APÓS A RUA FRANCISCO MARTINS MARQUES",
+        "associacao_cooperativa": "",
         "horario_original": "SEGUNDA À SEXTA, DE 7 ÀS 18 H, SÁBADOS, DOMINGOS E FERIADOS, DE 7:40 ÀS 16:00 H",
         "material_original": "CARCAÇAS DE ELETRODOMÉSTICOS, ENTULHO, MADEIRA, MÓVEIS INSERVÍVEIS, PNEUS, RESÍDUOS DE PODA E TERRA, VOLUMOSOS",
         "materiais_indexados": [
@@ -2946,6 +3322,7 @@
         "regional": "PAMPULHA",
         "endereco": "RUA FLOR DE INDIO 105",
         "referencia": "ENTRE AVENIDA PRESIDENTE ANTÔNIO CARLOS E RUA AIMÉE SEMPLE MCPHERSON",
+        "associacao_cooperativa": "",
         "horario_original": "SEGUNDA À SEXTA, DE 7 ÀS 18 H, SÁBADOS, DOMINGOS E FERIADOS, DE 7:40 ÀS 16:00 H",
         "material_original": "CARCAÇAS DE ELETRODOMÉSTICOS, ENTULHO, MADEIRA, MÓVEIS INSERVÍVEIS, PNEUS, RESÍDUOS DE PODA E TERRA, VOLUMOSOS",
         "materiais_indexados": [
@@ -2992,6 +3369,7 @@
         "regional": "BARREIRO",
         "endereco": "RUA ANTONIO DE SOUZA GOMES 110",
         "referencia": "ENTRE RUA DOUTOR GERALDO STARLING SOARES E RUA SEBASTIÃO DOS SANTOS",
+        "associacao_cooperativa": "",
         "horario_original": "SEGUNDA À SEXTA, DE 7 ÀS 18 H, SÁBADOS, DOMINGOS E FERIADOS, DE 7:40 ÀS 16:00 H",
         "material_original": "CARCAÇAS DE ELETRODOMÉSTICOS, ENTULHO, MADEIRA, MÓVEIS INSERVÍVEIS, PNEUS, RESÍDUOS DE PODA E TERRA, VOLUMOSOS",
         "materiais_indexados": [
@@ -3038,6 +3416,7 @@
         "regional": "CENTRO-SUL",
         "endereco": "AVE MEM DE SA 1806",
         "referencia": "ENTRE RUA GERALDINA DE ALMEIDA E RUA AMÉRICA",
+        "associacao_cooperativa": "",
         "horario_original": "SEGUNDA À SEXTA, DE 7 ÀS 18 H, SÁBADOS, DOMINGOS E FERIADOS, DE 7:40 ÀS 16:00 H",
         "material_original": "CARCAÇAS DE ELETRODOMÉSTICOS, ENTULHO, MADEIRA, MÓVEIS INSERVÍVEIS, PNEUS, RESÍDUOS DE PODA E TERRA, VOLUMOSOS",
         "materiais_indexados": [
@@ -3084,6 +3463,7 @@
         "regional": "BARREIRO",
         "endereco": "RUA DONA LUIZA 865",
         "referencia": "ENTRE RUA DOS CRUZEIRENSES E RUA FERNANDES DE MOURA",
+        "associacao_cooperativa": "",
         "horario_original": "SEGUNDA À SEXTA, DE 7 ÀS 18 H, SÁBADOS, DOMINGOS E FERIADOS, DE 7:40 ÀS 16:00 H",
         "material_original": "CARCAÇAS DE ELETRODOMÉSTICOS, ENTULHO, MADEIRA, MÓVEIS INSERVÍVEIS, PNEUS, RESÍDUOS DE PODA E TERRA, VOLUMOSOS",
         "materiais_indexados": [
@@ -3130,6 +3510,7 @@
         "regional": "PAMPULHA",
         "endereco": "AVE PRESIDENTE TANCREDO NEVES 4200",
         "referencia": "ENTRE RUA MONTE SINAI E RUA FREI MARTINHO BURNIER",
+        "associacao_cooperativa": "",
         "horario_original": "SEGUNDA À SEXTA, DE 7 ÀS 18 H, SÁBADOS, DOMINGOS E FERIADOS, DE 7:40 ÀS 16:00 H",
         "material_original": "CARCAÇAS DE ELETRODOMÉSTICOS, ENTULHO, MADEIRA, MÓVEIS INSERVÍVEIS, PNEUS, RESÍDUOS DE PODA E TERRA, VOLUMOSOS",
         "materiais_indexados": [
@@ -3176,6 +3557,7 @@
         "regional": "NOROESTE",
         "endereco": "AVE AMINTAS JACQUES DE MORAES 2500",
         "referencia": "NO FINAL DA AVENIDA, APÓS A ESQUINA COM RUA JATIR",
+        "associacao_cooperativa": "",
         "horario_original": "SEGUNDA À SEXTA, DE 7 ÀS 18 H, SÁBADOS, DOMINGOS E FERIADOS, DE 7:40 ÀS 16:00 H",
         "material_original": "CARCAÇAS DE ELETRODOMÉSTICOS, ENTULHO, MADEIRA, MÓVEIS INSERVÍVEIS, PNEUS, RESÍDUOS DE PODA E TERRA, VOLUMOSOS",
         "materiais_indexados": [
@@ -3222,6 +3604,7 @@
         "regional": "VENDA NOVA",
         "endereco": "RUA AUGUSTO DOS ANJOS 1983",
         "referencia": "ENTRE RUA UM MIL QUINHENTOS E OITENTA E UM E RUA MARIA LUCIA PETIT",
+        "associacao_cooperativa": "",
         "horario_original": "SEGUNDA À SEXTA, DE 7 ÀS 18 H, SÁBADOS, DOMINGOS E FERIADOS, DE 7:40 ÀS 16:00 H",
         "material_original": "CARCAÇAS DE ELETRODOMÉSTICOS, ENTULHO, MADEIRA, MÓVEIS INSERVÍVEIS, PNEUS, RESÍDUOS DE PODA E TERRA, VOLUMOSOS",
         "materiais_indexados": [
@@ -3268,6 +3651,7 @@
         "regional": "PAMPULHA",
         "endereco": "AVE DEPUTADO ANUAR MENHEN 550",
         "referencia": "ENTRE RUA RODRIGO LAGE DE OLIVEIRA E RUA CONCEIÇÃO MAIA",
+        "associacao_cooperativa": "",
         "horario_original": "SEGUNDA À SEXTA, DE 7 ÀS 18 H, SÁBADOS, DOMINGOS E FERIADOS, DE 7:40 ÀS 16:00 H",
         "material_original": "CARCAÇAS DE ELETRODOMÉSTICOS, ENTULHO, MADEIRA, MÓVEIS INSERVÍVEIS, PNEUS, RESÍDUOS DE PODA E TERRA, VOLUMOSOS",
         "materiais_indexados": [
@@ -3314,6 +3698,7 @@
         "regional": "CENTRO-SUL",
         "endereco": "AVE ARTUR BERNARDES 3951",
         "referencia": "RUA MURILLO MORAES DE ANDRADE E RUA PRINCIPAL",
+        "associacao_cooperativa": "",
         "horario_original": "SEGUNDA À SEXTA, DE 7 ÀS 18 H, SÁBADOS, DOMINGOS E FERIADOS, DE 7:40 ÀS 16:00 H",
         "material_original": "CARCAÇAS DE ELETRODOMÉSTICOS, ENTULHO, MADEIRA, MÓVEIS INSERVÍVEIS, PNEUS, RESÍDUOS DE PODA E TERRA, VOLUMOSOS",
         "materiais_indexados": [
@@ -3360,6 +3745,7 @@
         "regional": "VENDA NOVA",
         "endereco": "RUA ELCE RIBEIRO 340",
         "referencia": "ENTRE RUA BERNARDINO OLIVEIRA PENA E RUA MARIA ANTONINA ALVES",
+        "associacao_cooperativa": "",
         "horario_original": "SEGUNDA À SEXTA, DE 7 ÀS 18 H, SÁBADOS, DOMINGOS E FERIADOS, DE 7:40 ÀS 16:00 H",
         "material_original": "CARCAÇAS DE ELETRODOMÉSTICOS, ENTULHO, MADEIRA, MÓVEIS INSERVÍVEIS, PNEUS, RESÍDUOS DE PODA E TERRA, VOLUMOSOS",
         "materiais_indexados": [
@@ -3406,6 +3792,7 @@
         "regional": "PAMPULHA",
         "endereco": "RUA CRISTIANO PEREIRA SALGADO 200",
         "referencia": "ENTRE RUA MATHILDE SOUZA BOY E AVENIDA PRESIDENTE TANCREDO NEVES",
+        "associacao_cooperativa": "",
         "horario_original": "SEGUNDA À SEXTA, DE 7 ÀS 18 H, SÁBADOS, DOMINGOS E FERIADOS, DE 7:40 ÀS 16:00 H",
         "material_original": "CARCAÇAS DE ELETRODOMÉSTICOS, ENTULHO, MADEIRA, MÓVEIS INSERVÍVEIS, PNEUS, RESÍDUOS DE PODA E TERRA, VOLUMOSOS",
         "materiais_indexados": [
@@ -3452,6 +3839,7 @@
         "regional": "NORDESTE",
         "endereco": "RUA JACYR JOSÉ JACINTO 35",
         "referencia": "ENTRE RUA ANGATURAMA E RUA QUELUZITA",
+        "associacao_cooperativa": "",
         "horario_original": "SEGUNDA À SEXTA, DE 7 ÀS 18 H, SÁBADOS, DOMINGOS E FERIADOS, DE 7:40 ÀS 16:00 H",
         "material_original": "CARCAÇAS DE ELETRODOMÉSTICOS, ENTULHO, MADEIRA, MÓVEIS INSERVÍVEIS, PNEUS, RESÍDUOS DE PODA E TERRA, VOLUMOSOS",
         "materiais_indexados": [
@@ -3498,6 +3886,7 @@
         "regional": "NORTE",
         "endereco": "AVE BASILIO DA GAMA 5",
         "referencia": "ENTRE AVENIDA SARAMENHA E RUA HERMES FONTES",
+        "associacao_cooperativa": "",
         "horario_original": "SEGUNDA À SEXTA, DE 7 ÀS 18 H, SÁBADOS, DOMINGOS E FERIADOS, DE 7:40 ÀS 16:00 H",
         "material_original": "CARCAÇAS DE ELETRODOMÉSTICOS, ENTULHO, MADEIRA, MÓVEIS INSERVÍVEIS, PNEUS, RESÍDUOS DE PODA E TERRA, VOLUMOSOS",
         "materiais_indexados": [
@@ -3544,6 +3933,7 @@
         "regional": "OESTE",
         "endereco": "AVE TERESA CRISTINA 2195",
         "referencia": "SOB O VIADUTO DEPUTADO ULYSSES GUIMARÃES",
+        "associacao_cooperativa": "",
         "horario_original": "SEGUNDA À SEXTA, DE 7 ÀS 18 H, SÁBADOS, DOMINGOS E FERIADOS, DE 7:40 ÀS 16:00 H",
         "material_original": "CARCAÇAS DE ELETRODOMÉSTICOS, ENTULHO, MADEIRA, MÓVEIS INSERVÍVEIS, PNEUS, RESÍDUOS DE PODA E TERRA, VOLUMOSOS",
         "materiais_indexados": [
@@ -3590,6 +3980,7 @@
         "regional": "OESTE",
         "endereco": "AVE TERESA CRISTINA 11013",
         "referencia": "ENTRE RUA DEMIZA E RUA POHLIG HECKEL",
+        "associacao_cooperativa": "",
         "horario_original": "SEGUNDA À SEXTA, DE 7 ÀS 18 H, SÁBADOS, DOMINGOS E FERIADOS, DE 7:40 ÀS 16:00 H",
         "material_original": "CARCAÇAS DE ELETRODOMÉSTICOS, ENTULHO, MADEIRA, MÓVEIS INSERVÍVEIS, PNEUS, RESÍDUOS DE PODA E TERRA, VOLUMOSOS",
         "materiais_indexados": [
@@ -3636,6 +4027,7 @@
         "regional": "BARREIRO",
         "endereco": "RUA MARLY PASSOS 10",
         "referencia": "ENTRE RUA SABINO JOSÉ FERREIRA E RUA ABELARDO CHACRINHA BARBOSA",
+        "associacao_cooperativa": "",
         "horario_original": "SEGUNDA À SEXTA, DE 7 ÀS 18 H, SÁBADOS, DOMINGOS E FERIADOS, DE 7:40 ÀS 16:00 H",
         "material_original": "CARCAÇAS DE ELETRODOMÉSTICOS, ENTULHO, MADEIRA, MÓVEIS INSERVÍVEIS, PNEUS, RESÍDUOS DE PODA E TERRA, VOLUMOSOS",
         "materiais_indexados": [
@@ -3682,6 +4074,7 @@
         "regional": "VENDA NOVA",
         "endereco": "AVE VILARINHO 4441",
         "referencia": "ENTRE RUA ALBERTO AMBRÓSIO DOS SANTOS E RUA REPÚBLICA TCHECA",
+        "associacao_cooperativa": "",
         "horario_original": "SEGUNDA À SEXTA, DE 7 ÀS 18 H, SÁBADOS, DOMINGOS E FERIADOS, DE 7:40 ÀS 16:00 H",
         "material_original": "CARCAÇAS DE ELETRODOMÉSTICOS, ENTULHO, MADEIRA, MÓVEIS INSERVÍVEIS, PNEUS, RESÍDUOS DE PODA E TERRA, VOLUMOSOS",
         "materiais_indexados": [
@@ -3728,6 +4121,7 @@
         "regional": "NORDESTE",
         "endereco": "RUA ZUMBI 72",
         "referencia": "ENTRE AVENIDA ESPLANADA E RUA GENERAL ASTOLFO FERREIRA MENDES",
+        "associacao_cooperativa": "",
         "horario_original": "SEGUNDA À SEXTA, DE 7 ÀS 18 H, SÁBADOS, DOMINGOS E FERIADOS, DE 7:40 ÀS 16:00 H",
         "material_original": "CARCAÇAS DE ELETRODOMÉSTICOS, ENTULHO, MADEIRA, MÓVEIS INSERVÍVEIS, PNEUS, RESÍDUOS DE PODA E TERRA, VOLUMOSOS",
         "materiais_indexados": [
@@ -3752,6 +4146,50 @@
             "sha256": "a0c2683b13c63eb7e1ff37c8c24926804bf1502426391ae0402e96dbd83fa576",
             "linha": 22,
             "id_registro": "urpv:urpv:21"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.951576,
+          -19.8747397
+        ]
+      },
+      "properties": {
+        "id": "galpao:galpao:61",
+        "id_original": "61",
+        "tipo": "galpao",
+        "nome": "VIANA DO CASTELO",
+        "bairro": "SÃO FRANCISCO",
+        "regional": "",
+        "endereco": "RUA VIANA DO CASTELO 235",
+        "referencia": "",
+        "associacao_cooperativa": "COOMARP",
+        "horario_original": "SEGUNDA A SEXTA DAS 8H ÀS 16H",
+        "material_original": "ISOPOR,METAL,PAPEL,PLÁSTICO,VIDRO",
+        "materiais_indexados": [
+          "papel",
+          "plastico",
+          "metal",
+          "vidro",
+          "isopor"
+        ],
+        "origem_url": "https://dados.pbh.gov.br/dataset/galpao-reciclagem",
+        "origens": [
+          {
+            "fonte": "galpao",
+            "nome": "Galpão de Reciclagem",
+            "url": "https://dados.pbh.gov.br/dataset/galpao-reciclagem",
+            "recurso_url": null,
+            "arquivo": "20261103_galpao_reciclagem.csv",
+            "data_referencia": "2026-11-03",
+            "sha256": "92abb874c1ef3e2f6262d8165e98e97cb5badd7e13b5f5796ecb00f6b1dcf314",
+            "linha": 5,
+            "id_registro": "galpao:galpao:61"
           }
         ]
       }

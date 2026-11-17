@@ -6,13 +6,15 @@ const geo=JSON.parse(readFileSync(new URL('../dist/dados/pontos.geojson',import.
 const base={materials:[],mode:'any',location:'',region:'',kind:'',position:null,radius:5,sort:'name'};
 test('normalização de acentos e espaços',()=>assert.equal(normalize('  São   JOSÉ '),'sao jose'));
 test('todos os pontos reais carregam e possuem ids únicos',()=>{
-  assert.equal(filterPoints(geo.features,base).length,86);
+  assert.equal(filterPoints(geo.features,base).length,94);
   assert.equal(new Set(geo.features.map(f=>f.properties.id)).size,geo.features.length);
 });
-test('papel corresponde somente a menção explícita, nunca a URPV por inferência',()=>{
+test('papel corresponde a fontes que o mencionam literalmente, incluindo Galpão',()=>{
   const result=filterPoints(geo.features,{...base,materials:['papel']});
   assert.ok(result.length>0);assert.ok(result.every(r=>r.feature.properties.materiais_indexados.includes('papel')));
-  assert.ok(result.every(r=>r.feature.properties.tipo==='ponto_verde'));
+  assert.ok(result.some(r=>r.feature.properties.tipo==='ponto_verde'));
+  assert.ok(result.some(r=>r.feature.properties.tipo==='galpao'));
+  assert.ok(result.every(r=>r.feature.properties.tipo!=='urpv'));
 });
 test('localização normaliza acentos, combina tokens e restringe a regional',()=>{
   const results=filterPoints(geo.features,{...base,location:'sao jose',region:'pampulha'});
@@ -35,6 +37,15 @@ test('proximidade usa coordenadas e ordenação por distância',()=>{
   assert.ok(Math.abs(distanceKm([0,0],[0,1])-111.195)<0.01);
 });
 test('consulta inexistente resulta em lista vazia',()=>assert.equal(filterPoints(geo.features,{...base,location:'bairro inexistente xyz'}).length,0));
+test('galpões carregam separadamente e respondem ao filtro por tipo e material',()=>{
+  const galpoes=geo.features.filter(f=>f.properties.tipo==='galpao');
+  assert.equal(galpoes.length,8);
+  assert.ok(galpoes.every(f=>f.properties.associacao_cooperativa));
+  assert.ok(galpoes.every(f=>f.properties.materiais_indexados.includes('isopor')));
+  const result=filterPoints(geo.features,{...base,kind:'galpao',materials:['isopor']});
+  assert.equal(result.length,8);
+  assert.ok(result.every(r=>r.feature.properties.tipo==='galpao'));
+});
 
 test('busca retorna pontos próximos fora do raio e respeita materiais', () => {
   const pontos = [

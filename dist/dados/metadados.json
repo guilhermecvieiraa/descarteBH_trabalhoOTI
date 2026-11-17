@@ -8,8 +8,8 @@
   "crs_origem": "EPSG:31983",
   "crs_saida": "EPSG:4326",
   "ordem_coordenadas": "longitude, latitude",
-  "processado_em_utc": "2026-11-16T22:55:30+00:00",
-  "quantidade_total": 86,
+  "processado_em_utc": "2026-11-17T17:10:46+00:00",
+  "quantidade_total": 94,
   "fontes": [
     {
       "slug": "ponto_verde",
@@ -82,33 +82,80 @@
         "urpv"
       ],
       "arquivo_bruto_url": "brutos/a0c2683b13c63eb7e1ff37c8c24926804bf1502426391ae0402e96dbd83fa576.csv"
+    },
+    {
+      "slug": "galpao",
+      "tipo": "galpao",
+      "arquivo": "20261103_galpao_reciclagem.csv",
+      "nome": "Galpão de Reciclagem",
+      "url": "https://dados.pbh.gov.br/dataset/galpao-reciclagem",
+      "recurso_url": null,
+      "data_referencia": "2026-11-03",
+      "baixado_em": null,
+      "licenca": "Consultar licença no recurso oficial",
+      "nota": "Arquivo CSV disponibilizado pelo usuário; data de referência extraída do nome original. URL específica do recurso e data do download não informadas.",
+      "mapeamento": {
+        "id": "ID_GALPAO_RECICLAGEM",
+        "nome": "NOME_GALPAO_RECICLAGEM",
+        "associacao": "NOME_ASSOCIACAO_COOPERATIVA",
+        "material": "TIPO_RESIDUOS",
+        "horario": "HORARIO_FUNCIONAMENTO",
+        "tipo_logradouro": "TIPO_LOGRADOURO",
+        "logradouro": "NOME_LOGRADOURO",
+        "numero": "NUM_IMOVEL",
+        "bairro": "NOME_BAIRRO_POPULAR",
+        "geometria": "GEOMETRIA"
+      },
+      "sha256": "92abb874c1ef3e2f6262d8165e98e97cb5badd7e13b5f5796ecb00f6b1dcf314",
+      "cabecalhos": [
+        "ID_GALPAO_RECICLAGEM",
+        "NOME_GALPAO_RECICLAGEM",
+        "NOME_ASSOCIACAO_COOPERATIVA",
+        "TIPO_RESIDUOS",
+        "TIPO_LOGRADOURO",
+        "NOME_LOGRADOURO",
+        "NUM_IMOVEL",
+        "NOME_BAIRRO_POPULAR",
+        "HORARIO_FUNCIONAMENTO",
+        "GEOMETRIA"
+      ],
+      "codificacao": "utf-8-sig",
+      "separador": ";",
+      "linhas_lidas": 8,
+      "registros_aproveitados": 8,
+      "duplicados_integrados": 0,
+      "registros_rejeitados": 0,
+      "esquemas_encontrados": [
+        "galpao"
+      ],
+      "arquivo_bruto_url": "brutos/92abb874c1ef3e2f6262d8165e98e97cb5badd7e13b5f5796ecb00f6b1dcf314.csv"
     }
   ],
   "materiais": [
     {
       "id": "papel",
       "nome": "Papel e papelão",
-      "quantidade": 51
+      "quantidade": 59
     },
     {
       "id": "plastico",
       "nome": "Plástico",
-      "quantidade": 51
+      "quantidade": 59
     },
     {
       "id": "metal",
       "nome": "Metal",
-      "quantidade": 51
+      "quantidade": 59
     },
     {
       "id": "vidro",
       "nome": "Vidro",
-      "quantidade": 48
+      "quantidade": 56
     },
     {
       "id": "isopor",
       "nome": "Isopor",
-      "quantidade": 6
+      "quantidade": 14
     },
     {
       "id": "entulho",
@@ -161,6 +208,7 @@
     "id": "Identificador prefixado pela fonte de origem",
     "tipo": "Tipo identificado pelo esquema do registro, separado da origem",
     "nome": "Nome original da unidade",
+    "associacao_cooperativa": "Associação ou cooperativa responsável, quando informada",
     "endereco": "Logradouro, número e letra da fonte",
     "bairro": "Bairro informado",
     "regional": "Regional informada",

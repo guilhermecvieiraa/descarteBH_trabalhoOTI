@@ -1,0 +1,227 @@
+{
+  "titulo": "Descarte BH — pontos de recebimento de resíduos",
+  "criador": "Prefeitura de Belo Horizonte / fontes declaradas",
+  "publicador": "Descarte BH — projeto acadêmico UFMG / OTI071",
+  "idioma": "pt-BR",
+  "cobertura": "Belo Horizonte, Minas Gerais, Brasil",
+  "formato": "GeoJSON (RFC 7946)",
+  "crs_origem": "EPSG:31983",
+  "crs_saida": "EPSG:4326",
+  "ordem_coordenadas": "longitude, latitude",
+  "processado_em_utc": "2026-11-17T17:10:46+00:00",
+  "quantidade_total": 94,
+  "fontes": [
+    {
+      "slug": "ponto_verde",
+      "arquivo": "20261103_ponto_verde.csv",
+      "nome": "Ponto Verde",
+      "url": "https://dados.pbh.gov.br/dataset/ponto-verde",
+      "recurso_url": null,
+      "data_referencia": "2026-11-03",
+      "baixado_em": null,
+      "licenca": "Consultar licença no recurso oficial",
+      "nota": "Download local disponibilizado pelo usuário; data de referência extraída do nome original. URL específica do recurso e data do download não informadas.",
+      "sha256": "8536a4d1b5fd9e9043ee1524063ad4556e557a6b17631b075c600150e1c1b9ae",
+      "cabecalhos": [
+        "ID_LEV",
+        "NOME_LEV",
+        "TIPO_MATERIAL_COLETADO",
+        "HORARIO_FUNCIONAMENTO",
+        "TIPO_LOGRADOURO",
+        "NOME_LOGRADOURO",
+        "NUMERO_IMOVEL",
+        "LETRA_IMOVEL",
+        "BAIRRO",
+        "REGIONAL",
+        "REF_LOCALIZACAO",
+        "GEOMETRIA"
+      ],
+      "codificacao": "utf-8-sig",
+      "separador": ";",
+      "linhas_lidas": 51,
+      "registros_aproveitados": 51,
+      "duplicados_integrados": 0,
+      "registros_rejeitados": 0,
+      "esquemas_encontrados": [
+        "ponto_verde"
+      ],
+      "arquivo_bruto_url": "brutos/8536a4d1b5fd9e9043ee1524063ad4556e557a6b17631b075c600150e1c1b9ae.csv"
+    },
+    {
+      "slug": "urpv",
+      "arquivo": "20261103_unidade_recebimento_pequenos_volumes.csv",
+      "nome": "Unidades de Recebimento de Pequenos Volumes",
+      "url": "https://dados.pbh.gov.br/dataset/unidadade-de-recebimento-de-pequenos-volumes-urpv",
+      "recurso_url": null,
+      "data_referencia": "2026-11-03",
+      "baixado_em": null,
+      "licenca": "Consultar licença no recurso oficial",
+      "nota": "Download local disponibilizado pelo usuário; data de referência extraída do nome original. URL específica do recurso e data do download não informadas.",
+      "sha256": "a0c2683b13c63eb7e1ff37c8c24926804bf1502426391ae0402e96dbd83fa576",
+      "cabecalhos": [
+        "ID_URPV",
+        "NOME_URPV",
+        "TIPO_MATERIAL_COLETADO",
+        "HORARIO_FUNCIONAMENTO",
+        "TIPO_LOGRADOURO",
+        "NOME_LOGRADOURO",
+        "NUMERO_IMOVEL",
+        "LETRA_IMOVEL",
+        "BAIRRO",
+        "REGIONAL",
+        "REF_LOCALIZACAO",
+        "GEOMETRIA"
+      ],
+      "codificacao": "utf-8-sig",
+      "separador": ";",
+      "linhas_lidas": 35,
+      "registros_aproveitados": 35,
+      "duplicados_integrados": 0,
+      "registros_rejeitados": 0,
+      "esquemas_encontrados": [
+        "urpv"
+      ],
+      "arquivo_bruto_url": "brutos/a0c2683b13c63eb7e1ff37c8c24926804bf1502426391ae0402e96dbd83fa576.csv"
+    },
+    {
+      "slug": "galpao",
+      "tipo": "galpao",
+      "arquivo": "20261103_galpao_reciclagem.csv",
+      "nome": "Galpão de Reciclagem",
+      "url": "https://dados.pbh.gov.br/dataset/galpao-reciclagem",
+      "recurso_url": null,
+      "data_referencia": "2026-11-03",
+      "baixado_em": null,
+      "licenca": "Consultar licença no recurso oficial",
+      "nota": "Arquivo CSV disponibilizado pelo usuário; data de referência extraída do nome original. URL específica do recurso e data do download não informadas.",
+      "mapeamento": {
+        "id": "ID_GALPAO_RECICLAGEM",
+        "nome": "NOME_GALPAO_RECICLAGEM",
+        "associacao": "NOME_ASSOCIACAO_COOPERATIVA",
+        "material": "TIPO_RESIDUOS",
+        "horario": "HORARIO_FUNCIONAMENTO",
+        "tipo_logradouro": "TIPO_LOGRADOURO",
+        "logradouro": "NOME_LOGRADOURO",
+        "numero": "NUM_IMOVEL",
+        "bairro": "NOME_BAIRRO_POPULAR",
+        "geometria": "GEOMETRIA"
+      },
+      "sha256": "92abb874c1ef3e2f6262d8165e98e97cb5badd7e13b5f5796ecb00f6b1dcf314",
+      "cabecalhos": [
+        "ID_GALPAO_RECICLAGEM",
+        "NOME_GALPAO_RECICLAGEM",
+        "NOME_ASSOCIACAO_COOPERATIVA",
+        "TIPO_RESIDUOS",
+        "TIPO_LOGRADOURO",
+        "NOME_LOGRADOURO",
+        "NUM_IMOVEL",
+        "NOME_BAIRRO_POPULAR",
+        "HORARIO_FUNCIONAMENTO",
+        "GEOMETRIA"
+      ],
+      "codificacao": "utf-8-sig",
+      "separador": ";",
+      "linhas_lidas": 8,
+      "registros_aproveitados": 8,
+      "duplicados_integrados": 0,
+      "registros_rejeitados": 0,
+      "esquemas_encontrados": [
+        "galpao"
+      ],
+      "arquivo_bruto_url": "brutos/92abb874c1ef3e2f6262d8165e98e97cb5badd7e13b5f5796ecb00f6b1dcf314.csv"
+    }
+  ],
+  "materiais": [
+    {
+      "id": "papel",
+      "nome": "Papel e papelão",
+      "quantidade": 59
+    },
+    {
+      "id": "plastico",
+      "nome": "Plástico",
+      "quantidade": 59
+    },
+    {
+      "id": "metal",
+      "nome": "Metal",
+      "quantidade": 59
+    },
+    {
+      "id": "vidro",
+      "nome": "Vidro",
+      "quantidade": 56
+    },
+    {
+      "id": "isopor",
+      "nome": "Isopor",
+      "quantidade": 14
+    },
+    {
+      "id": "entulho",
+      "nome": "Entulho",
+      "quantidade": 35
+    },
+    {
+      "id": "poda",
+      "nome": "Resíduos de poda",
+      "quantidade": 35
+    },
+    {
+      "id": "terra",
+      "nome": "Terra",
+      "quantidade": 35
+    },
+    {
+      "id": "pneu",
+      "nome": "Pneus",
+      "quantidade": 35
+    },
+    {
+      "id": "colchao",
+      "nome": "Colchões",
+      "quantidade": 0
+    },
+    {
+      "id": "madeira",
+      "nome": "Madeira",
+      "quantidade": 35
+    },
+    {
+      "id": "moveis",
+      "nome": "Móveis",
+      "quantidade": 35
+    },
+    {
+      "id": "volumosos",
+      "nome": "Volumosos",
+      "quantidade": 35
+    },
+    {
+      "id": "carcacas_eletrodomesticos",
+      "nome": "Carcaças de eletrodomésticos",
+      "quantidade": 35
+    }
+  ],
+  "criterio_indexacao": "Correspondência literal normalizada, sem inferir materiais pelo tipo de equipamento.",
+  "campos": {
+    "id": "Identificador prefixado pela fonte de origem",
+    "tipo": "Tipo identificado pelo esquema do registro, separado da origem",
+    "nome": "Nome original da unidade",
+    "associacao_cooperativa": "Associação ou cooperativa responsável, quando informada",
+    "endereco": "Logradouro, número e letra da fonte",
+    "bairro": "Bairro informado",
+    "regional": "Regional informada",
+    "referencia": "Referência de localização original",
+    "material_original": "Descrição preservada dos materiais",
+    "materiais_indexados": "Vocabulário literal para recuperação",
+    "horario_original": "Horário preservado, sem inferência de aberto agora",
+    "origens": "Fonte, URL, arquivo, linha, referência temporal e SHA-256"
+  },
+  "limitacoes": [
+    "Data do processamento não equivale à data de atualização da prefeitura.",
+    "URL específica do recurso e data de download permanecem não informadas quando desconhecidas.",
+    "Ausência no índice não comprova proibição. Confirme a aceitação com a PBH.",
+    "Galpões só entram após fornecimento do CSV e validação explícita do mapeamento."
+  ]
+}
