@@ -2,7 +2,10 @@
 
 Plataforma acadêmica funcional conforme o diagnóstico e a entrega técnica: dados reais da PBH, mapa Leaflet/OpenStreetMap, recuperação por material e localização, metadados e auditoria.
 
-O projeto é um site estático independente, pronto para um repositório no GitHub e hospedagem no GitHub Pages. A pasta `plataforma` deve ser a raiz do repositório: nela ficam `.github`, `dist`, `dados_brutos`, `fontes.json` e `pipeline.py`.
+O Descarte BH é um site estático hospedado no GitHub Pages. A raiz do repositório contém `.github`, `dist`, `dados_brutos`, `fontes.json`, `pipeline.py`, testes e documentação técnica.
+
+- Site publicado: https://guilhermecvieiraa.github.io/descarteBH_trabalhoOTI/
+- Repositório: https://github.com/guilhermecvieiraa/descarteBH_trabalhoOTI
 
 ## Abrir
 
@@ -22,23 +25,25 @@ O navegador carrega GeoJSON, metadados e relatório por HTTP. Todos os filtros s
 
 Os arquivos de referência são `dados_brutos/20261103_ponto_verde.csv` e `dados_brutos/20261103_unidade_recebimento_pequenos_volumes.csv`. Esses CSVs, internos a esta pasta, são a entrada efetiva da plataforma. A origem declarada do arquivo fica separada do tipo identificado no registro. O importador aceita cabeçalhos URPV dentro de um conjunto declarado Ponto Verde e mantém essa origem; não reclassifica o conjunto inteiro. Duplicados exatos são integrados, preservando ambas as origens. O relatório de qualidade distingue coordenadas coincidentes de endereços compartilhados, preservando os registros para revisão.
 
-## Enviar ao GitHub
+## Enviar alterações ao GitHub
 
-1. Crie no GitHub um repositório vazio, por exemplo `descarte-bh`. Não inicialize esse repositório remoto com README, licença ou .gitignore, pois os arquivos locais já existem.
-2. Abra um terminal dentro da pasta `plataforma`. O repositório Git local já existe. Confira os arquivos com `git status`.
-3. Execute os comandos abaixo, substituindo `SEU_USUARIO` e o nome do repositório pelos seus. A autenticação é feita pelo Git/GitHub, fora do código da plataforma.
+O projeto já possui repositório remoto configurado e publicação pelo GitHub Pages.
 
-```powershell
+Para enviar alterações a partir de um clone local com permissão de escrita:
+
+```bash
+git status
 git add .
-git commit -m "Preparar Descarte BH para GitHub Pages"
-git branch -M main
-git remote add origin https://github.com/SEU_USUARIO/descarte-bh.git
-git push -u origin main
+git commit -m "Atualiza plataforma Descarte BH"
+git pull --rebase origin main
+git push origin main
 ```
 
-Não há remoto configurado no estado preparado desta entrega. Se você já tiver adicionado `origin` depois disso, confira `git remote -v` e use `git remote set-url origin URL_DO_SEU_REPOSITORIO` em vez de adicioná-lo novamente.
+Se o Git identificar conflitos durante o rebase, eles devem ser resolvidos e os testes executados novamente antes do push.
 
-Se estiver copiando os arquivos para uma pasta nova que não contém `.git`, execute `git init -b main` antes desses comandos. Não envie `node_modules`, caches ou resultados de testes; eles estão no `.gitignore`. Envie `dist` com todos os seus arquivos, incluindo `logo.png`, `vendor` e `dados`, além dos CSVs originais e código do projeto. Para clonar, executar ou publicar, não é necessária nenhuma ferramenta proprietária de hospedagem.
+Não envie ambientes virtuais, `node_modules`, caches ou resultados temporários de testes. Esses arquivos estão configurados no `.gitignore`.
+
+A pasta `dist` contém o site publicado e deve ser versionada.
 
 ## Publicar no GitHub Pages
 
@@ -70,9 +75,19 @@ Galpão Reciclagem exige CSV real e mapeamento validado em `fontes.json`; nenhum
 
 ## Localização e serviços
 
-Digite bairro, regional ou termos do endereço para filtrar os campos locais. Para distância, use GPS (com permissão), marque no mapa ou clique em Localizar endereço. Nesse último caso, o texto é enviado ao Photon/Komoot somente após ação explícita, sem autocomplete remoto, com cache em memória e timeout. Resultados ficam limitados ao entorno de BH; o usuário escolhe uma sugestão. Falhas mantêm o filtro textual. URL do serviço e tiles podem ser alterados em `dist/config.json`. O serviço público Photon é apropriado para uso moderado de protótipo e não garante disponibilidade. Em escala, configure instância/provedor próprio. Coordenadas GPS não são persistidas. Distâncias usam Haversine (linha reta), não rotas. A rota é aberta externamente no Google Maps.
+Digite bairro, regional ou termos do endereço para filtrar os campos locais. Para distância, use GPS (com permissão), marque no mapa ou clique em Localizar endereço. Nesse último caso, o texto é enviado ao Photon/Komoot somente após ação explícita, sem autocomplete remoto, com cache em memória e timeout. Resultados ficam limitados ao entorno de BH; o usuário escolhe uma sugestão. Falhas mantêm o filtro textual. URL do serviço e tiles podem ser alterados em `dist/config.json`. O serviço público Photon é apropriado para uso moderado de protótipo e não garante disponibilidade. Em escala, configure instância/provedor próprio. Coordenadas GPS não são persistidas. Distâncias usam Haversine (linha reta), não rotas. A rota é aberta externamente no Google Maps. Quando não existem pontos dentro do raio escolhido, a interface apresenta até cinco pontos mais próximos fora desse raio, respeitando os demais filtros. Essa situação é informada ao usuário. Um endereço pesquisado não precisa corresponder ao endereço de um ponto de descarte.
 
 Os tiles OpenStreetMap, geocodificador e fontes tipográficas precisam de internet. Leaflet está incluído localmente; mesmo se o fundo do mapa falhar, lista e filtros permanecem disponíveis. Créditos OSM são visíveis no mapa. Leaflet: licença BSD-2-Clause em `dist/vendor/LEAFLET-LICENSE`.
+
+## Identificação visual dos equipamentos
+
+As janelas de detalhes apresentam fotografias de referência dos tipos Ponto Verde e URPV.
+
+As imagens são ilustrativas e não devem ser interpretadas como fotografias do endereço selecionado. Cada imagem apresenta crédito e acesso à publicação original da PBH.
+
+O logotipo utiliza imagem com fundo transparente, integrada à identidade visual da plataforma.
+
+As fotografias dependem de URLs externas, e suas condições de reutilização devem ser conferidas antes da publicação definitiva.
 
 ## Verificação
 

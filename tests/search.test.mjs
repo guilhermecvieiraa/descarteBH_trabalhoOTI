@@ -1,7 +1,7 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {normalize,filterPoints,distanceKm} from '../dist/search.js';
+import {normalize,filterPoints,distanceKm,nearestPoints} from '../dist/search.js';
 const geo=JSON.parse(readFileSync(new URL('../dist/dados/pontos.geojson',import.meta.url)));
 const base={materials:[],mode:'any',location:'',region:'',kind:'',position:null,radius:5,sort:'name'};
 test('normalização de acentos e espaços',()=>assert.equal(normalize('  São   JOSÉ '),'sao jose'));
@@ -35,3 +35,80 @@ test('proximidade usa coordenadas e ordenação por distância',()=>{
   assert.ok(Math.abs(distanceKm([0,0],[0,1])-111.195)<0.01);
 });
 test('consulta inexistente resulta em lista vazia',()=>assert.equal(filterPoints(geo.features,{...base,location:'bairro inexistente xyz'}).length,0));
+
+test('busca retorna pontos próximos fora do raio e respeita materiais', () => {
+  const pontos = [
+    {
+      properties: {
+        id: 'proximo',
+        nome: 'Ponto A',
+        tipo: 'ponto_verde',
+        materiais_indexados: ['papel']
+      },
+      geometry: {
+        coordinates: [-43.94, -19.93]
+      }
+    },
+    {
+      properties: {
+        id: 'outro_material',
+        nome: 'Ponto B',
+        tipo: 'urpv',
+        materiais_indexados: ['entulho']
+      },
+      geometry: {
+        coordinates: [-43.94, -19.925]
+      }
+    },
+    {
+      properties: {
+        id: 'distante',
+        nome: 'Ponto C',
+        tipo: 'ponto_verde',
+        materiais_indexados: ['papel']
+      },
+      geometry: {
+        coordinates: [-43.94, -19.94]
+      }
+    }
+  ];
+
+  const estado = {
+    ...base,
+    materials: ['papel'],
+    location: 'Rua inexistente 999',
+    position: [-43.94, -19.92],
+    radius: 0.1
+  };
+
+  // Não existem pontos com papel dentro de 100 metros.
+  const dentroRaio = filterPoints(pontos, {
+    ...estado,
+    location: ''
+  });
+
+  assert.equal(dentroRaio.length, 0);
+
+  // A busca complementar ignora o raio e retorna os mais próximos.
+  const proximos = nearestPoints(pontos, estado, 2);
+
+  assert.equal(proximos.length, 2);
+
+  // Os pontos aparecem em ordem crescente de distância.
+  assert.deepEqual(
+    proximos.map(item => item.feature.properties.id),
+    ['proximo', 'distante']
+  );
+
+  // Todos os pontos sugeridos estão fora do raio inicial.
+  assert.ok(
+    proximos.every(item => item.distance > estado.radius)
+  );
+
+  // Nenhum resultado possui material diferente do solicitado.
+  assert.ok(
+    proximos.every(item =>
+      item.feature.properties.materiais_indexados.includes('papel')
+    )
+  );
+});

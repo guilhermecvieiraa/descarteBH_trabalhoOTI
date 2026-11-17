@@ -9,8 +9,7 @@
 | Validação | Colunas, identificadores, quantidade de campos, POINT e limites do entorno de BH |
 | Classificação literal | materiais_literal; texto original preservado; sem inferência pelo equipamento |
 | Busca avançada | Material múltiplo (qualquer/todos), texto de localização sem acentos, regional e tipo em interseção |
-| Localização | Endereço geocodificado selecionado pelo usuário, GPS ou marcação no mapa; raio e ordenação por distância |
-| Georreferenciamento | pyproj EPSG:31983 → EPSG:4326; ordem GeoJSON longitude, latitude |
+| Localização | Endereço geocodificado selecionado pelo usuário, GPS ou marcação no mapa; raio, ordenação por distância e sugestão dos cinco pontos mais próximos quando não há resultados dentro do raio || Georreferenciamento | pyproj EPSG:31983 → EPSG:4326; ordem GeoJSON longitude, latitude |
 | Metadados descritivos | Identificador, nome, endereço, referência, bairro, regional, horário e material original |
 | Metadados temáticos | Vocabulário de materiais, rótulos e critério de indexação |
 | Metadados administrativos | Fonte, arquivo, linha, hash, datas, codificação, separador e colunas |
@@ -18,6 +17,7 @@
 | Auditoria | Relatório por fonte e linha rejeitada, duplicados integrados, coordenadas coincidentes e endereços compartilhados |
 | Transparência | Modal de fontes, dicionário, limitações e download de CSV bruto/tratado, GeoJSON e JSON |
 | Acessibilidade e celular | HTML semântico, labels, teclado, foco visível, dialogs nativos, lista alternativa ao mapa, layouts responsivos |
+| Referências visuais | Logotipo com fundo transparente e fotografias ilustrativas dos tipos Ponto Verde e URPV, com descrição alternativa, crédito e link para a publicação original |
 
 ## Organização e gestão dos registros
 
@@ -48,6 +48,30 @@ erDiagram
 
 O modelo é lógico. A implementação desta entrega usa documentos GeoJSON/JSON e não exige SQL.
 
+## Busca complementar por proximidade
+
+A plataforma permite que o usuário selecione um endereço geocodificado, utilize GPS ou marque uma posição no mapa.
+
+Inicialmente, a recuperação considera os pontos que atendem aos filtros selecionados e estão dentro do raio informado.
+
+Quando não há resultados dentro desse raio, a função nearestPoints consulta os registros que atendem aos demais filtros, desconsidera temporariamente a restrição de distância e retorna até cinco pontos ordenados pela proximidade.
+
+O cálculo utiliza a fórmula de Haversine. As distâncias representam aproximações em linha reta, não trajetos pelas vias públicas.
+
+A busca complementar não altera os dados originais nem atribui materiais aos equipamentos. Os filtros de material, regional e tipo continuam sendo respeitados.
+
+## Fotografias de referência
+
+A interface apresenta fotografias ilustrativas para os tipos Ponto Verde e URPV.
+
+As imagens são utilizadas para auxiliar o reconhecimento visual dos equipamentos. Não representam necessariamente a unidade específica selecionada pelo usuário.
+
+As fotografias são carregadas diretamente de endereços externos associados a publicações da Prefeitura de Belo Horizonte. A interface informa o caráter ilustrativo, apresenta o crédito e oferece acesso à publicação original.
+
+Por dependerem de recursos externos, as fotografias podem ficar indisponíveis. O aplicativo trata falhas de carregamento sem impedir a consulta dos dados do ponto.
+
+A disponibilidade pública das fotografias não representa, por si só, autorização irrestrita de reprodução. Suas condições de reutilização precisam ser verificadas.
+
 ## Limitações de interpretação
 
 Colchões, por exemplo, não são acrescentados ao índice de um ponto que só mencione móveis. “Carcaças de eletrodomésticos” não é apresentado como aceitação irrestrita de eletrônicos. O texto de horários não gera selo de “aberto agora”. Busca sem resultado não comprova inexistência de serviço nem proibição. Dados e regras de aceitação precisam de conferência com a PBH.
@@ -60,3 +84,8 @@ Colchões, por exemplo, não são acrescentados ao índice de um ponto que só m
 - https://leafletjs.com/reference-1.9.4.html
 - https://github.com/komoot/photon
 - https://operations.osmfoundation.org/policies/tiles/
+
+## Referências das fotografias
+
+- Ponto Verde: https://prefeitura.pbh.gov.br/noticias/prefeitura-implanta-novos-equipamentos-e-moderniza-coleta-seletiva-na-cidade
+- URPV: https://prefeitura.pbh.gov.br/noticias/requalificacao-de-fachadas-de-urpvs-inibe-mau-uso-dos-equipamentos

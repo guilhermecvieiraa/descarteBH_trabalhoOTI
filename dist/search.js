@@ -25,3 +25,14 @@ export function filterPoints(features, state) {
     ? a.distance - b.distance || a.feature.properties.nome.localeCompare(b.feature.properties.nome, 'pt-BR')
     : a.feature.properties.nome.localeCompare(b.feature.properties.nome, 'pt-BR'));
 }
+
+export function nearestPoints(features, state, limit = 5) {
+  if (!state.position) return [];
+
+  return filterPoints(features, {
+    ...state,
+    location: '',
+    radius: Number.POSITIVE_INFINITY,
+    sort: 'distance'
+  }).slice(0, limit);
+}

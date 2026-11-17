@@ -1,4 +1,4 @@
-import { normalize, filterPoints, TYPES } from './search.js';
+import { normalize, filterPoints, nearestPoints, TYPES } from './search.js';
 
 const $ = selector => document.querySelector(selector);
 const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -163,11 +163,27 @@ function routeUrl(f) {
 
 function render() {
   if (!metadata) return;
-  filtered = filterPoints(features,state);
+
+  // Primeiro, procura pontos dentro do raio selecionado.
+  filtered = filterPoints(features, state);
+
+  // Se não houver resultados no raio, procura os 5 mais próximos.
+  const nearbyFallback = state.position && filtered.length === 0
+    ? nearestPoints(features, state, 5)
+    : [];
+
+  if (nearbyFallback.length) {
+    filtered = nearbyFallback;
+  }
+
   const n = filtered.length;
   $('#result-count').textContent = `${n} ${n === 1 ? 'ponto encontrado' : 'pontos encontrados'}`;
   $('#list-counter').textContent = n;
-  $('#result-context').textContent = state.position ? `Em até ${state.radius} km da sua referência · distância em linha reta` : 'Locais e informações fornecidos pela PBH';
+  $('#result-context').textContent = nearbyFallback.length
+  ? `Nenhum ponto encontrado em até ${state.radius} km. Exibindo os ${n} pontos mais próximos, mesmo fora do raio · distância em linha reta.`
+  : state.position
+    ? `Em até ${state.radius} km da sua referência · distância em linha reta`
+    : 'Locais e informações fornecidos pela PBH';
   const active = state.materials.map(id => `<button class="active-chip" type="button" data-remove-material="${esc(id)}" aria-label="Remover filtro ${esc(materialName(id))}">${esc(materialName(id))} ×</button>`);
   if (state.location) active.push(`<span class="active-chip">Local: ${esc(state.location)}</span>`);
   if (state.region) active.push(`<span class="active-chip">${esc(state.region)}</span>`);
@@ -177,7 +193,7 @@ function render() {
   const materiaisSemPontos = state.materials.filter(id =>
     metadata.materiais.some(m => m.id === id && m.quantidade === 0)
   );
-  
+
   $('#empty-description').textContent = materiaisSemPontos.length
     ? `Nenhum ponto foi identificado para ${materiaisSemPontos.map(materialName).join(', ')} nas fontes utilizadas. Isso não significa que o descarte seja proibido em BH.`
     : 'Tente outra região, aumente a distância ou remova um material. A ausência de resultados não significa que o descarte seja proibido.';
@@ -187,13 +203,85 @@ function render() {
     const more = p.materiais_indexados.length > 4 ? `<span class="tag">+${p.materiais_indexados.length - 4}</span>` : '';
     return `<article class="point-card" data-card-id="${esc(p.id)}"><div class="card-top"><span class="badge ${esc(p.tipo)}">${esc(TYPES[p.tipo] || p.tipo)}</span>${distance !== null ? `<span class="distance">${distance.toLocaleString('pt-BR',{maximumFractionDigits:1})} km</span>` : `<span class="distance">${esc(p.regional)}</span>`}</div><h4><button type="button" data-detail="${esc(p.id)}">${esc(nomeExibicao(p))}</button></h4><p class="card-address">${esc(p.endereco || 'Endereço não informado')}<br>${esc(p.bairro || 'Bairro não informado')}</p><div class="tags">${tags || '<span class="tag">Material não informado no índice</span>'}${more}</div><div class="card-bottom"><button type="button" data-detail="${esc(p.id)}">Ver detalhes <span aria-hidden="true">↗</span></button><button type="button" data-map="${esc(p.id)}">Ver no mapa ⌖</button></div></article>`;
   }).join('');
+
   updateMarkers();
+
+  // Enquadra a localização do usuário e os pontos sugeridos.
+  if (nearbyFallback.length) {
+    fitMap();
+  }
 }
 
 function showDetails(f) {
   const p = f.properties, coords = f.geometry.coordinates;
   const materials = p.materiais_indexados.map(id => `<span class="tag">${esc(materialName(id))}</span>`).join('');
   $('#detail-content').innerHTML = `<span class="badge ${esc(p.tipo)}">${esc(TYPES[p.tipo] || p.tipo)}</span><h2 id="detail-title">${esc(nomeExibicao(p))}</h2><div class="tags">${materials}</div><dl><dt>Endereço</dt><dd>${esc(present(p.endereco))}</dd><dt>Bairro / regional</dt><dd>${esc(present(p.bairro))} · ${esc(present(p.regional))}</dd><dt>Referência de localização</dt><dd>${esc(present(p.referencia))}</dd><dt>Materiais — texto original da fonte</dt><dd>${esc(present(p.material_original))}</dd><dt>Horário — texto original da fonte</dt><dd>${esc(present(p.horario_original))}</dd><dt>Coordenadas (EPSG:4326)</dt><dd>Latitude: ${coords[1]} · Longitude: ${coords[0]}</dd><dt>Identificador no Descarte BH</dt><dd>${esc(p.id)}</dd></dl><div class="detail-actions"><a class="primary-link" href="${routeUrl(f)}" target="_blank" rel="noopener noreferrer">Abrir rota no Google Maps ↗</a><button type="button" class="outline" id="detail-map">Ver no mapa ⌖</button></div><h3>Origem e metadados do registro</h3>${p.origens.map(o => `<div class="data-source"><h3>${esc(o.nome)}</h3><dl><dt>Arquivo original</dt><dd>${esc(o.arquivo)}</dd><dt>Referência temporal</dt><dd>${fmtDate(o.data_referencia)}</dd><dt>Registro na fonte</dt><dd>${esc(o.id_registro)} · linha ${o.linha}</dd><dt>SHA-256</dt><dd class="hash">${esc(o.sha256)}</dd></dl><a href="${esc(o.url)}" target="_blank" rel="noopener noreferrer">Consultar conjunto oficial ↗</a></div>`).join('')}<p class="metadata-note">Confirme a operação e as condições com a PBH. A descrição é preservada do CSV; ela não comprova recebimento atual. Ausência de um material no índice não significa proibição.</p>`;
+    // Fotografias de referência dos equipamentos de descarte
+    const fotosReferencia = {
+      ponto_verde: {
+        imagem: 'https://prefeitura.pbh.gov.br/sites/default/files/estrutura-de-governo/slu/novos%20conteineres%20foto%20divolgacao%20pbh.png',
+        fonte: 'https://prefeitura.pbh.gov.br/noticias/prefeitura-implanta-novos-equipamentos-e-moderniza-coleta-seletiva-na-cidade',
+        descricao: 'Exemplo de contêiner verde utilizado na coleta seletiva de Belo Horizonte.'
+      },
+
+      urpv: {
+        imagem: 'https://prefeitura.pbh.gov.br/sites/default/files/estrutura-de-governo/vilarinho-depois-urpv-7.png',
+        fonte: 'https://prefeitura.pbh.gov.br/noticias/requalificacao-de-fachadas-de-urpvs-inibe-mau-uso-dos-equipamentos',
+        descricao: 'Exemplo da fachada da URPV Vilarinho, em Belo Horizonte.'
+      }
+    };
+
+    const foto = fotosReferencia[p.tipo];
+
+    if (foto) {
+      const secao = document.createElement('section');
+      secao.className = 'reference-photo';
+
+      secao.innerHTML = `
+        <h3>Como identificar este ponto</h3>
+
+        <figure>
+          <img
+            src="${esc(foto.imagem)}"
+            alt="${esc(foto.descricao)}"
+            loading="lazy"
+            decoding="async"
+          >
+
+          <figcaption>
+            <p>
+              Imagem ilustrativa do tipo de equipamento.
+              A aparência desta unidade pode ser diferente.
+            </p>
+
+            <p>
+              Foto: Divulgação PBH.
+              <a
+                href="${esc(foto.fonte)}"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Consultar imagem original ↗
+              </a>
+            </p>
+          </figcaption>
+        </figure>
+      `;
+
+      $('#detail-content .tags').after(secao);
+
+      // Trata eventuais falhas no carregamento da fotografia.
+      const imagem = secao.querySelector('img');
+
+      imagem.addEventListener('error', () => {
+        imagem.remove();
+
+        const aviso = document.createElement('p');
+        aviso.textContent = 'Imagem temporariamente indisponível. Consulte a fonte oficial.';
+
+        secao.querySelector('figure').prepend(aviso);
+      });
+    }
   $('#detail-map').addEventListener('click', () => { $('#detail-dialog').close(); focusOnMap(p.id); });
   openDialog('detail');
 }
