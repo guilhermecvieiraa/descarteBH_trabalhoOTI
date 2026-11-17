@@ -1,4 +1,4 @@
-# Verificação da entrega — 16/11/2026
+# Verificação da entrega — estado em 16/11/2026, antes do Galpão
 
 - Importação real: 51 registros de Ponto Verde + 35 de URPV = 86 pontos, 9 regionais, 2 fontes.
 - Nenhuma linha rejeitada na importação dos arquivos selecionados.
@@ -21,3 +21,10 @@
 - O logotipo foi atualizado para uma imagem de maior resolução e fundo transparente.
 - As janelas de detalhes apresentam fotografias de referência para Ponto Verde e URPV, com indicação de que não representam necessariamente a unidade selecionada.
 - As fotografias são carregadas de URLs externas da PBH. A disponibilidade dos arquivos e as condições de reutilização devem ser verificadas antes da publicação definitiva.
+## Atualização com Galpão de Reciclagem — 17/11/2026
+
+- O CSV `20261103_galpao_reciclagem.csv` foi incluído no manifesto e processado junto com as fontes anteriores.
+- Execução de 17/11/2026 às 17:10:46 UTC: 51 registros de Ponto Verde, 35 de URPV e 8 de Galpão; 94 feições no total, sem rejeições nem duplicatas exatas integradas.
+- Os oito galpões foram convertidos para EPSG:4326. A associação/cooperativa é preservada como atributo e exibida nos detalhes; o mapa tem marcador próprio para esse tipo.
+- Permanecem 30 pares com endereço compartilhado, preservados para revisão. Não há pares com coordenadas coincidentes.
+- Verificação após a atualização: 6 testes Python, 10 testes Node e 10 testes Chromium passaram. As suítes incluem o mapeamento/associação do Galpão, sua recuperação por tipo e material, e sua presença na legenda, nos marcadores e nos detalhes. Os testes Playwright foram executados numa cópia temporária para não deixar dependências de desenvolvimento no repositório.
