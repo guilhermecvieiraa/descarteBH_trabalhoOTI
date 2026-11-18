@@ -221,13 +221,22 @@ function showDetails(f) {
       ponto_verde: {
         imagem: 'https://prefeitura.pbh.gov.br/sites/default/files/estrutura-de-governo/slu/novos%20conteineres%20foto%20divolgacao%20pbh.png',
         fonte: 'https://prefeitura.pbh.gov.br/noticias/prefeitura-implanta-novos-equipamentos-e-moderniza-coleta-seletiva-na-cidade',
-        descricao: 'Exemplo de contêiner verde utilizado na coleta seletiva de Belo Horizonte.'
+        descricao: 'Exemplo de contêiner verde utilizado na coleta seletiva de Belo Horizonte.',
+        credito: 'Divulgação PBH'
       },
 
       urpv: {
         imagem: 'https://prefeitura.pbh.gov.br/sites/default/files/estrutura-de-governo/vilarinho-depois-urpv-7.png',
         fonte: 'https://prefeitura.pbh.gov.br/noticias/requalificacao-de-fachadas-de-urpvs-inibe-mau-uso-dos-equipamentos',
-        descricao: 'Exemplo da fachada da URPV Vilarinho, em Belo Horizonte.'
+        descricao: 'Exemplo da fachada da URPV Vilarinho, em Belo Horizonte.',
+        credito: 'Divulgação PBH'
+      },
+
+      galpao: {
+        imagem: 'imagens/galpao-asmare-equipe.jpeg',
+        descricao: 'Fachada do galpão da Asmare',
+        credito: 'Google Maps',
+        legenda: 'Fachada do galpão da Asmare. A imagem é uma referência visual e não representa necessariamente os demais galpões nem a aparência atual desta unidade.'
       }
     };
 
@@ -249,20 +258,10 @@ function showDetails(f) {
           >
 
           <figcaption>
-            <p>
-              Imagem ilustrativa do tipo de equipamento.
-              A aparência desta unidade pode ser diferente.
-            </p>
+            <p>${esc(foto.legenda || 'Imagem ilustrativa do tipo de equipamento. A aparência desta unidade pode ser diferente.')}</p>
 
             <p>
-              Foto: Divulgação PBH.
-              <a
-                href="${esc(foto.fonte)}"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Consultar imagem original ↗
-              </a>
+              Foto: ${esc(foto.credito)}.${foto.fonte ? ` <a href="${esc(foto.fonte)}" target="_blank" rel="noopener noreferrer">Consultar imagem original ↗</a>` : ''}
             </p>
           </figcaption>
         </figure>

@@ -17,7 +17,7 @@
 | Auditoria | Relatório por fonte e linha rejeitada, duplicados integrados, coordenadas coincidentes e endereços compartilhados |
 | Transparência | Modal de fontes, dicionário, limitações e download de CSV bruto/tratado, GeoJSON e JSON |
 | Acessibilidade e celular | HTML semântico, labels, teclado, foco visível, dialogs nativos, lista alternativa ao mapa, layouts responsivos |
-| Referências visuais | Logotipo com fundo transparente e fotografias ilustrativas dos tipos Ponto Verde e URPV, com descrição alternativa, crédito e link para a publicação original |
+| Referências visuais | Logotipo com fundo transparente e fotografias de Ponto Verde, URPV e Galpão, com descrição alternativa e crédito; a foto do galpão é local e enviada pela equipe |
 
 ## Organização e gestão dos registros
 
@@ -64,13 +64,13 @@ A busca complementar não altera os dados originais nem atribui materiais aos eq
 
 ## Fotografias de referência
 
-A interface apresenta fotografias ilustrativas para os tipos Ponto Verde e URPV.
+A interface apresenta fotografias ilustrativas para Ponto Verde, URPV e Galpão de Reciclagem. A foto do galpão é uma fotografia da fachada da Asmare enviada pela equipe do projeto e armazenada em `dist/imagens/galpao-asmare-equipe.jpeg`. Ela serve como referência visual, mas não representa cada galpão listado nem necessariamente a aparência atual desta unidade.
 
 As imagens são utilizadas para auxiliar o reconhecimento visual dos equipamentos. Não representam necessariamente a unidade específica selecionada pelo usuário.
 
-As fotografias são carregadas diretamente de endereços externos associados a publicações da Prefeitura de Belo Horizonte. A interface informa o caráter ilustrativo, apresenta o crédito e oferece acesso à publicação original.
+As fotos de Ponto Verde e URPV são carregadas de publicações da Prefeitura de Belo Horizonte. A foto do galpão é servida localmente a partir do repositório e tem crédito para a equipe do projeto. A interface informa seu caráter de referência visual.
 
-Por dependerem de recursos externos, as fotografias podem ficar indisponíveis. O aplicativo trata falhas de carregamento sem impedir a consulta dos dados do ponto.
+As fotos de Ponto Verde e URPV dependem de recursos externos e podem ficar indisponíveis. O aplicativo trata falhas de carregamento sem impedir a consulta dos dados do ponto. A foto do galpão está armazenada no repositório.
 
 A disponibilidade pública das fotografias não representa, por si só, autorização irrestrita de reprodução. Suas condições de reutilização precisam ser verificadas.
 
@@ -91,3 +91,4 @@ Colchões, por exemplo, não são acrescentados ao índice de um ponto que só m
 
 - Ponto Verde: https://prefeitura.pbh.gov.br/noticias/prefeitura-implanta-novos-equipamentos-e-moderniza-coleta-seletiva-na-cidade
 - URPV: https://prefeitura.pbh.gov.br/noticias/requalificacao-de-fachadas-de-urpvs-inibe-mau-uso-dos-equipamentos
+- Galpão de Reciclagem — fachada da Asmare (foto enviada pela equipe do projeto): `dist/imagens/galpao-asmare-equipe.jpeg`
