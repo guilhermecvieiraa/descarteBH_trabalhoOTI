@@ -81,13 +81,13 @@ Os tiles OpenStreetMap, geocodificador e fontes tipográficas precisam de intern
 
 ## Identificação visual dos equipamentos
 
-As janelas de detalhes apresentam fotografias de referência dos tipos Ponto Verde e URPV.
+As janelas de detalhes apresentam fotografias de referência de Ponto Verde, URPV e Galpão de Reciclagem.
 
-As imagens são ilustrativas e não devem ser interpretadas como fotografias do endereço selecionado. Cada imagem apresenta crédito e acesso à publicação original da PBH.
+As imagens são ilustrativas e não devem ser interpretadas como fotografias do endereço selecionado. A foto do galpão, em `dist/imagens/galpao-asmare-equipe.jpeg`, mostra a fachada da Asmare e foi enviada pela equipe do projeto. Ela não representa necessariamente as demais unidades nem a aparência atual do local. O crédito aparece na interface.
 
 O logotipo utiliza imagem com fundo transparente, integrada à identidade visual da plataforma.
 
-As fotografias dependem de URLs externas, e suas condições de reutilização devem ser conferidas antes da publicação definitiva.
+As fotos de Ponto Verde e URPV dependem de URLs externas. A foto do galpão é um arquivo local enviado pela equipe do projeto.
 
 ## Verificação
 

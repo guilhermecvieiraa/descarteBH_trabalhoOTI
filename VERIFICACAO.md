@@ -19,8 +19,8 @@
 - Os resultados complementares são identificados como pontos fora do raio original. As distâncias continuam sendo calculadas em linha reta.
 - A busca complementar foi validada manualmente no navegador e por teste automatizado com dados controlados.
 - O logotipo foi atualizado para uma imagem de maior resolução e fundo transparente.
-- As janelas de detalhes apresentam fotografias de referência para Ponto Verde e URPV, com indicação de que não representam necessariamente a unidade selecionada.
-- As fotografias são carregadas de URLs externas da PBH. A disponibilidade dos arquivos e as condições de reutilização devem ser verificadas antes da publicação definitiva.
+- As janelas de detalhes apresentam fotografias de referência para Ponto Verde, URPV e Galpão, com indicação de que não representam necessariamente a unidade selecionada. A foto do Galpão é da fachada da Asmare, enviada pela equipe e armazenada no repositório.
+- As fotos de Ponto Verde e URPV são carregadas de URLs externas da PBH; a do Galpão é servida localmente.
 ## Atualização com Galpão de Reciclagem — 17/11/2026
 
 - O CSV `20261103_galpao_reciclagem.csv` foi incluído no manifesto e processado junto com as fontes anteriores.
@@ -28,3 +28,9 @@
 - Os oito galpões foram convertidos para EPSG:4326. A associação/cooperativa é preservada como atributo e exibida nos detalhes; o mapa tem marcador próprio para esse tipo.
 - Permanecem 30 pares com endereço compartilhado, preservados para revisão. Não há pares com coordenadas coincidentes.
 - Verificação após a atualização: 6 testes Python, 10 testes Node e 10 testes Chromium passaram. As suítes incluem o mapeamento/associação do Galpão, sua recuperação por tipo e material, e sua presença na legenda, nos marcadores e nos detalhes. Os testes Playwright foram executados numa cópia temporária para não deixar dependências de desenvolvimento no repositório.
+
+
+## Foto ilustrativa para Galpão — 18/11/2026
+
+- Os detalhes dos Galpões exibem uma foto própria da fachada da Asmare, enviada pela equipe do projeto, com crédito e aviso de que é uma referência visual e não representa todos os galpões nem necessariamente a aparência atual da unidade.
+- A imagem é servida localmente por `dist/imagens/galpao-asmare-equipe.jpeg`; as suítes automatizadas não foram repetidas após esta alteração visual.
