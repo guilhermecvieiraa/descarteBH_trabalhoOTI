@@ -8,6 +8,10 @@ const icons = {papel:'▤',plastico:'♧',metal:'▱',vidro:'♙',isopor:'▦',e
 const state = { materials:[], mode:'any', location:'', region:'', kind:'', position:null, radius:5, sort:'name' };
 let features = [], metadata, quality, config, map, markers, positionLayer, radiusLayer, filtered = [], picking = false;
 const markerById = new Map(), addressCache = new Map();
+const PAGE_SIZE = 12;
+const PREVIEW_MATERIALS = 6;
+let expandedMaterials = false;
+let visibleCards = PAGE_SIZE;
 
 async function readJson(url) {
   const response = await fetch(url, {cache:'no-cache'});
@@ -41,7 +45,14 @@ function nomeExibicao(p) {
 function materialName(id) { return metadata?.materiais.find(m => m.id === id)?.nome || id; }
 function renderMaterials() {
   const query = normalize($('#material-query').value);
-  $('#materials').innerHTML = metadata.materiais.filter(m => normalize(m.nome).includes(query)).map(m => `<button type="button" class="material ${m.nome.length > 21 ? 'long' : ''} ${m.quantidade ? '' : 'unavailable'}" data-material="${esc(m.id)}" aria-pressed="${state.materials.includes(m.id)}" title="${m.quantidade} pontos mencionam ${esc(m.nome)}"><span class="material-icon" aria-hidden="true">${icons[m.id] || '♧'}</span><span>${esc(m.nome)}</span><small>${m.quantidade}</small></button>`).join('') || '<p class="helper">Material não encontrado no vocabulário. Consulte o texto original dos pontos.</p>';
+  const matching = metadata.materiais.filter(m => normalize(m.nome).includes(query));
+  const showAll = expandedMaterials || Boolean(query);
+  const shown = showAll ? matching : matching.filter((m, index) => index < PREVIEW_MATERIALS || state.materials.includes(m.id));
+  $('#materials').innerHTML = shown.map(m => `<button type="button" class="material ${m.nome.length > 21 ? 'long' : ''} ${m.quantidade ? '' : 'unavailable'}" data-material="${esc(m.id)}" aria-pressed="${state.materials.includes(m.id)}" title="${m.quantidade} pontos mencionam ${esc(m.nome)}"><span class="material-icon" aria-hidden="true">${icons[m.id] || '♧'}</span><span>${esc(m.nome)}</span><small>${m.quantidade}</small></button>`).join('') || '<p class="helper">Material não encontrado no vocabulário.</p>';
+  const toggle = $('#materials-more');
+  toggle.hidden = Boolean(query) || matching.length <= PREVIEW_MATERIALS;
+  toggle.textContent = expandedMaterials ? 'Ver menos materiais' : 'Ver todos os materiais';
+  toggle.setAttribute('aria-expanded', String(expandedMaterials));
 }
 
 function locationMessage(message, error = false) {
@@ -55,7 +66,6 @@ function setPosition(coords, label) {
     return;
   }
   state.position = coords;
-  state.location = '';
   state.sort = 'distance';
   $('#location').value = '';
   $('#sort').value = 'distance';
@@ -63,7 +73,8 @@ function setPosition(coords, label) {
   $('#radius').disabled = false;
   $('#clear-position').hidden = false;
   $('#address-choices').replaceChildren();
-  $('#radius-help').textContent = 'Distância aproximada em linha reta, não pelo trajeto.';
+  $('#radius-help').textContent = 'Distância em linha reta, não pelo trajeto.';
+  $('#radius-group').hidden = false;
   locationMessage(label);
   if (map) {
     if (positionLayer) positionLayer.remove();
@@ -72,7 +83,7 @@ function setPosition(coords, label) {
     radiusLayer = L.circle([coords[1], coords[0]], {radius:state.radius * 1000,color:'#9a8d49',weight:1,dashArray:'5 6',fillOpacity:.035,interactive:false}).addTo(map);
     map.fitBounds(radiusLayer.getBounds(), {padding:[20,20],maxZoom:14});
   }
-  render();
+  render({resetPage:true});
 }
 
 function clearPosition(shouldRender = true) {
@@ -82,7 +93,8 @@ function clearPosition(shouldRender = true) {
   $('#sort option[value=distance]').disabled = true;
   $('#radius').disabled = true;
   $('#clear-position').hidden = true;
-  $('#radius-help').textContent = 'Ative com GPS, endereço localizado ou um ponto no mapa.';
+  $('#radius-help').textContent = 'Distância em linha reta.';
+  $('#radius-group').hidden = true;
   if (positionLayer) positionLayer.remove();
   if (radiusLayer) radiusLayer.remove();
   positionLayer = radiusLayer = null;
@@ -161,126 +173,111 @@ function routeUrl(f) {
   return `https://www.google.com/maps/dir/?api=1&destination=${lat},${lon}`;
 }
 
-function render() {
+function render({resetPage = false} = {}) {
   if (!metadata) return;
-
-  // Primeiro, procura pontos dentro do raio selecionado.
+  if (resetPage) visibleCards = PAGE_SIZE;
   filtered = filterPoints(features, state);
-
-  // Se não houver resultados no raio, procura os 5 mais próximos.
   const nearbyFallback = state.position && filtered.length === 0
     ? nearestPoints(features, state, 5)
     : [];
-
-  if (nearbyFallback.length) {
-    filtered = nearbyFallback;
-  }
+  if (nearbyFallback.length) filtered = nearbyFallback;
 
   const n = filtered.length;
   $('#result-count').textContent = `${n} ${n === 1 ? 'ponto encontrado' : 'pontos encontrados'}`;
   $('#list-counter').textContent = n;
   $('#result-context').textContent = nearbyFallback.length
-  ? `Nenhum ponto encontrado em até ${state.radius} km. Exibindo os ${n} pontos mais próximos, mesmo fora do raio · distância em linha reta.`
-  : state.position
-    ? `Em até ${state.radius} km da sua referência · distância em linha reta`
-    : 'Locais e informações fornecidos pela PBH';
+    ? `Nenhum ponto no raio de ${state.radius} km. Mostrando até 5 mais próximos fora do raio (linha reta).`
+    : state.position
+      ? `Até ${state.radius} km da referência (linha reta)`
+      : 'Dados públicos da Prefeitura de Belo Horizonte';
   const active = state.materials.map(id => `<button class="active-chip" type="button" data-remove-material="${esc(id)}" aria-label="Remover filtro ${esc(materialName(id))}">${esc(materialName(id))} ×</button>`);
-  if (state.location) active.push(`<span class="active-chip">Local: ${esc(state.location)}</span>`);
+  if (state.location) active.push(`<span class="active-chip">Texto: ${esc(state.location)}</span>`);
   if (state.region) active.push(`<span class="active-chip">${esc(state.region)}</span>`);
   if (state.kind) active.push(`<span class="active-chip">${esc(TYPES[state.kind] || state.kind)}</span>`);
   $('#active-filters').innerHTML = active.join('');
   $('#empty-state').hidden = n !== 0;
-  const materiaisSemPontos = state.materials.filter(id =>
-    metadata.materiais.some(m => m.id === id && m.quantidade === 0)
-  );
-
+  const materiaisSemPontos = state.materials.filter(id => metadata.materiais.some(m => m.id === id && m.quantidade === 0));
   $('#empty-description').textContent = materiaisSemPontos.length
     ? `Nenhum ponto foi identificado para ${materiaisSemPontos.map(materialName).join(', ')} nas fontes utilizadas. Isso não significa que o descarte seja proibido em BH.`
-    : 'Tente outra região, aumente a distância ou remova um material. A ausência de resultados não significa que o descarte seja proibido.';
-  $('#results').innerHTML = filtered.map(({feature:f,distance}) => {
+    : 'Nenhum registro atende aos filtros. Tente outra região, aumente a distância ou remova um material. Isso não significa que o descarte seja proibido.';
+
+  $('#region-help').hidden = !state.region;
+  $('#results').innerHTML = filtered.slice(0, visibleCards).map(({feature:f,distance}) => {
     const p = f.properties;
-    const tags = p.materiais_indexados.slice(0,4).map(id => `<span class="tag">${esc(materialName(id))}</span>`).join('');
-    const more = p.materiais_indexados.length > 4 ? `<span class="tag">+${p.materiais_indexados.length - 4}</span>` : '';
-    return `<article class="point-card" data-card-id="${esc(p.id)}"><div class="card-top"><span class="badge ${esc(p.tipo)}">${esc(TYPES[p.tipo] || p.tipo)}</span>${distance !== null ? `<span class="distance">${distance.toLocaleString('pt-BR',{maximumFractionDigits:1})} km</span>` : `<span class="distance">${esc(p.regional)}</span>`}</div><h4><button type="button" data-detail="${esc(p.id)}">${esc(nomeExibicao(p))}</button></h4><p class="card-address">${esc(p.endereco || 'Endereço não informado')}<br>${esc(p.bairro || 'Bairro não informado')}</p><div class="tags">${tags || '<span class="tag">Material não informado no índice</span>'}${more}</div><div class="card-bottom"><button type="button" data-detail="${esc(p.id)}">Ver detalhes <span aria-hidden="true">↗</span></button><button type="button" data-map="${esc(p.id)}">Ver no mapa ⌖</button></div></article>`;
+    const tags = p.materiais_indexados.slice(0,3).map(id => `<span class="tag">${esc(materialName(id))}</span>`).join('');
+    const more = p.materiais_indexados.length > 3 ? `<span class="tag">+${p.materiais_indexados.length - 3}</span>` : '';
+    const locality = [p.bairro, p.regional].filter(Boolean).join(' · ');
+    return `<article class="point-card" data-card-id="${esc(p.id)}"><div class="card-top"><span class="badge ${esc(p.tipo)}">${esc(TYPES[p.tipo] || p.tipo)}</span>${distance !== null ? `<span class="distance">${distance.toLocaleString('pt-BR',{maximumFractionDigits:1})} km</span>` : p.regional ? `<span class="distance">${esc(p.regional)}</span>` : ''}</div><h4><button type="button" data-detail="${esc(p.id)}">${esc(nomeExibicao(p))}</button></h4><p class="card-address">${esc(p.endereco || 'Endereço não informado')}${locality ? `<br>${esc(locality)}` : ''}</p><div class="tags">${tags || '<span class="tag">Sem material indexado</span>'}${more}</div><div class="card-bottom"><button type="button" data-detail="${esc(p.id)}">Ver detalhes ↗</button><button type="button" data-map="${esc(p.id)}">Ver no mapa ⌖</button></div></article>`;
   }).join('');
-
+  const moreButton = $('#show-more');
+  moreButton.hidden = n <= visibleCards;
+  moreButton.textContent = `Ver mais resultados (${n - Math.min(n, visibleCards)} restantes)`;
   updateMarkers();
+  if (nearbyFallback.length) fitMap();
+}
 
-  // Enquadra a localização do usuário e os pontos sugeridos.
-  if (nearbyFallback.length) {
-    fitMap();
-  }
+function detailRow(label, value) {
+  if (value === null || value === undefined || String(value).trim() === '') return '';
+  return `<dt>${esc(label)}</dt><dd>${esc(value)}</dd>`;
 }
 
 function showDetails(f) {
   const p = f.properties, coords = f.geometry.coordinates;
   const materials = p.materiais_indexados.map(id => `<span class="tag">${esc(materialName(id))}</span>`).join('');
-  $('#detail-content').innerHTML = `<span class="badge ${esc(p.tipo)}">${esc(TYPES[p.tipo] || p.tipo)}</span><h2 id="detail-title">${esc(nomeExibicao(p))}</h2><div class="tags">${materials}</div><dl><dt>Endereço</dt><dd>${esc(present(p.endereco))}</dd><dt>Bairro / regional</dt><dd>${esc(present(p.bairro))} · ${esc(present(p.regional))}</dd><dt>Associação / cooperativa</dt><dd>${esc(present(p.associacao_cooperativa))}</dd><dt>Referência de localização</dt><dd>${esc(present(p.referencia))}</dd><dt>Materiais — texto original da fonte</dt><dd>${esc(present(p.material_original))}</dd><dt>Horário — texto original da fonte</dt><dd>${esc(present(p.horario_original))}</dd><dt>Coordenadas (EPSG:4326)</dt><dd>Latitude: ${coords[1]} · Longitude: ${coords[0]}</dd><dt>Identificador no Descarte BH</dt><dd>${esc(p.id)}</dd></dl><div class="detail-actions"><a class="primary-link" href="${routeUrl(f)}" target="_blank" rel="noopener noreferrer">Abrir rota no Google Maps ↗</a><button type="button" class="outline" id="detail-map">Ver no mapa ⌖</button></div><h3>Origem e metadados do registro</h3>${p.origens.map(o => `<div class="data-source"><h3>${esc(o.nome)}</h3><dl><dt>Arquivo original</dt><dd>${esc(o.arquivo)}</dd><dt>Referência temporal</dt><dd>${fmtDate(o.data_referencia)}</dd><dt>Registro na fonte</dt><dd>${esc(o.id_registro)} · linha ${o.linha}</dd><dt>SHA-256</dt><dd class="hash">${esc(o.sha256)}</dd></dl><a href="${esc(o.url)}" target="_blank" rel="noopener noreferrer">Consultar conjunto oficial ↗</a></div>`).join('')}<p class="metadata-note">Confirme a operação e as condições com a PBH. A descrição é preservada do CSV; ela não comprova recebimento atual. Ausência de um material no índice não significa proibição.</p>`;
-    // Fotografias de referência dos equipamentos de descarte
-    const fotosReferencia = {
-      ponto_verde: {
-        imagem: 'https://prefeitura.pbh.gov.br/sites/default/files/estrutura-de-governo/slu/novos%20conteineres%20foto%20divolgacao%20pbh.png',
-        fonte: 'https://prefeitura.pbh.gov.br/noticias/prefeitura-implanta-novos-equipamentos-e-moderniza-coleta-seletiva-na-cidade',
-        descricao: 'Exemplo de contêiner verde utilizado na coleta seletiva de Belo Horizonte.',
-        credito: 'Divulgação PBH'
-      },
+  const origins = p.origens.map(o => `<section class="data-source"><h3>${esc(o.nome)}</h3><dl>${detailRow('Arquivo original', o.arquivo)}${detailRow('Referência temporal', fmtDate(o.data_referencia))}${detailRow('Registro na fonte', `${o.id_registro} · linha ${o.linha}`)}${detailRow('SHA-256', o.sha256)}</dl><a href="${esc(o.url)}" target="_blank" rel="noopener noreferrer">Consultar conjunto oficial ↗</a></section>`).join('');
+  $('#detail-content').innerHTML = `
+    <span class="badge ${esc(p.tipo)}">${esc(TYPES[p.tipo] || p.tipo)}</span>
+    <h2 id="detail-title">${esc(nomeExibicao(p))}</h2>
+    <dl class="detail-essential">
+      ${detailRow('Endereço', p.endereco)}
+      ${detailRow('Bairro', p.bairro)}
+      ${detailRow('Regional', p.regional)}
+      ${detailRow('Associação / cooperativa', p.associacao_cooperativa)}
+      ${detailRow('Horário informado pela fonte', p.horario_original)}
+    </dl>
+    <h3 class="detail-subhead">Materiais mencionados na fonte</h3>
+    <div class="tags">${materials || '<span class="tag">Sem materiais indexados</span>'}</div>
+    <div class="detail-actions"><a class="primary-link" href="${routeUrl(f)}" target="_blank" rel="noopener noreferrer">Como chegar ↗</a><button type="button" class="outline" id="detail-map">Ver no mapa ⌖</button></div>
+    <p class="detail-caution">Consulte as condições de recebimento com a PBH antes de sair. O horário informado não é atualizado em tempo real.</p>
+    <div id="detail-reference"></div>
+    <details class="technical-details"><summary>Dados técnicos e proveniência</summary>
+      <dl>
+        ${detailRow('Referência de localização', p.referencia)}
+        ${detailRow('Materiais — texto original', p.material_original)}
+        ${detailRow('Coordenadas (EPSG:4326)', `Latitude: ${coords[1]} · Longitude: ${coords[0]}`)}
+        ${detailRow('Identificador no Descarte BH', p.id)}
+      </dl>
+      <h3>Origem e metadados do registro</h3>${origins}
+    </details>`;
 
-      urpv: {
-        imagem: 'https://prefeitura.pbh.gov.br/sites/default/files/estrutura-de-governo/vilarinho-depois-urpv-7.png',
-        fonte: 'https://prefeitura.pbh.gov.br/noticias/requalificacao-de-fachadas-de-urpvs-inibe-mau-uso-dos-equipamentos',
-        descricao: 'Exemplo da fachada da URPV Vilarinho, em Belo Horizonte.',
-        credito: 'Divulgação PBH'
-      },
-
-      galpao: {
-        imagem: 'imagens/galpao-asmare-equipe.jpeg',
-        descricao: 'Fachada do galpão da Asmare',
-        credito: 'Google Maps',
-        legenda: 'Fachada do galpão da Asmare. A imagem é uma referência visual e não representa necessariamente os demais galpões nem a aparência atual desta unidade.'
-      }
-    };
-
-    const foto = fotosReferencia[p.tipo];
-
-    if (foto) {
-      const secao = document.createElement('section');
-      secao.className = 'reference-photo';
-
-      secao.innerHTML = `
-        <h3>Como identificar este ponto</h3>
-
-        <figure>
-          <img
-            src="${esc(foto.imagem)}"
-            alt="${esc(foto.descricao)}"
-            loading="lazy"
-            decoding="async"
-          >
-
-          <figcaption>
-            <p>${esc(foto.legenda || 'Imagem ilustrativa do tipo de equipamento. A aparência desta unidade pode ser diferente.')}</p>
-
-            <p>
-              Foto: ${esc(foto.credito)}.${foto.fonte ? ` <a href="${esc(foto.fonte)}" target="_blank" rel="noopener noreferrer">Consultar imagem original ↗</a>` : ''}
-            </p>
-          </figcaption>
-        </figure>
-      `;
-
-      $('#detail-content .tags').after(secao);
-
-      // Trata eventuais falhas no carregamento da fotografia.
-      const imagem = secao.querySelector('img');
-
-      imagem.addEventListener('error', () => {
-        imagem.remove();
-
-        const aviso = document.createElement('p');
-        aviso.textContent = 'Imagem temporariamente indisponível. Consulte a fonte oficial.';
-
-        secao.querySelector('figure').prepend(aviso);
-      });
+  // Somente imagens de referência com procedência institucional identificada.
+  // Foto de galpão enviada pela equipe foi retirada até confirmação de autorização de uso.
+  const fotosReferencia = {
+    ponto_verde: {
+      imagem: 'https://prefeitura.pbh.gov.br/sites/default/files/estrutura-de-governo/slu/novos%20conteineres%20foto%20divolgacao%20pbh.png',
+      fonte: 'https://prefeitura.pbh.gov.br/noticias/prefeitura-implanta-novos-equipamentos-e-moderniza-coleta-seletiva-na-cidade',
+      descricao: 'Exemplo de contêiner de coleta seletiva em Belo Horizonte.', credito: 'Divulgação PBH'
+    },
+    urpv: {
+      imagem: 'https://prefeitura.pbh.gov.br/sites/default/files/estrutura-de-governo/vilarinho-depois-urpv-7.png',
+      fonte: 'https://prefeitura.pbh.gov.br/noticias/requalificacao-de-fachadas-de-urpvs-inibe-mau-uso-dos-equipamentos',
+      descricao: 'Exemplo de fachada de URPV em Belo Horizonte.', credito: 'Divulgação PBH'
     }
+  };
+  const foto = fotosReferencia[p.tipo];
+  if (foto) {
+    const secao = document.createElement('section');
+    secao.className = 'reference-photo';
+    secao.innerHTML = `<h3>Exemplo de ${esc(TYPES[p.tipo] || 'unidade')}</h3><figure><img src="${esc(foto.imagem)}" alt="${esc(foto.descricao)}" loading="lazy" decoding="async"><figcaption><p>Foto ilustrativa. A unidade selecionada pode ser diferente.</p><p>Foto: ${esc(foto.credito)}. <a href="${esc(foto.fonte)}" target="_blank" rel="noopener noreferrer">Fonte original ↗</a></p></figcaption></figure>`;
+    $('#detail-reference').append(secao);
+    const imagem = secao.querySelector('img');
+    imagem.addEventListener('error', () => {
+      imagem.remove();
+      const aviso = document.createElement('p');
+      aviso.textContent = 'Imagem indisponível. Consulte a fonte original.';
+      secao.querySelector('figure').prepend(aviso);
+    });
+  }
   $('#detail-map').addEventListener('click', () => { $('#detail-dialog').close(); focusOnMap(p.id); });
   openDialog('detail');
 }
@@ -311,7 +308,8 @@ function reset() {
   HTMLFormElement.prototype.reset.call($('#filter-form'));
   $('#radius-value').textContent = '5 km';
   $('#address-choices').replaceChildren();
-  clearPosition(false); setPicking(false); renderMaterials(); render(); fitMap();
+  expandedMaterials = false; visibleCards = PAGE_SIZE;
+  clearPosition(false); setPicking(false); renderMaterials(); render({resetPage:true}); fitMap();
 }
 
 async function geocode() {
@@ -342,33 +340,36 @@ async function geocode() {
       $('#address-choices').append(choice);
     }
   } catch {
-    if ($('#location').value.trim() === query) locationMessage('Não foi possível consultar o endereço. O filtro por texto continua disponível; você também pode marcar no mapa ou usar o GPS.',true);
-  } finally { button.disabled=false; button.innerHTML='Localizar endereço no mapa <span aria-hidden="true">↗</span>'; }
+    if ($('#location').value.trim() === query) locationMessage('Não foi possível consultar o endereço. Tente novamente, use o GPS ou marque no mapa. Para filtrar textos já cadastrados, abra Mais filtros.',true);
+  } finally { button.disabled=false; button.innerHTML='Localizar pontos próximos <span aria-hidden="true">⌕</span>'; }
 }
 
 function wireEvents() {
   $('#filter-form').addEventListener('submit',event=>{event.preventDefault();geocode();});
+  $('#material-query').addEventListener('keydown', event => { if (event.key === 'Enter') event.preventDefault(); });
+  $('#materials-more').addEventListener('click', () => {expandedMaterials = !expandedMaterials; renderMaterials();});
   $('#materials').addEventListener('click',event=>{
     const b=event.target.closest('[data-material]'); if(!b)return;
     const id=b.dataset.material;
     state.materials=state.materials.includes(id)?state.materials.filter(m=>m!==id):[...state.materials,id];
-    renderMaterials();render();
+    renderMaterials();render({resetPage:true});
   });
   $('#active-filters').addEventListener('click',event=>{
     const b=event.target.closest('[data-remove-material]');if(!b)return;
-    state.materials=state.materials.filter(m=>m!==b.dataset.removeMaterial);renderMaterials();render();
+    state.materials=state.materials.filter(m=>m!==b.dataset.removeMaterial);renderMaterials();render({resetPage:true});
   });
   $('#material-query').addEventListener('input',renderMaterials);
-  $('#location').addEventListener('input',()=>{clearPosition(false);state.location=$('#location').value;$('#address-choices').replaceChildren();render();});
-  $('#match-mode').addEventListener('change',event=>{state.mode=event.target.value;render();});
-  $('#region').addEventListener('change',event=>{state.region=event.target.value;render();fitMap();});
-  $('#kind').addEventListener('change',event=>{state.kind=event.target.value;render();});
-  $('#sort').addEventListener('change',event=>{state.sort=event.target.value;render();});
-  $('#radius').addEventListener('input',event=>{state.radius=Number(event.target.value);$('#radius-value').textContent=`${state.radius} km`;if(radiusLayer)radiusLayer.setRadius(state.radius*1000);render();});
+  $('#location').addEventListener('input',()=>{ $('#address-choices').replaceChildren(); locationMessage(state.position ? 'Selecione um novo endereço para atualizar sua referência.' : ''); });
+  $('#local-filter').addEventListener('input',()=>{state.location=$('#local-filter').value;render({resetPage:true});});
+  $('#match-mode').addEventListener('change',event=>{state.mode=event.target.value;render({resetPage:true});});
+  $('#region').addEventListener('change',event=>{state.region=event.target.value;render({resetPage:true});fitMap();});
+  $('#kind').addEventListener('change',event=>{state.kind=event.target.value;render({resetPage:true});});
+  $('#sort').addEventListener('change',event=>{state.sort=event.target.value;render({resetPage:true});});
+  $('#radius').addEventListener('input',event=>{state.radius=Number(event.target.value);$('#radius-value').textContent=`${state.radius} km`;if(radiusLayer)radiusLayer.setRadius(state.radius*1000);render({resetPage:true});});
   $('#reset').addEventListener('click',reset);$('#empty-reset').addEventListener('click',reset);
-  $('#fit-map').addEventListener('click',fitMap);$('#clear-position').addEventListener('click',()=>clearPosition());
+  $('#fit-map').addEventListener('click',fitMap);$('#clear-position').addEventListener('click',()=>{clearPosition(false);render({resetPage:true});});
+  $('#show-more').addEventListener('click',()=>{visibleCards += PAGE_SIZE;render();});
   $('#pick-map').addEventListener('click',()=>setPicking(!picking));
-  $('#geocode').addEventListener('click',geocode);
   $('#geolocate').addEventListener('click',()=>{
     if(!navigator.geolocation){locationMessage('Seu navegador não oferece localização. Marque sua posição no mapa.',true);return;}
     const button=$('#geolocate');button.disabled=true;locationMessage('Aguardando a permissão de localização…');
@@ -395,8 +396,6 @@ async function main() {
     const regions=[...new Set(features.map(f=>f.properties.regional).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'pt-BR'));
     regions.forEach(r=>$('#region').add(new Option(r,r)));
     [...new Set(features.map(f=>f.properties.tipo))].sort().forEach(k=>$('#kind').add(new Option(TYPES[k]||k,k)));
-    const locations=[...new Set(features.flatMap(f=>[f.properties.bairro,f.properties.regional]).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'pt-BR'));
-    locations.forEach(value=>{const o=document.createElement('option');o.value=value;$('#locations').append(o);});
     renderMaterials();renderMetadata();initMap();wireEvents();render();fitMap();
   } catch(error) {
     $('#error-state').hidden=false;
