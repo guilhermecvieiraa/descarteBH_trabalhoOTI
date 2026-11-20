@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="pt-BR">
 <head>
@@ -19,21 +20,63 @@
     <nav aria-label="Navegação principal"><a class="active" href="#explorar">Encontrar um ponto</a><button type="button" data-open="metadata">Dados e transparência</button><button type="button" data-open="about">Sobre o projeto <span aria-hidden="true">↗</span></button></nav>
   </header>
   <main>
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-copy"><div class="eyebrow"><span class="live-dot"></span> BELO HORIZONTE · DADOS PÚBLICOS</div><h1 id="hero-title">Seu descarte<br>tem um <em>lugar certo.</em></h1><p>Encontre onde levar seus resíduos em BH.<br>Mais informação para você. Mais cuidado com a cidade.</p></div>
-      <div class="hero-aside"><div class="hero-logo" aria-hidden="true"><img src="logo.png" width="327" height="87" alt=""></div><div class="stats"><div><strong id="total-points">—</strong><span>pontos no mapa</span></div><div><strong id="total-regions">—</strong><span>regionais</span></div><div><strong id="total-sources">—</strong><span>fontes públicas</span></div></div></div>
+    <section class="hero compact-hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <h1 id="hero-title">Encontre onde <em>descartar em BH.</em></h1>
+        <p>Pesquise o material e encontre pontos de recebimento próximos de você.</p>
+      </div>
+      <div class="hero-aside" aria-label="Resumo da base">
+        <div class="stats">
+          <div><strong id="total-points">—</strong><span>pontos</span></div>
+          <div><strong id="total-regions">—</strong><span>regionais</span></div>
+          <div><strong id="total-sources">—</strong><span>fontes</span></div>
+        </div>
+      </div>
     </section>
     <section id="explorar" class="explore" aria-labelledby="explore-title">
-      <div class="section-top"><div><span class="eyebrow">ENCONTRE SEU DESTINO</span><h2 id="explore-title">O que você quer descartar?</h2></div><span class="source-stamp" id="reference-date">Carregando base da PBH…</span></div>
+      <div class="section-top"><div><h2 id="explore-title">Encontre um ponto de descarte</h2></div><span class="source-stamp" id="reference-date">Carregando base da PBH…</span></div>
       <div class="workspace">
         <aside class="filters" aria-label="Filtros de busca">
           <form id="filter-form">
-            <fieldset><legend><span class="step">01</span> Tipo de descarte</legend><label class="sr-only" for="material-query">Buscar material</label><div class="search-field"><span aria-hidden="true">⌕</span><input id="material-query" placeholder="Buscar material na lista…" type="search" autocomplete="off"></div><div id="materials" class="materials"></div><p class="helper">Vários materiais: mostrar pontos que mencionem <label class="inline-select"><select id="match-mode" aria-label="Combinação de materiais"><option value="any">qualquer um</option><option value="all">todos eles</option></select></label>.</p></fieldset>
-            <fieldset><legend><span class="step">02</span> Sua localização</legend><label for="location" class="field-label">Bairro, rua ou regional</label><div class="search-field"><span aria-hidden="true">⌖</span><input id="location" type="search" placeholder="Ex.: Pampulha, Rua do Canal…" list="locations" autocomplete="off"></div><datalist id="locations"></datalist><p class="helper">O texto filtra os endereços da base. Para buscar perto de outro endereço, localize-o no mapa.</p><button type="button" id="geocode" class="outline full">Localizar endereço no mapa <span aria-hidden="true">↗</span></button><div id="address-choices" class="address-choices"></div><div class="location-actions"><button type="button" id="geolocate">⌖ Usar minha localização</button><button type="button" id="pick-map" aria-pressed="false">Marcar no mapa</button></div><div id="location-status" class="location-status" role="status"></div><button type="button" id="clear-position" class="text-button" hidden>Remover localização de referência ×</button><label for="radius" class="field-label radius-label">Distância em linha reta <output id="radius-value">5 km</output></label><input id="radius" type="range" min="1" max="30" value="5" step="1" disabled><p id="radius-help" class="helper">Ative com GPS, endereço localizado ou um ponto no mapa.</p></fieldset>
-            <fieldset><legend><span class="step">03</span> Refine sua busca</legend><label for="region" class="field-label">Regional</label><select id="region"><option value="">Todas as regionais</option></select><label for="kind" class="field-label">Tipo de unidade</label><select id="kind"><option value="">Todos os tipos</option></select></fieldset>
+            <fieldset class="material-fieldset">
+              <legend>O que você quer descartar?</legend>
+              <label class="sr-only" for="material-query">Buscar material</label>
+              <div class="search-field"><span aria-hidden="true">⌕</span><input id="material-query" placeholder="Ex.: papel, entulho, vidro" type="search" autocomplete="off"></div>
+              <div id="materials" class="materials"></div>
+              <button type="button" id="materials-more" class="text-button materials-more" aria-expanded="false" hidden>Ver todos os materiais</button>
+            </fieldset>
+            <fieldset class="location-fieldset">
+              <legend>Onde você está?</legend>
+              <label for="location" class="field-label">Endereço de referência em Belo Horizonte</label>
+              <div class="search-field"><span aria-hidden="true">⌖</span><input id="location" type="search" placeholder="Ex.: Praça Sete, Rua da Bahia" autocomplete="off"></div>
+              <button type="submit" id="geocode" class="primary-search full">Localizar pontos próximos <span aria-hidden="true">⌕</span></button>
+              <div id="address-choices" class="address-choices" aria-label="Sugestões de endereço"></div>
+              <div class="location-actions"><button type="button" id="geolocate">⌖ Usar GPS</button><button type="button" id="pick-map" aria-pressed="false">Marcar no mapa</button></div>
+              <div id="location-status" class="location-status" role="status" aria-live="polite"></div>
+              <button type="button" id="clear-position" class="text-button" hidden>Remover localização ×</button>
+              <div id="radius-group" hidden>
+                <label for="radius" class="field-label radius-label">Raio de busca <output id="radius-value">5 km</output></label>
+                <input id="radius" type="range" min="1" max="30" value="5" step="1" disabled>
+                <p id="radius-help" class="helper">Distância em linha reta.</p>
+              </div>
+            </fieldset>
+            <details id="advanced-filters" class="advanced-filters">
+              <summary>Mais filtros</summary>
+              <div class="advanced-content">
+                <label for="local-filter" class="field-label">Filtrar por bairro, regional ou rua cadastrada</label>
+                <input id="local-filter" type="search" placeholder="Ex.: Pampulha" autocomplete="off">
+                <label for="match-mode" class="field-label">Ao selecionar vários materiais</label>
+                <select id="match-mode" aria-label="Combinação de materiais"><option value="any">Qualquer um</option><option value="all">Todos eles</option></select>
+                <label for="region" class="field-label">Regional</label>
+                <select id="region"><option value="">Todas as regionais</option></select>
+                <p id="region-help" class="helper" hidden>Os galpões não possuem regional informada na fonte e não aparecem neste filtro.</p>
+                <label for="kind" class="field-label">Tipo de unidade</label>
+                <select id="kind"><option value="">Todos os tipos</option></select>
+              </div>
+            </details>
             <button id="reset" type="button" class="reset full">↺ Limpar filtros</button>
           </form>
-          <div class="filter-note"><span aria-hidden="true">ⓘ</span><p>Os materiais seguem o texto da fonte. Confirme as condições de recebimento antes de sair.</p></div>
+
         </aside>
         <div class="results-area">
           <div class="results-toolbar"><div><h3 id="result-count" role="status" aria-live="polite">Carregando pontos…</h3><p id="result-context">Locais e informações fornecidos pela PBH</p></div><div class="view-switch" role="group" aria-label="Visualização"><button type="button" class="selected" data-view="map" aria-pressed="true">⌖ Mapa</button><button type="button" data-view="list" aria-pressed="false">☷ Lista</button></div></div>
@@ -46,15 +89,15 @@
   A ausência de resultados não significa que o descarte seja proibido.
 </p><button type="button" id="empty-reset" class="outline">Limpar filtros</button></div>
           <div id="results" class="results" aria-label="Lista de pontos de descarte"></div>
+          <button id="show-more" class="outline more-results" type="button" hidden>Ver mais resultados</button>
         </div>
       </div>
     </section>
-    <section class="care-strip"><span class="care-icon" aria-hidden="true">♧</span><div><h2>Uma cidade melhor começa com pequenas escolhas.</h2><p>Separe os resíduos e consulte os materiais informados para cada local.</p></div><button type="button" data-open="about" class="outline">Conheça o projeto <span aria-hidden="true">↗</span></button></section>
   </main>
   <footer><a class="brand footer-brand" href="#"><img class="brand-logo" src="logo.png" width="327" height="87" alt="Descarte BH — Informação para o descarte correto"></a><p>Projeto acadêmico · UFMG · Organização e Tratamento da Informação<br>Dados da Prefeitura de Belo Horizonte. Esta plataforma não substitui os canais oficiais.</p><button type="button" data-open="metadata">Fontes e metadados ↗</button></footer>
   <dialog id="detail-dialog" aria-labelledby="detail-title"><div class="dialog-top"><span class="eyebrow">INFORMAÇÕES DO PONTO</span><button type="button" class="close-dialog" aria-label="Fechar detalhes">×</button></div><div id="detail-content"></div></dialog>
   <dialog id="metadata-dialog" class="wide-dialog" aria-labelledby="metadata-title"><div class="dialog-top"><span class="eyebrow">DADOS ABERTOS · RASTREABILIDADE</span><button type="button" class="close-dialog" aria-label="Fechar metadados">×</button></div><h2 id="metadata-title">Dados e transparência</h2><p class="dialog-intro">Da fonte pública ao mapa, cada registro mantém sua origem.</p><div id="metadata-content"></div></dialog>
-  <dialog id="about-dialog" aria-labelledby="about-title"><div class="dialog-top"><span class="eyebrow">INFORMAÇÃO QUE TRANSFORMA</span><button type="button" class="close-dialog" aria-label="Fechar sobre o projeto">×</button></div><h2 id="about-title">Sobre o Descarte BH</h2><p>O Descarte BH organiza informações públicas sobre locais de descarte em Belo Horizonte para aproximar o cidadão dos serviços da cidade.</p><h3>Um projeto de organização da informação</h3><p>Protótipo acadêmico do curso de Sistemas de Informação da UFMG, disciplina Organização e Tratamento da Informação (OTI071), sob orientação da professora Patrícia Nascimento Silva.</p><p>Autores: Lucas Morais de Souza, Guilherme Augusto Pires Lopes e Guilherme Carneiro Vieira.</p><h3>Como pesquisar</h3><p>Escolha materiais e informe um bairro, rua ou regional. Para ordenar por proximidade, use sua localização, localize um endereço ou marque uma posição no mapa. As distâncias são calculadas em linha reta, não pelo trajeto.</p><h3>Como interpretar os resultados</h3><p>Materiais são indexados apenas quando mencionados na descrição original. Não inferimos que uma unidade recebe um resíduo apenas pelo seu tipo. Campos ausentes aparecem como “Não informado”.</p><p>Horários são os textos do CSV, sem confirmação de funcionamento em tempo real. A plataforma não substitui os canais oficiais da PBH.</p><h3>Localização e serviços externos</h3><p>Filtros e cálculo de distância ocorrem no navegador. A localização GPS não é armazenada. Ao clicar em “Localizar endereço”, o texto é enviado ao serviço Photon/Komoot. O mapa usa OpenStreetMap; o link de rota abre um serviço externo.</p><p><a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">© OpenStreetMap contributors</a> · <a href="https://github.com/komoot/photon" target="_blank" rel="noopener noreferrer">Photon</a> · Leaflet</p></dialog>
+  <dialog id="about-dialog" aria-labelledby="about-title"><div class="dialog-top"><span class="eyebrow">INFORMAÇÃO QUE TRANSFORMA</span><button type="button" class="close-dialog" aria-label="Fechar sobre o projeto">×</button></div><h2 id="about-title">Sobre o Descarte BH</h2><p>O Descarte BH organiza informações públicas sobre locais de descarte em Belo Horizonte para aproximar o cidadão dos serviços da cidade.</p><h3>Um projeto de organização da informação</h3><p>Protótipo acadêmico do curso de Sistemas de Informação da UFMG, disciplina Organização e Tratamento da Informação (OTI071), sob orientação da professora Patrícia Nascimento Silva.</p><p>Autores: Lucas Morais de Souza, Guilherme Augusto Pires Lopes e Guilherme Carneiro Vieira.</p><h3>Como pesquisar</h3><p>Selecione um material e localize um endereço para encontrar pontos próximos. Em Mais filtros, você pode restringir por texto da base, regional ou tipo de unidade. Também é possível usar GPS ou marcar um ponto no mapa. As distâncias são em linha reta, não pelo trajeto.</p><h3>Como interpretar os resultados</h3><p>Materiais são indexados apenas quando mencionados na descrição original. Não inferimos que uma unidade recebe um resíduo apenas pelo seu tipo. Campos opcionais ausentes não são apresentados nos detalhes resumidos, mas permanecem documentados nos dados.</p><p>Horários são os textos do CSV, sem confirmação de funcionamento em tempo real. A plataforma não substitui os canais oficiais da PBH.</p><h3>Localização e serviços externos</h3><p>Filtros e cálculo de distância ocorrem no navegador. A localização GPS não é armazenada. Ao clicar em “Localizar endereço”, o texto é enviado ao serviço Photon/Komoot. O mapa usa OpenStreetMap; o link de rota abre um serviço externo.</p><p><a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">© OpenStreetMap contributors</a> · <a href="https://github.com/komoot/photon" target="_blank" rel="noopener noreferrer">Photon</a> · Leaflet</p></dialog>
   <noscript><p class="error-state">Ative o JavaScript para usar o mapa e os filtros. <a href="dados/pontos.csv">Baixar os dados em CSV</a>.</p></noscript>
 </body>
 </html>
