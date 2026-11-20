@@ -31,7 +31,6 @@ export function nearestPoints(features, state, limit = 5) {
 
   return filterPoints(features, {
     ...state,
-    location: '',
     radius: Number.POSITIVE_INFINITY,
     sort: 'distance'
   }).slice(0, limit);
