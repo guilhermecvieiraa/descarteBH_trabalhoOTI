@@ -1,4 +1,4 @@
-import { normalize, filterPoints, nearestPoints, TYPES } from './search.js';
+import { normalize, filterPoints, nearestPoints, TYPES } from './search.js?v=20261120-fix2';
 
 const $ = selector => document.querySelector(selector);
 const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
