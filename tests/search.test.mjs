@@ -87,7 +87,7 @@ test('busca retorna pontos próximos fora do raio e respeita materiais', () => {
   const estado = {
     ...base,
     materials: ['papel'],
-    location: 'Rua inexistente 999',
+    location: '',
     position: [-43.94, -19.92],
     radius: 0.1
   };
@@ -122,4 +122,15 @@ test('busca retorna pontos próximos fora do raio e respeita materiais', () => {
       item.feature.properties.materiais_indexados.includes('papel')
     )
   );
+});
+
+test('busca complementar mantém filtro textual quando há posição', () => {
+  const pontoComRegional = geo.features.find(f => f.properties.regional);
+  const position = pontoComRegional.geometry.coordinates;
+  const regiao = pontoComRegional.properties.regional;
+  const result = nearestPoints(geo.features, {...base, position, radius: 0.001, region: regiao, location: 'xyz-nao-existe'}, 5);
+  assert.deepEqual(result, []);
+  const validos = nearestPoints(geo.features, {...base, position, radius: 0.001, region: regiao}, 5);
+  assert.ok(validos.length > 0);
+  assert.ok(validos.every(item => normalize(item.feature.properties.regional) === normalize(regiao)));
 });
